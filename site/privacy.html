@@ -1,0 +1,1260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy and terms | Alexander Langley</title>
+<meta name="description" content="How Alexander Langley handles the information you send through this site.">
+<link rel="canonical" href="https://alexanderlangleyyachts.com/privacy">
+<meta property="og:title" content="Privacy and terms | Alexander Langley">
+<meta property="og:description" content="How Alexander Langley handles the information you send through this site.">
+<meta property="og:url" content="https://alexanderlangleyyachts.com/privacy">
+<meta property="og:image" content="https://alexanderlangleyyachts.com/img/hero-trawler-1200.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="robots" content="noindex">
+</head>
+<body>
+<style>
+@font-face{font-family:"Manrope";src:url("/fonts/manrope.woff2") format("woff2");font-weight:200 800;font-display:swap}
+
+/* ===== Core Colors (raw palettes, one mode) ===== */
+:root{
+  color-scheme:light;
+  /* Primary: Van Isle navy, 500 is the brand hue */
+  --primary-00:#f3f7fb;--primary-50:#e8eff6;--primary-100:#d2e0ee;--primary-150:#bcd0e5;--primary-200:#a2bdda;--primary-300:#6f95bf;--primary-350:#5684b4;--primary-400:#3b6c9e;--primary-450:#1f5890;--primary-500:#00467f;--primary-600:#003c6f;--primary-700:#00335f;--primary-800:#00294d;--primary-850:#002242;--primary-900:#0b1f36;--primary-950:#06162a;--primary-1000:#020c18;
+  /* Secondary: chart land buff */
+  --secondary-00:#fdfbf6;--secondary-50:#faf6ec;--secondary-100:#f3ead3;--secondary-150:#eee2c4;--secondary-200:#e8d9b4;--secondary-300:#dbc48f;--secondary-400:#cfb57b;--secondary-500:#c4a768;--secondary-600:#a68a4f;--secondary-700:#806a3c;--secondary-800:#5b4b2a;--secondary-850:#4a3d22;--secondary-900:#382e1a;--secondary-950:#251f11;--secondary-1000:#140f08;
+  /* Accent: Van Isle teal, held under 80% saturation */
+  --accent-00:#f6fbfb;--accent-50:#ecf6f5;--accent-100:#d6ecea;--accent-150:#c1e2df;--accent-200:#acd8d5;--accent-300:#7fc1bd;--accent-400:#4fa8a3;--accent-500:#2a8f8a;--accent-600:#227a76;--accent-700:#1c6562;--accent-800:#16504e;--accent-850:#134542;--accent-900:#0f3937;--accent-950:#0a2625;--accent-1000:#051413;
+  /* Grayscale: cool neutrals */
+  --gray-00:#ffffff;--gray-50:#f6f8fa;--gray-100:#eef1f4;--gray-150:#e4e9ee;--gray-200:#d6dde4;--gray-250:#c8d1da;--gray-300:#b3becb;--gray-400:#8a97a5;--gray-450:#76838f;--gray-500:#636f7b;--gray-600:#4f5a66;--gray-700:#3b4550;--gray-750:#313131;--gray-800:#272727;--gray-850:#1f1f1f;--gray-870:#181818;--gray-900:#111417;--gray-950:#0a0c0e;--gray-1000:#000000;
+  --red-00:#fef7f6;--red-50:#fbeceb;--red-100:#f6d6d3;--red-500:#c2362b;--red-600:#ab2f25;--red-700:#9b2a21;--red-800:#7a2019;
+  --green-50:#ebf5ee;--green-500:#3a8a50;--green-600:#2f7a43;--green-700:#256236;
+  --yellow-50:#fdf6e3;--yellow-500:#c99a1e;--yellow-800:#6b5110;
+  /* Alpha neutrals for overlays */
+  --gray-alpha-00-80:rgb(255 255 255 / .8);--gray-alpha-00-94:rgb(255 255 255 / .94);
+  --primary-alpha-900-40:rgb(11 31 54 / .4);--primary-alpha-900-12:rgb(11 31 54 / .12);
+
+/* ===== Color System (semantic, Light mode; every value is an alias) ===== */
+  --surface-primary:var(--gray-00);
+  --surface-primary-hover:var(--gray-100);
+  --surface-primary-subtle:var(--gray-50);
+  --surface-secondary:var(--primary-00);
+  --surface-secondary-hover:var(--primary-50);
+  --surface-secondary-subtle:var(--primary-50);
+  --surface-land:var(--secondary-100);
+  --surface-land-subtle:var(--secondary-50);
+  --surface-accent:var(--accent-500);
+  --surface-accent-subtle:var(--accent-50);
+  --surface-inverted:var(--primary-800);
+  --surface-error-subtle:var(--red-00);
+  --surface-warning-subtle:var(--yellow-50);
+  --surface-primary-selected:var(--gray-150);
+  --surface-land-strong:var(--secondary-500);
+  --text-primary:var(--primary-900);
+  --text-secondary:var(--gray-700);
+  --text-subtle:var(--gray-600);
+  --text-inverted:var(--gray-00);
+  --text-inverted-subtle:var(--primary-100);
+  --text-accent:var(--accent-700);
+  --text-link:var(--primary-500);
+  --text-error:var(--red-700);
+  --text-success:var(--green-700);
+  --text-land:var(--secondary-800);
+  --text-placeholder:var(--gray-450);
+  --text-warning-inverted:var(--yellow-800);
+  --action-primary:var(--primary-500);
+  --action-primary-hover:var(--primary-700);
+  --action-primary-click:var(--primary-600);
+  --action-primary-disabled:var(--gray-300);
+  --action-inverted:var(--gray-00);
+  --action-inverted-hover:var(--primary-50);
+  --action-inverted-click:var(--primary-100);
+  --border-primary:var(--gray-200);
+  --border-secondary:var(--primary-100);
+  --border-input:var(--gray-450);
+  --border-action:var(--primary-500);
+  --border-accent:var(--accent-500);
+  --border-error:var(--red-500);
+  --border-focus:var(--accent-600);
+  --border-focus-inverted:var(--gray-00);
+  --icon-default:var(--primary-900);
+  --icon-secondary:var(--gray-600);
+  --icon-accent:var(--accent-500);
+  --icon-action:var(--primary-500);
+  --icon-error:var(--red-500);
+  --icon-inverted:var(--gray-00);
+  --chart-route:var(--primary-300);
+  --chart-route-done:var(--primary-500);
+  --chart-contour:var(--primary-150);
+  --chart-sounding:var(--primary-350);
+  --chart-land:var(--secondary-100);
+  --chart-land-edge:var(--secondary-400);
+  --chart-wake:var(--primary-350);
+  --chart-turn:var(--accent-600);
+  --border-land-strong:var(--secondary-600);
+  --hero-from:var(--primary-900);
+  --hero-to:var(--primary-400);
+  --overlay-nav:var(--gray-alpha-00-80);
+  --overlay-menu:var(--gray-alpha-00-94);
+  --overlay-scrim:var(--primary-alpha-900-40);
+  --shadow-float:0 16px 40px var(--primary-alpha-900-12);
+
+/* ===== spacing (only these) ===== */
+  --s-0:0;--s-25:2px;--s-50:4px;--s-75:8px;--s-100:12px;--s-200:16px;--s-300:24px;--s-400:32px;--s-500:40px;--s-600:48px;--s-700:64px;--s-800:80px;--s-900:96px;
+/* ===== radius (Tailwind steps only) ===== */
+  --r-0:0;--r-2:2px;--r-4:4px;--r-6:6px;--r-8:8px;--r-12:12px;--r-16:16px;--r-24:24px;--r-full:9999px;
+/* ===== motion ===== */
+  --ease:cubic-bezier(.22,1,.36,1);--t-layout:500ms;--t-color:300ms;--t-reveal:700ms;
+}
+
+/* ===== Text styles (Tailwind scale only; one typeface) ===== */
+.heading-1{font-size:60px;line-height:60px;font-weight:600}
+.heading-2{font-size:48px;line-height:48px;font-weight:600}
+.heading-3{font-size:36px;line-height:40px;font-weight:600}
+.heading-4{font-size:30px;line-height:36px;font-weight:600}
+.heading-5{font-size:24px;line-height:32px;font-weight:600}
+.heading-6{font-size:20px;line-height:28px;font-weight:600}
+.title-1{font-size:20px;line-height:28px;font-weight:500}
+.title-2{font-size:18px;line-height:28px;font-weight:500}
+.title-3{font-size:16px;line-height:24px;font-weight:500}
+.title-4{font-size:14px;line-height:20px;font-weight:500}
+.title-5{font-size:12px;line-height:16px;font-weight:500}
+.body-1{font-size:16px;line-height:24px;font-weight:600}
+.body-2{font-size:16px;line-height:24px;font-weight:500}
+.body-3{font-size:16px;line-height:24px;font-weight:400}
+.body-4{font-size:14px;line-height:20px;font-weight:600}
+.body-5{font-size:14px;line-height:20px;font-weight:500}
+.body-6{font-size:14px;line-height:20px;font-weight:400}
+.body-7{font-size:18px;line-height:28px;font-weight:400}
+.body-8{font-size:20px;line-height:28px;font-weight:400}
+.button-lg{font-size:18px;line-height:28px;font-weight:600}
+.button-md{font-size:16px;line-height:24px;font-weight:600}
+.button-sm{font-size:14px;line-height:20px;font-weight:600}
+.button-xsm{font-size:12px;line-height:16px;font-weight:600}
+.caption-1{font-size:14px;line-height:20px;font-weight:500}
+.caption-2{font-size:14px;line-height:20px;font-weight:400}
+.caption-3{font-size:12px;line-height:16px;font-weight:600}
+.caption-4{font-size:12px;line-height:16px;font-weight:500}
+.caption-5{font-size:12px;line-height:16px;font-weight:400}
+@media (min-width:768px){
+  .md\:heading-1{font-size:60px;line-height:60px;font-weight:600}
+  .md\:heading-2{font-size:48px;line-height:48px;font-weight:600}
+  .md\:heading-3{font-size:36px;line-height:40px;font-weight:600}
+  .md\:heading-5{font-size:24px;line-height:32px;font-weight:600}
+  .md\:body-7{font-size:18px;line-height:28px;font-weight:400}
+  .md\:body-8{font-size:20px;line-height:28px;font-weight:400}
+}
+@media (min-width:1024px){
+  .lg\:heading-1{font-size:60px;line-height:60px;font-weight:600}
+  .lg\:heading-2{font-size:48px;line-height:48px;font-weight:600}
+  .lg\:heading-5{font-size:24px;line-height:32px;font-weight:600}
+  .lg\:body-8{font-size:20px;line-height:28px;font-weight:400}
+}
+
+/* ===== Base ===== */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--surface-primary);color:var(--text-secondary);font-family:"Manrope",system-ui,sans-serif;font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,figure,blockquote{margin:0;padding:0}
+ul,ol{list-style:none}
+img,svg{display:block}
+img{max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.25em;text-decoration-thickness:1px}
+button,input,textarea,select{font:inherit;color:inherit}
+h1,h2,h3,h4,h5,h6{color:var(--text-primary);text-wrap:balance}
+p,li,dd,dt,figcaption,summary,legend,label{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--border-focus);outline-offset:2px}
+.icon{width:24px;height:24px;flex:none;fill:currentColor}
+.icon-sm{width:20px;height:20px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:var(--s-200);top:var(--s-200);z-index:100;padding:var(--s-75) var(--s-100);border-radius:var(--r-8);background:var(--action-primary);color:var(--text-inverted);text-decoration:none;transform:translateY(-200%);transition:transform var(--t-color) var(--ease)}
+.skip:focus{transform:none}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--s-200)}
+@media (min-width:768px){.wrap{padding-inline:var(--s-400)}}
+@media (min-width:1280px){.wrap{padding-inline:var(--s-500)}}
+.sec{padding-block:var(--s-700)}
+@media (min-width:1024px){.sec{padding-block:var(--s-900)}}
+.muted{color:var(--text-subtle)}
+.tel{white-space:nowrap}
+.mt-200{margin-top:var(--s-200)}
+.stack-200>*+*{margin-top:var(--s-200)}
+.stack-300>*+*{margin-top:var(--s-300)}
+
+/* ===== Buttons ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-75);min-height:44px;padding:var(--s-75) var(--s-100);border:0;border-radius:var(--r-8);background:var(--action-primary);color:var(--text-inverted);text-decoration:none;cursor:pointer;transition:background-color var(--t-color) var(--ease),transform var(--t-color) var(--ease)}
+.btn .icon{width:20px;height:20px;transition:transform var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.btn:hover{background:var(--action-primary-hover)}.btn:hover .icon{transform:translateX(4px)}}
+.btn:active{transform:scale(.98);background:var(--action-primary-click)}
+.btn:focus-visible{outline:2px solid var(--border-focus);outline-offset:2px}
+.btn[aria-busy="true"]{cursor:progress;opacity:.85}
+.btn:disabled,.btn[aria-disabled="true"]{background:var(--action-primary-disabled);cursor:not-allowed;transform:none}
+.btn-inv{background:var(--action-inverted);color:var(--action-primary)}
+@media (hover:hover) and (pointer:fine){.btn-inv:hover{background:var(--action-inverted-hover)}}
+.btn-inv:active{background:var(--action-inverted-click)}
+.btn-inv:focus-visible{outline-color:var(--border-focus-inverted)}
+.link{display:inline-flex;align-items:center;gap:var(--s-75);min-height:44px;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em}
+.link .icon{width:20px;height:20px;transition:transform var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.link:hover{color:var(--action-primary-hover)}.link:hover .icon{transform:translateX(4px)}}
+.tag{display:inline-flex;align-items:center;gap:var(--s-50);padding:var(--s-25) var(--s-75);border-radius:var(--r-full);background:var(--surface-accent-subtle);color:var(--text-accent)}
+.tag-plain{background:var(--surface-primary-subtle);color:var(--text-subtle)}
+
+/* ===== Floating navigation ===== */
+.nav{position:fixed;z-index:60;top:var(--s-200);left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - var(--s-400));display:flex;align-items:center;gap:var(--s-200);padding:var(--s-75) var(--s-75) var(--s-75) var(--s-300);border:1px solid var(--border-primary);border-radius:var(--r-full);background:var(--overlay-nav);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4)}
+.brand{display:flex;flex-direction:column;color:var(--text-primary);text-decoration:none;white-space:nowrap}
+.brand small{color:var(--text-subtle)}
+.nav-links{display:flex;gap:var(--s-25)}
+.nav-links a{display:inline-flex;align-items:center;min-height:44px;padding:var(--s-75) var(--s-100);border-radius:var(--r-full);color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:background-color var(--t-color) var(--ease),color var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.nav-links a:hover{background:var(--surface-secondary-hover);color:var(--text-primary)}}
+.nav-links a[aria-current="page"]{background:var(--surface-secondary-subtle);color:var(--text-primary);font-weight:600}
+.nav .btn{border-radius:var(--r-full);padding-inline:var(--s-200);white-space:nowrap}
+.menu-btn{display:none;position:relative;width:44px;height:44px;flex:none;padding:0;border:0;border-radius:var(--r-full);background:var(--surface-secondary-subtle);cursor:pointer}
+.menu-btn span{position:absolute;left:13px;width:18px;height:2px;border-radius:var(--r-2);background:var(--icon-default);transition:transform var(--t-layout) var(--ease)}
+.menu-btn span:first-of-type{top:18px}
+.menu-btn span:last-of-type{top:24px}
+.menu-btn[aria-expanded="true"] span:first-of-type{transform:translateY(3px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:last-of-type{transform:translateY(-3px) rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:55;display:flex;flex-direction:column;justify-content:space-between;padding:var(--s-900) var(--s-300) var(--s-400);background:var(--overlay-menu);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);opacity:0;visibility:hidden;transition:opacity var(--t-color) var(--ease),visibility 0s linear var(--t-color)}
+.menu.open{opacity:1;visibility:visible;transition:opacity var(--t-color) var(--ease)}
+.menu ul{display:grid;gap:var(--s-75)}
+.menu li{opacity:0;transform:translateY(24px);transition:opacity var(--t-layout) var(--ease),transform var(--t-layout) var(--ease);transition-delay:calc(var(--i, 0) * 60ms)}
+.menu.open li{opacity:1;transform:none}
+.menu ul a{display:flex;align-items:center;min-height:48px;color:var(--text-primary);text-decoration:none}
+.menu ul a[aria-current="page"]{text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:2px}
+.menu-foot{display:grid;gap:var(--s-200)}
+.menu-foot .btn{width:100%}
+@media (max-width:959px){
+  .nav{left:var(--s-200);right:var(--s-200);transform:none;width:auto;max-width:none;justify-content:space-between;gap:var(--s-75);padding-left:var(--s-200)}
+  .nav-links,.nav .brand small{display:none}
+  .menu-btn{display:block}
+}
+@media (max-width:389px){.nav .btn{display:none}}
+@media (min-width:960px){.menu{display:none}}
+
+/* ===== Hero ===== */
+main{padding-top:var(--s-800)}
+.hero{padding-top:var(--s-400);padding-bottom:var(--s-700)}
+@media (min-width:1024px){.hero{padding-top:var(--s-700);padding-bottom:var(--s-900)}}
+.hero-grid{display:grid;gap:var(--s-600)}
+@media (min-width:1024px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s-700);align-items:center}}
+.hero h1{max-width:680px;background-image:linear-gradient(90deg,var(--hero-from) 0%,var(--hero-to) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){.hero h1{color:var(--text-primary);background:none}}
+@media (forced-colors:active){.hero h1{color:CanvasText;background:none}}
+.hero-sub{max-width:680px;margin-top:var(--s-300);color:var(--text-secondary)}
+.hero-act{margin-top:var(--s-400);display:grid;gap:var(--s-100);justify-items:start}
+.hero-act .caption-2{color:var(--text-subtle)}
+.hero-call{color:var(--text-secondary)}
+.hero-call a{display:inline-flex;align-items:center;gap:var(--s-50);min-height:44px;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em}
+.hero-call .icon{width:20px;height:20px}
+@media (hover:hover) and (pointer:fine){.hero-call a:hover{color:var(--action-primary-hover)}}
+.proof{margin-top:var(--s-500);display:flex;align-items:center;gap:var(--s-100);max-width:680px}
+.proof img{width:48px;height:48px;border-radius:var(--r-full);object-fit:cover}
+.proof p{color:var(--text-secondary)}
+.proof b{color:var(--text-primary);font-weight:600}
+.hero-visual{position:relative}
+.hero-photo{border-radius:var(--r-24);overflow:hidden;aspect-ratio:4/3;background:var(--surface-secondary)}
+@media (min-width:1024px){.hero-photo{aspect-ratio:5/4}}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.float-card{position:relative;margin:calc(-1 * var(--s-700)) var(--s-200) 0;padding:var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-16);background:var(--surface-primary);box-shadow:var(--shadow-float);display:grid;gap:var(--s-75)}
+@media (min-width:640px){.float-card{position:absolute;margin:0;left:var(--s-300);bottom:var(--s-300);width:360px}}
+@media (min-width:1024px){.float-card{left:calc(-1 * var(--s-600));bottom:var(--s-600)}}
+.fc-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);color:var(--text-subtle)}
+.fc-range{padding:var(--s-100) var(--s-200);border-radius:var(--r-8);background:var(--surface-secondary)}
+.fc-range span{display:block;color:var(--text-subtle)}
+.fc-range b{display:block;color:var(--text-primary);text-wrap:balance;font-variant-numeric:tabular-nums lining-nums}
+.float-card .title-3{color:var(--text-primary)}
+
+/* Hero entrance */
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+[data-hero]{animation:rise 800ms var(--ease) both;animation-delay:calc(var(--d, 0) * 90ms)}
+
+/* Scroll reveals: visible by default, armed by script only below the fold */
+[data-reveal]{transition:opacity var(--t-reveal) var(--ease),transform var(--t-reveal) var(--ease);transition-delay:calc(var(--d, 0) * 80ms)}
+[data-reveal].pending{opacity:0;transform:translateY(32px)}
+
+/* ===== Section heads ===== */
+.head{display:grid;gap:var(--s-200)}
+@media (min-width:1024px){.head-split{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:end}.head-split>:first-child{grid-column:1/7}.head-split>:last-child{grid-column:7/13}}
+.lead{color:var(--text-secondary)}
+
+/* ===== Benefits bento ===== */
+.bento{display:grid;gap:var(--s-200);margin-top:var(--s-600)}
+@media (min-width:768px){.bento{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300)}.b1,.b4{grid-column:span 7}.b2,.b3{grid-column:span 5}}
+.card{display:flex;flex-direction:column;gap:var(--s-200);padding:var(--s-400);border-radius:var(--r-16);background:var(--surface-primary-subtle)}
+@media (max-width:767px){.card{padding:var(--s-300)}}
+.card>.icon{color:var(--icon-accent);width:32px;height:32px}
+.card h3{color:var(--text-primary)}
+.card .lead{max-width:34rem}
+.mini{margin-top:auto;padding:var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-12);background:var(--surface-primary);display:grid;gap:var(--s-75)}
+.mini-row{display:flex;align-items:center;gap:var(--s-100)}
+.mini-row img{width:40px;height:40px;border-radius:var(--r-full);object-fit:cover}
+.mini-head{display:flex;justify-content:space-between;align-items:center;gap:var(--s-100);color:var(--text-subtle)}
+.mini p{color:var(--text-secondary)}
+.mini .title-3,.mini .title-4{color:var(--text-primary)}
+.checks{display:grid;gap:var(--s-75)}
+.checks li{display:flex;gap:var(--s-75);align-items:flex-start;color:var(--text-secondary)}
+.checks .icon{width:20px;height:20px;margin-top:0}
+.checks .yes .icon{color:var(--icon-accent)}
+.checks .no .icon{color:var(--icon-secondary)}
+
+/* ===== Tagline reveal ===== */
+.tagline{padding-block:var(--s-800)}
+@media (min-width:1024px){.tagline{padding-block:var(--s-900)}}
+.tagline p{max-width:680px;margin-inline:auto;text-align:center;color:var(--text-primary);text-wrap:balance}
+.tagline .w{opacity:.3;transition:opacity var(--t-layout) var(--ease)}
+.tagline .w.on{opacity:1}
+.no-split .tagline .w{opacity:1}
+
+/* ===== Passage plan ===== */
+.chart{position:relative;margin-top:var(--s-600);padding:var(--s-700) var(--s-200) var(--s-600);border:1px solid var(--border-secondary);border-radius:var(--r-24);background:var(--surface-secondary);overflow:hidden;isolation:isolate}
+@media (min-width:768px){.chart{padding:var(--s-800) var(--s-400) var(--s-700)}}
+.chart-deco{position:absolute;pointer-events:none;z-index:-1}
+.deco-isle-a{top:-8px;right:-24px;width:min(46%,420px)}
+.deco-isle-b{bottom:-16px;left:-32px;width:min(40%,360px)}
+.deco-isle-c{top:44%;right:-40px;width:min(26%,220px)}
+.deco-rose{top:var(--s-300);left:var(--s-300);width:88px;color:var(--chart-sounding)}
+@media (max-width:767px){.deco-rose{width:64px;top:var(--s-200);left:auto;right:var(--s-200)}.deco-isle-c{display:none}.deco-isle-a{width:60%;right:-30%}.deco-isle-b{width:70%;left:-35%}}
+.route{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.route .base{fill:none;stroke:var(--chart-route);stroke-width:2;stroke-dasharray:2 8;stroke-linecap:round}
+.route .done{fill:none;stroke:var(--chart-route-done);stroke-width:3;stroke-linecap:round}
+.route .turn{fill:none;stroke:var(--chart-turn);stroke-width:2;stroke-dasharray:6 6;stroke-linecap:round}
+.route .turn-head{fill:var(--chart-turn)}
+.route .turn-label{fill:var(--text-accent)}
+.boat{transition:opacity var(--t-color) var(--ease)}
+.boat .hull{fill:var(--surface-accent);stroke:var(--surface-primary);stroke-width:2}
+.boat .cabin{fill:var(--surface-primary)}
+.boat .wake{fill:none;stroke:var(--chart-wake);stroke-width:1.5;stroke-linecap:round}
+.boat .halo{fill:var(--surface-primary);stroke:var(--chart-route-done);stroke-width:1.5}
+.route .sounding{fill:var(--chart-sounding)}
+.chart-end{position:relative;text-align:center;display:grid;justify-items:center;gap:var(--s-25)}
+.chart-end .caption-3{color:var(--text-accent);text-transform:none}
+.chart-end .body-5{color:var(--text-primary)}
+.chart-end .caption-5{color:var(--text-subtle)}
+.chart-end-top{margin-bottom:var(--s-600)}
+@media (max-width:767px){.chart-end{justify-items:start;text-align:left;padding-left:var(--s-700)}}
+.chart-end-bottom{margin-top:var(--s-600)}
+.legs{position:relative;display:grid;gap:var(--s-500)}
+@media (min-width:768px){.legs{gap:0}.leg+.leg{margin-top:calc(-1 * var(--s-600))}.leg.decision,.leg.decision+.leg{margin-top:var(--s-200)}}
+.leg{display:grid;grid-template-columns:48px minmax(0,1fr);gap:var(--s-100);align-items:center}
+@media (min-width:768px){
+  .leg{grid-template-columns:minmax(0,1fr) 128px minmax(0,1fr);gap:0}
+  .leg .wp{grid-column:1;grid-row:1}
+  .leg.right .wp{grid-column:3}
+  .leg .marker{grid-column:2;grid-row:1}
+}
+.marker{position:relative;justify-self:center;width:44px;height:44px;border:2px solid var(--border-action);border-radius:var(--r-full);background:var(--surface-primary);color:var(--text-primary);display:grid;place-items:center;transition:background-color var(--t-color) var(--ease),border-color var(--t-color) var(--ease),color var(--t-color) var(--ease)}
+.marker .icon{display:none;width:20px;height:20px}
+.leg.on .marker{background:var(--surface-accent);border-color:var(--border-accent);color:var(--text-inverted)}
+.leg.on .marker .n{display:none}
+.leg.on .marker .icon{display:block}
+@media (min-width:768px){.leg .marker{transform:translateX(var(--mx, 0))}}
+.wp{padding:var(--s-300);border:1px solid var(--border-secondary);border-radius:var(--r-16);background:var(--surface-primary);display:grid;gap:var(--s-100);transition:border-color var(--t-color) var(--ease),transform var(--t-layout) var(--ease)}
+.leg.on .wp{border-color:var(--border-accent)}
+@media (max-width:767px){.wp{border-radius:var(--r-8)}}
+.wp-meta{display:flex;align-items:center;justify-content:space-between;gap:var(--s-100);margin-top:var(--s-50)}
+.wp-meta .caption-3{color:var(--text-accent)}
+.wp p{color:var(--text-secondary)}
+.decision .wp{background:var(--surface-land);border-color:var(--chart-land-edge)}
+.decision .wp-meta .caption-3{color:var(--text-land)}
+.decision .marker{border-radius:var(--r-4);transform:rotate(45deg);width:32px;height:32px;border-color:var(--chart-land-edge);background:var(--surface-land)}
+.decision .marker>*{transform:rotate(-45deg)}
+.decision.on .marker{background:var(--surface-land-strong);border-color:var(--border-land-strong)}
+@media (min-width:768px){.decision .marker{transform:translateX(var(--mx, 0)) rotate(45deg)}}
+.turn-note{display:none;align-items:center;gap:var(--s-75);color:var(--text-accent)}
+.turn-note .icon{width:20px;height:20px;color:var(--icon-accent)}
+.route .islet{fill:var(--chart-land);stroke:var(--chart-land-edge);stroke-width:1.5}
+@media (max-width:767px){.turn-note{display:flex}.deco-isle-a{display:none}.chart .deco-isle-b{left:auto;right:-20%;width:62%;transform:scaleX(-1)}}
+.passage-note{margin-top:var(--s-400);display:flex;flex-wrap:wrap;gap:var(--s-200) var(--s-400);align-items:center;justify-content:space-between}
+.passage-note p{color:var(--text-secondary);max-width:44rem}
+
+/* ===== Written valuation example ===== */
+.split{display:grid;gap:var(--s-600)}
+@media (min-width:1024px){.split{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:center}.split>.s-l{grid-column:1/6}.split>.s-r{grid-column:7/13}.split>.s-l7{grid-column:1/8}.split>.s-r5{grid-column:9/13}}
+.report{padding:var(--s-400);border:1px solid var(--border-primary);border-radius:var(--r-16);background:var(--surface-primary);display:grid;gap:var(--s-300);box-shadow:var(--shadow-float)}
+@media (max-width:767px){.report{padding:var(--s-300)}}
+.r-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);color:var(--text-subtle)}
+.r-boat{color:var(--text-primary)}
+.r-sub{color:var(--text-subtle);margin-top:var(--s-50)}
+.r-range{padding:var(--s-200) var(--s-300);border-radius:var(--r-12);background:var(--surface-secondary);display:grid;gap:var(--s-50)}
+.r-range span{color:var(--text-subtle)}
+.r-range b{color:var(--text-primary);font-variant-numeric:tabular-nums lining-nums}
+.r-sales .caption-1{color:var(--text-primary);margin-bottom:var(--s-75)}
+.rows>div{position:relative;display:flex;justify-content:space-between;gap:var(--s-200);padding-block:var(--s-100)}
+.rows>div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-primary)}
+.rows dd{color:var(--text-primary);font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}
+.r-foot{color:var(--text-subtle)}
+.rows dt{display:grid;gap:var(--s-25)}
+.r-where{color:var(--text-subtle)}
+.tax-note{display:flex;gap:var(--s-200);align-items:flex-start;padding:var(--s-300);border-radius:var(--r-16);background:var(--surface-accent-subtle);max-width:32rem}
+.tax-note>.icon{width:32px;height:32px;color:var(--icon-accent)}
+.tax-note .title-3{color:var(--text-primary)}
+.tax-note .body-6{margin-top:var(--s-50);color:var(--text-secondary)}
+
+/* ===== Presented properly ===== */
+.channels{margin-top:var(--s-400);display:flex;flex-wrap:wrap;gap:var(--s-75)}
+.channels li{padding:var(--s-75) var(--s-200);border-radius:var(--r-full);background:var(--surface-primary-subtle);color:var(--text-secondary)}
+.pair{margin-top:var(--s-600);display:grid;gap:var(--s-200)}
+@media (min-width:768px){.pair{grid-template-columns:1fr 1fr;gap:var(--s-300)}}
+.pair figure{border-radius:var(--r-16);overflow:hidden;aspect-ratio:4/3;background:var(--surface-secondary)}
+.pair img{width:100%;height:100%;object-fit:cover}
+
+/* ===== Marina ===== */
+.photo{border-radius:var(--r-24);overflow:hidden;background:var(--surface-secondary)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.marina .photo{aspect-ratio:4/3}
+.facts{display:grid;gap:var(--s-200);margin-top:var(--s-400)}
+.facts li{display:flex;gap:var(--s-200);align-items:flex-start}
+.facts .ic{flex:none;width:44px;height:44px;border-radius:var(--r-12);background:var(--surface-secondary);display:grid;place-items:center;color:var(--icon-action)}
+.facts .ic .icon{width:24px;height:24px}
+.facts b{display:block;color:var(--text-primary)}
+.facts span{color:var(--text-secondary)}
+
+/* ===== About ===== */
+.about .photo{aspect-ratio:1}
+.facts-grid{margin-top:var(--s-400);display:grid;grid-template-columns:1fr 1fr;gap:var(--s-300) var(--s-300)}
+.facts-grid dt{color:var(--text-subtle)}
+.facts-grid dd{color:var(--text-primary);margin-top:var(--s-25)}
+.quotes{margin-top:var(--s-700);display:grid;gap:var(--s-300)}
+@media (min-width:768px){.quotes{grid-template-columns:1fr 1fr}}
+.quotes h3{grid-column:1/-1}
+.quote{padding:var(--s-400);border:2px dashed var(--border-input);border-radius:var(--r-16);display:grid;gap:var(--s-200);color:var(--text-subtle)}
+.quote .ph{color:var(--text-primary)}
+
+/* ===== Cost ===== */
+.fees{padding:var(--s-75);border-radius:var(--r-16);background:var(--surface-primary-subtle);display:grid;gap:var(--s-75)}
+.fees>div{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s-300);padding:var(--s-200) var(--s-300);border-radius:var(--r-8);background:var(--surface-primary)}
+.fees dt{color:var(--text-primary)}
+.fees dd{color:var(--text-secondary);text-align:right;max-width:22rem}
+@media (max-width:639px){.fees>div{flex-direction:column;gap:var(--s-50)}.fees dd{text-align:left}}
+
+/* ===== FAQ ===== */
+.faq{display:grid;gap:var(--s-100)}
+.faq details{border-radius:var(--r-12);background:var(--surface-primary-subtle);transition:background-color var(--t-color) var(--ease)}
+.faq details[open]{background:var(--surface-secondary)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);min-height:44px;padding:var(--s-200) var(--s-300);color:var(--text-primary);cursor:pointer;border-radius:var(--r-12)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .icon{width:20px;height:20px;color:var(--icon-action);transition:transform var(--t-layout) var(--ease)}
+.faq details[open] summary .icon{transform:rotate(45deg)}
+@media (hover:hover) and (pointer:fine){.faq details:not([open]):hover{background:var(--surface-primary-hover)}}
+.faq details p{padding:0 var(--s-300) var(--s-300);color:var(--text-secondary);max-width:44rem}
+.faq details[open] p{animation:rise 500ms var(--ease) both}
+.faq-side{display:grid;gap:var(--s-200);align-content:start}
+
+/* ===== Market notes ===== */
+.notes{padding:var(--s-400) var(--s-300);border-radius:var(--r-24);background:var(--surface-accent-subtle)}
+@media (min-width:768px){.notes{padding:var(--s-600)}}
+.notes-grid{display:grid;gap:var(--s-400)}
+@media (min-width:1024px){.notes-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:end}.notes-grid>:first-child{grid-column:1/7}.notes-grid>form{grid-column:7/13}}
+.notes form{display:grid;gap:var(--s-200)}
+.inline{display:flex;flex-wrap:wrap;gap:var(--s-100);align-items:flex-end}
+.pair-fields{display:grid;gap:var(--s-200)}
+@media (min-width:640px){.pair-fields{grid-template-columns:1fr 1fr}}
+.inline .field{flex:1 1 16rem}
+@media (max-width:639px){.inline .btn{width:100%}}
+
+/* ===== Fields (shared with the forms) ===== */
+.field{display:grid;gap:var(--s-75)}
+.field label,.legend{color:var(--text-primary)}
+.field input,.field textarea{width:100%;min-height:48px;padding:var(--s-100) var(--s-200);border:1px solid var(--border-input);border-radius:var(--r-8);background:var(--surface-primary);color:var(--text-primary);font-size:16px;line-height:24px;transition:border-color var(--t-color) var(--ease)}
+.field textarea{resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--text-placeholder)}
+.field input:hover,.field textarea:hover{border-color:var(--text-subtle)}
+.field input:focus-visible,.field textarea:focus-visible{outline:2px solid var(--border-focus);outline-offset:1px;border-color:var(--border-action)}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:var(--border-error);background:var(--surface-error-subtle)}
+.field input:disabled{background:var(--surface-primary-subtle);color:var(--text-subtle);cursor:not-allowed}
+.check{display:flex;gap:var(--s-100);align-items:flex-start;cursor:pointer;color:var(--text-secondary)}
+.check input{flex:none;width:20px;height:20px;margin:2px 0 0;accent-color:var(--action-primary)}
+.check input[aria-invalid="true"]{outline:2px solid var(--border-error);outline-offset:2px}
+.err{display:flex;gap:var(--s-75);align-items:flex-start;color:var(--text-error)}
+.err::before{content:"";flex:none;width:20px;height:20px;background:currentColor;-webkit-mask:var(--warn) center/contain no-repeat;mask:var(--warn) center/contain no-repeat}
+.ok{display:flex;gap:var(--s-75);align-items:flex-start;color:var(--text-success)}
+.ok::before{content:"";flex:none;width:20px;height:20px;background:currentColor;-webkit-mask:var(--tick) center/contain no-repeat;mask:var(--tick) center/contain no-repeat}
+
+/* ===== Final call to action ===== */
+.final{padding:var(--s-700) var(--s-300);border-radius:var(--r-24);background:var(--surface-inverted);color:var(--text-inverted-subtle)}
+@media (min-width:768px){.final{padding:var(--s-800) var(--s-700)}}
+.final h2{color:var(--text-inverted)}
+.final .split{align-items:center}
+.final-act{display:grid;gap:var(--s-200);justify-items:start}
+@media (min-width:1024px){.final-act{justify-items:end;text-align:right}}
+.final a.tel{color:var(--text-inverted)}
+
+/* ===== Visit ===== */
+.visit{padding-bottom:var(--s-700)}
+@media (min-width:1024px){.visit{padding-bottom:var(--s-900)}}
+.visit-wrap{position:relative}
+.visit .photo{aspect-ratio:4/5}
+@media (min-width:768px){.visit .photo{aspect-ratio:16/9}}
+.visit-card{position:relative;margin:calc(-1 * var(--s-700)) var(--s-200) 0;padding:var(--s-300);border-radius:var(--r-16);background:var(--surface-primary);box-shadow:var(--shadow-float);display:grid;gap:var(--s-200)}
+@media (min-width:768px){.visit-card{position:absolute;margin:0;left:var(--s-400);bottom:var(--s-400);width:360px;padding:var(--s-400)}}
+.visit-card address{font-style:normal;color:var(--text-secondary)}
+.hours>div{position:relative;display:flex;justify-content:space-between;gap:var(--s-200);padding-block:var(--s-100)}
+.hours>div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-primary)}
+.hours dt{color:var(--text-subtle)}
+.hours dd{color:var(--text-primary);text-align:right}
+.visit-card .btn{justify-self:start}
+
+/* ===== Footer ===== */
+.foot{padding-bottom:var(--s-600)}
+.foot .photo{aspect-ratio:4/5}
+@media (min-width:768px){.foot .photo{aspect-ratio:21/9}}
+.foot-cap{margin-top:var(--s-100);color:var(--text-subtle)}
+.foot-grid{margin-top:var(--s-600);display:grid;gap:var(--s-400)}
+@media (min-width:1024px){.foot-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300)}.foot-grid>:first-child{grid-column:1/7}.foot-grid>:last-child{grid-column:7/13}}
+.foot-lines{display:grid;gap:var(--s-200)}
+.foot-lines li{display:grid;gap:var(--s-25)}
+.foot-lines small{color:var(--text-subtle)}
+.foot-lines a{color:var(--text-primary);text-decoration:none;justify-self:start;min-height:28px}
+@media (hover:hover) and (pointer:fine){.foot-lines a:hover{text-decoration:underline}}
+.foot-base{margin-top:var(--s-600);padding-top:var(--s-300);position:relative;display:flex;flex-wrap:wrap;gap:var(--s-200) var(--s-400);justify-content:space-between;color:var(--text-subtle)}
+.foot-base::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-primary)}
+.foot-base nav{display:flex;gap:var(--s-300);flex-wrap:wrap}
+.foot-base a{color:var(--text-secondary);display:inline-flex;align-items:center;min-height:44px}
+
+/* ===== Step-through forms (dialog) ===== */
+dialog.val{width:min(960px,calc(100% - var(--s-400)));max-height:calc(100dvh - var(--s-400));padding:0;border:0;border-radius:var(--r-24);background:var(--surface-primary);color:var(--text-secondary);box-shadow:var(--shadow-float);overflow:auto}
+dialog.val::backdrop{background:var(--overlay-scrim)}
+dialog.val[open]{animation:pop var(--t-layout) var(--ease) both}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+@media (max-width:639px){dialog.val{width:100%;max-width:100%;height:100dvh;max-height:100dvh;border-radius:0;margin:0}}
+.val-form{display:grid;grid-template-rows:auto auto 1fr;min-height:100%}
+.val-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);padding:var(--s-200) var(--s-200) var(--s-200) var(--s-300);color:var(--text-primary)}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;padding:0;border:0;border-radius:var(--r-full);background:var(--surface-primary-subtle);color:var(--icon-default);cursor:pointer;transition:background-color var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.icon-btn:hover{background:var(--surface-primary-selected)}}
+.icon-btn:active{transform:scale(.98)}
+.val-bar{height:4px;margin-inline:var(--s-300);border-radius:var(--r-full);background:var(--surface-secondary-subtle);overflow:hidden}
+.val-bar span{display:block;height:100%;background:var(--surface-accent);transform-origin:left;transform:scaleX(var(--p, .05));transition:transform var(--t-layout) var(--ease)}
+.val-body{display:grid;gap:var(--s-400);padding:var(--s-400) var(--s-300) var(--s-300)}
+@media (min-width:768px){.val-body{grid-template-columns:minmax(0,1fr) 280px;gap:var(--s-600);padding:var(--s-500) var(--s-500) var(--s-500)}}
+.step{border:0;margin:0;padding:0;min-width:0;display:grid;gap:var(--s-300);align-content:start}
+.step.enter{animation:stepin var(--t-layout) var(--ease) both}
+.step.enter-back{animation:stepback var(--t-layout) var(--ease) both}
+@keyframes stepin{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+@keyframes stepback{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+.q{padding:0;color:var(--text-primary);outline:none}
+.step>legend.q{float:left;width:100%}
+.q-help{color:var(--text-subtle);margin-top:calc(-1 * var(--s-200))}
+.opts{display:grid;gap:var(--s-75)}
+.opt{position:relative;display:flex;align-items:center;justify-content:space-between;gap:var(--s-200);min-height:56px;padding:var(--s-100) var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-12);background:var(--surface-primary);color:var(--text-primary);cursor:pointer;transition:background-color var(--t-color) var(--ease),border-color var(--t-color) var(--ease),transform var(--t-color) var(--ease)}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .icon{width:20px;height:20px;color:var(--icon-action);transition:transform var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.opt:hover{border-color:var(--border-action);background:var(--surface-secondary)}.opt:hover .icon{transform:translateX(4px)}}
+.opt:active{transform:scale(.98)}
+.opt:has(input:focus-visible){outline:2px solid var(--border-focus);outline-offset:2px}
+.opt:has(input:checked){border-color:var(--border-action);background:var(--surface-secondary-subtle)}
+.opts.small .opt{min-height:48px}
+.opts.small .opt::after{content:"";flex:none;width:20px;height:20px;border-radius:var(--r-full);border:2px solid var(--border-input);background:var(--surface-primary);transition:border-color var(--t-color) var(--ease)}
+.opts.small .opt:has(input:checked)::after{border:6px solid var(--border-action)}
+.fields{display:grid;gap:var(--s-200)}
+.file{display:inline-flex;align-items:center;gap:var(--s-75);justify-self:start;min-height:44px;padding:var(--s-75) var(--s-100);border:1px solid var(--border-input);border-radius:var(--r-8);background:var(--surface-primary);color:var(--text-primary);cursor:pointer;transition:background-color var(--t-color) var(--ease),transform var(--t-color) var(--ease)}
+.file .icon{width:20px;height:20px;color:var(--icon-action)}
+@media (hover:hover) and (pointer:fine){.file:hover{background:var(--surface-secondary)}}
+.file:active{transform:scale(.98)}
+.sr:focus-visible+.file{outline:2px solid var(--border-focus);outline-offset:2px}
+.thumbs{display:flex;flex-wrap:wrap;gap:var(--s-75)}
+.thumbs:empty{display:none}
+.thumbs li{width:64px;height:64px;border-radius:var(--r-8);overflow:hidden;background:var(--surface-secondary)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.vc-photo{aspect-ratio:4/3;border-radius:var(--r-8);overflow:hidden;background:var(--surface-secondary-subtle)}
+.vc-photo img{width:100%;height:100%;object-fit:cover}
+.row2,.range{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-200)}
+.row2{grid-template-columns:2fr 1fr}
+.feet{position:relative}
+.feet span{position:absolute;right:var(--s-200);top:50%;transform:translateY(-50%);color:var(--text-subtle);pointer-events:none}
+.feet input{padding-right:var(--s-900)}
+.step-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-200)}
+.back{min-height:44px;padding:var(--s-75) var(--s-100);border:0;border-radius:var(--r-8);background:none;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em;cursor:pointer}
+@media (hover:hover) and (pointer:fine){.back:hover{background:var(--surface-secondary)}}
+.val-aside{display:grid;gap:var(--s-200);align-content:start;color:var(--text-subtle)}
+@media (max-width:767px){.val-aside{display:none}}
+.vc{padding:var(--s-300);border-radius:var(--r-16);background:var(--surface-secondary);display:grid;gap:var(--s-100)}
+.vc-label{color:var(--text-subtle)}
+.vc-title{color:var(--text-primary)}
+.vc-rows>div{position:relative;display:flex;justify-content:space-between;gap:var(--s-200);padding-block:var(--s-75)}
+.vc-rows>div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-secondary)}
+.vc-rows dt{color:var(--text-subtle)}
+.vc-rows dd{color:var(--text-primary);text-align:right}
+.vc-foot{color:var(--text-subtle)}
+.flash{animation:fade 600ms var(--ease) both}
+.done-sum{color:var(--text-secondary)}
+.proto{padding:var(--s-100) var(--s-200);border-radius:var(--r-8);background:var(--surface-warning-subtle);color:var(--text-warning-inverted)}
+
+/* ===== Boats page ===== */
+.boats-grid{display:grid;gap:var(--s-400)}
+.boats-photo{position:relative;aspect-ratio:4/3;border-radius:var(--r-24);overflow:hidden;background:var(--surface-secondary)}
+@media (min-width:1024px){.boats-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:start}.boats-photo{grid-column:1/7;position:sticky;top:var(--s-900)}.boats-list{grid-column:7/13}}
+.boats-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity var(--t-layout) var(--ease)}
+.boats-photo img.is-on{opacity:1}
+@media (max-width:1023px){.boats-photo{position:sticky;top:var(--s-800);z-index:2}}
+.boat-rows{display:grid;gap:var(--s-75)}
+.boat{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s-25) var(--s-200);align-items:baseline;padding:var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-16);background:var(--surface-primary);transition:background-color var(--t-color) var(--ease),border-color var(--t-color) var(--ease)}
+.boat.is-on{background:var(--surface-secondary);border-color:var(--border-secondary)}
+.boat-name{color:var(--text-primary)}
+.boat-price{color:var(--text-primary);font-variant-numeric:tabular-nums lining-nums}
+.boat-spec{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-75);color:var(--text-subtle)}
+.boat-act{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--s-50) var(--s-300);margin-top:var(--s-75)}
+.link-btn{display:inline-flex;align-items:center;min-height:44px;padding:0;border:0;background:none;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em;cursor:pointer}
+.boat-act a{display:inline-flex;align-items:center;min-height:44px;color:var(--text-secondary)}
+@media (hover:hover) and (pointer:fine){.link-btn:hover{color:var(--action-primary-hover)}.boat-act a:hover{color:var(--text-primary)}}
+
+/* ===== Simple pages ===== */
+.doc{max-width:720px}
+.doc h2{margin-top:var(--s-600)}
+.doc p,.doc li{margin-top:var(--s-200);color:var(--text-secondary)}
+.doc ul{list-style:disc;padding-left:var(--s-300)}
+.draft{padding:var(--s-200) var(--s-300);border-radius:var(--r-12);background:var(--surface-warning-subtle);color:var(--text-warning-inverted)}
+
+@media (prefers-reduced-motion:reduce){
+  [data-hero]{animation-name:fade}
+  [data-reveal].pending{transform:none}
+  .menu li{transform:none}
+  .step.enter,.step.enter-back,.faq details[open] p,dialog.val[open]{animation-name:fade}
+  .btn,.btn .icon,.link .icon,.opt,.opt .icon{transition-property:background-color,color,border-color,opacity}
+}
+
+:root{--warn:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20256%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M128%2C24A104%2C104%2C0%2C1%2C0%2C232%2C128%2C104.11%2C104.11%2C0%2C0%2C0%2C128%2C24Zm0%2C192a88%2C88%2C0%2C1%2C1%2C88-88A88.1%2C88.1%2C0%2C0%2C1%2C128%2C216Zm-8-80V80a8%2C8%2C0%2C0%2C1%2C16%2C0v56a8%2C8%2C0%2C0%2C1-16%2C0Zm20%2C36a12%2C12%2C0%2C1%2C1-12-12A12%2C12%2C0%2C0%2C1%2C140%2C172Z%22/%3E%3C/svg%3E");--tick:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20256%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M173.66%2C98.34a8%2C8%2C0%2C0%2C1%2C0%2C11.32l-56%2C56a8%2C8%2C0%2C0%2C1-11.32%2C0l-24-24a8%2C8%2C0%2C0%2C1%2C11.32-11.32L112%2C148.69l50.34-50.35A8%2C8%2C0%2C0%2C1%2C173.66%2C98.34ZM232%2C128A104%2C104%2C0%2C1%2C1%2C128%2C24%2C104.11%2C104.11%2C0%2C0%2C1%2C232%2C128Zm-16%2C0a88%2C88%2C0%2C1%2C0-88%2C88A88.1%2C88.1%2C0%2C0%2C0%2C216%2C128Z%22/%3E%3C/svg%3E")}
+
+</style>
+
+<a class="skip button-sm" href="#main">Skip to content</a>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="/"><span class="title-3">Alexander Langley</span><small class="caption-5">Yacht broker, Van Isle Marina</small></a>
+    <div class="nav-links">
+      <a class="title-4" href="/">Sell your boat</a>
+      <a class="title-4" href="/#how-it-works">How it works</a>
+      <a class="title-4" href="/#about">About</a>
+      <a class="title-4" href="/boats">Boats for sale</a>
+    </div>
+    <a class="btn button-sm" href="/#value">Free valuation</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><b class="sr caption-3">Menu</b></button>
+  </nav>
+  <div class="menu" id="menu" inert>
+    <ul>
+      <li style="--i:0"><a class="heading-4" href="/">Sell your boat</a></li>
+      <li style="--i:1"><a class="heading-4" href="/#how-it-works">How it works</a></li>
+      <li style="--i:2"><a class="heading-4" href="/#about">About</a></li>
+      <li style="--i:3"><a class="heading-4" href="/boats">Boats for sale</a></li>
+    </ul>
+    <div class="menu-foot">
+      <a class="btn button-md" href="/#value">Get my free valuation<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+      <p class="body-6 muted">Or call or text <a class="tel" href="tel:+12505148944">250 514 8944</a></p>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="hero wrap">
+  <div class="doc">
+    <h1 class="heading-3 md:heading-2">Privacy and terms</h1>
+    <p class="body-7">This site belongs to Alexander Langley, a yacht broker working with Van Isle Marina in Sidney, British Columbia. Here is what happens to the information you send through it.</p>
+
+    <h2 class="heading-5">What I collect</h2>
+    <p class="body-3">Only what you type into a form: your name, email, phone number, details about your boat or the boat you want, and how you’d like me to contact you.</p>
+
+    <h2 class="heading-5">How I use it</h2>
+    <ul class="body-3">
+      <li>To prepare your valuation, answer your question or send you boats that fit.</li>
+      <li>To contact you the way you asked: email, a call or a text.</li>
+      <li>To send my monthly market notes, only if you ticked the box for them.</li>
+    </ul>
+    <p class="body-3">I don’t sell your information. Your details may be kept in Van Isle Marina’s client records so the marina can help with your boat.</p>
+
+    <h2 class="heading-5">How your enquiry reaches me</h2>
+    <p class="body-3">Forms on this site are delivered through the site’s host, Netlify, which passes them to my email. Photos you add are sent the same way.</p>
+
+    <h2 class="heading-5">Ads and links</h2>
+    <p class="body-3">If you arrive from an ad or a link, for example on Facebook or ChatGPT, the name of that ad is sent along with your enquiry so I know which ads are useful. This site doesn’t use advertising cookies.</p>
+
+    <h2 class="heading-5">Your choices</h2>
+    <p class="body-3">You can ask to see, correct or delete your information at any time, and you can unsubscribe from the market notes from any email. Write to <a href="mailto:alangley@vanislemarina.com">alangley@vanislemarina.com</a> or call or text <a class="tel" href="tel:+12505148944">250 514 8944</a>.</p>
+
+    <h2 class="heading-5">Terms</h2>
+    <p class="body-3">Boat details and prices on this site come from the listings and can change without notice. Example valuations are illustrations only. A written valuation is an opinion of value, not an appraisal or survey.</p>
+
+    <p class="caption-2 muted" style="margin-top:var(--s-600)">Last updated November 2026</p>
+  </div>
+</main>
+
+<footer class="foot wrap" aria-label="Contact">
+  <figure>
+    <div class="photo">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/img/anchor-tall-1000.jpg">
+        <img src="/img/anchor-wide-2016.jpg" srcset="/img/anchor-wide-1200.jpg 1200w, /img/anchor-wide-2016.jpg 2016w" sizes="(min-width: 1280px) 1200px, 100vw" width="2016" height="864" loading="lazy" alt="Alexander’s 1978 CHB 34 trawler at anchor in a still, tree lined Gulf Islands cove at dusk">
+      </picture>
+    </div>
+    <figcaption class="foot-cap caption-2">My 1978 CHB 34, at anchor in the Gulf Islands.</figcaption>
+  </figure>
+  <div class="foot-grid">
+    <div class="stack-200">
+      <h2 class="heading-4">Fair winds</h2>
+      <p class="body-3 md:body-7">Selling, buying, or just wondering what she’s worth? I’m always happy to talk boats.</p>
+    </div>
+    <ul class="foot-lines">
+      <li><small class="caption-2">Call or text</small><a class="title-2 tel" href="tel:+12505148944">250 514 8944</a></li>
+      <li><small class="caption-2">Email</small><a class="title-2" href="mailto:alangley@vanislemarina.com">alangley@vanislemarina.com</a></li>
+      <li><small class="caption-2">Office</small><a class="title-2" href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Isle%20Marina%2C%202320%20Harbour%20Road%2C%20Sidney%20BC" target="_blank" rel="noopener">Van Isle Marina, 2320 Harbour Road, Sidney</a></li>
+      <li><small class="caption-2">YouTube</small><a class="title-2" href="https://www.youtube.com/@alexanderlangleyyacht" target="_blank" rel="noopener">@alexanderlangleyyacht</a></li>
+    </ul>
+  </div>
+  <div class="foot-base caption-2">
+    <p>© 2026 Alexander Langley, yacht broker with Van Isle Marina, Sidney, British Columbia</p>
+    <nav aria-label="Footer"><a href="/">Sell your boat</a><a href="/boats">Boats for sale</a><a href="/privacy">Privacy and terms</a></nav>
+  </div>
+</footer>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const NS = 'http://www.w3.org/2000/svg';
+
+  /* ---------- Where this visitor came from, sent with every enquiry ---------- */
+  const LIVE = /^https?:$/.test(location.protocol) && !/claude/.test(location.hostname);
+  const KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  let track = {};
+  try { track = JSON.parse(sessionStorage.getItem('al_track') || '{}'); } catch (e) { track = {}; }
+  const qs = new URLSearchParams(location.search);
+  if (KEYS.some(k => qs.get(k)) || qs.get('fbclid') || qs.get('gclid') || !track.landing_page) {
+    track = { landing_page: location.pathname + location.search, referrer: document.referrer };
+    KEYS.forEach(k => { if (qs.get(k)) track[k] = qs.get(k); });
+    if (qs.get('fbclid') && !track.utm_source) track.utm_source = 'facebook';
+    if (qs.get('gclid') && !track.utm_source) track.utm_source = 'google';
+  }
+  try { sessionStorage.setItem('al_track', JSON.stringify(track)); } catch (e) { /* private mode */ }
+  function leadSource() {
+    const s = (track.utm_source || '').toLowerCase(), r = (track.referrer || '').toLowerCase();
+    if (/chatgpt|openai/.test(s) || /chatgpt\.com|openai\.com/.test(r)) return 'ChatGPT ad';
+    if (/facebook|^fb$|meta|instagram/.test(s) || /facebook\.|instagram\./.test(r)) return 'Facebook';
+    if (/youtube/.test(s) || /youtube\./.test(r)) return 'YouTube';
+    if (/google/.test(s) || /google\./.test(r)) return 'Google';
+    if (s) return s;
+    const host = r.replace(/^https?:\/\//, '').split('/')[0];
+    return host && host !== location.hostname ? 'Link from ' + host : 'Website';
+  }
+  function stamp(form, subject) {
+    const set = (n, v) => { const el = form.querySelector(`input[type="hidden"][name="${n}"]`); if (el) el.value = v || ''; };
+    const src = leadSource();
+    set('lead_source', src);
+    KEYS.concat(['landing_page', 'referrer']).forEach(k => set(k, track[k]));
+    set('subject', `${subject} | ${src}`);
+  }
+  async function send(form, files) {
+    if (!LIVE) { await new Promise(r => setTimeout(r, 400)); return; }
+    const fd = new FormData(form);
+    ['photo1', 'photo2', 'photo3'].forEach(k => fd.delete(k));
+    const opts = { method: 'POST' };
+    if (form.querySelector('input[type="file"][name]')) {
+      (files || []).forEach((b, i) => fd.append('photo' + (i + 1), b, `photo${i + 1}.jpg`));
+      opts.body = fd;
+    } else {
+      opts.headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+      opts.body = new URLSearchParams([...fd].filter(([, v]) => typeof v === 'string')).toString();
+    }
+    const res = await fetch('/', opts);
+    if (!res.ok) throw new Error('Form answered ' + res.status);
+  }
+  function busy(btn, on) {
+    if (!btn) return;
+    const label = btn.firstChild;
+    if (on) { btn.dataset.label = label.textContent; label.textContent = 'Sending '; btn.disabled = true; btn.setAttribute('aria-busy', 'true'); }
+    else { if (btn.dataset.label) label.textContent = btn.dataset.label; btn.disabled = false; btn.removeAttribute('aria-busy'); }
+  }
+  const FAIL = 'That didn’t send. Please try again, or call or text me at 250 514 8944.';
+
+  /* ---------- Navigation: full height menu on phones ---------- */
+  const menuBtn = $('.menu-btn'), menu = $('#menu');
+  function setMenu(open) {
+    if (!menu) return;
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menu.classList.toggle('open', open);
+    menu.inert = !open;
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+    if (open) $('a', menu).focus({ preventScroll: true });
+  }
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'));
+    $$('a', menu).forEach(a => a.addEventListener('click', () => setMenu(false)));
+    addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('open')) { setMenu(false); menuBtn.focus(); } });
+    matchMedia('(min-width: 960px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+  }
+
+  /* ---------- Scroll reveals: armed only below the fold, played once ---------- */
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.remove('pending'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -8% 0px' });
+    $$('[data-reveal]').forEach(n => {
+      if (n.getBoundingClientRect().top > innerHeight * 0.92) { n.classList.add('pending'); io.observe(n); }
+    });
+  }
+
+  /* One rAF throttled scroll loop shared by the tagline, the chart and the boat list */
+  const onFrame = [];
+  let ticking = false;
+  const run = () => { ticking = false; onFrame.forEach(f => f()); };
+  const kick = () => { if (!ticking) { ticking = true; requestAnimationFrame(run); } };
+  addEventListener('scroll', kick, { passive: true });
+  addEventListener('resize', kick);
+
+  /* ---------- Tagline: words light up one at a time, in reading order ---------- */
+  const tl = $('[data-split]');
+  if (tl) {
+    const parts = tl.innerHTML.split(/(<br>)/);
+    tl.setAttribute('aria-label', tl.textContent.replace(/\s+/g, ' ').trim());
+    tl.innerHTML = parts.map(p => p === '<br>' ? '<br>' : p.split(/(\s+)/).map(w => (/^\s+$/.test(w) || !w) ? w : `<span class="w" aria-hidden="true">${w}</span>`).join('')).join('');
+    const words = $$('.w', tl);
+    if (reduce) words.forEach(w => w.classList.add('on'));
+    else onFrame.push(() => {
+      const r = tl.getBoundingClientRect();
+      const startTop = innerHeight * 0.85, endTop = innerHeight * 0.45 - r.height;
+      const p = Math.min(1, Math.max(0, (startTop - r.top) / (startTop - endTop)));
+      const n = Math.round(p * words.length);
+      words.forEach((w, i) => w.classList.toggle('on', i < n));
+    });
+  }
+
+  /* ---------- The passage plan: a route through the waypoints, a boat that follows the reader ---------- */
+  const chartEl = $('[data-chart]');
+  if (chartEl) {
+    const svg = $('[data-route]', chartEl);
+    const legs = $$('.leg', chartEl);
+    const markers = legs.map(l => $('[data-marker]', l));
+    const startEl = $('[data-end="start"]', chartEl), endEl = $('[data-end="end"]', chartEl);
+    let path, clipRect, boat, samples = [], ys = [], markerL = [], total = 0, H = 0, ready = false;
+
+    const box = (n, c) => { const r = n.getBoundingClientRect(); return { x: r.left - c.left + r.width / 2, y: r.top - c.top + r.height / 2, top: r.top - c.top, bottom: r.bottom - c.top }; };
+    const el = (tag, attrs, parent) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; };
+
+    function smooth(pts) {
+      let d = `M${pts[0].x.toFixed(1)},${pts[0].y.toFixed(1)}`;
+      for (let i = 0; i < pts.length - 1; i++) {
+        const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2, t = 1 / 6;
+        d += ` C${(p1.x + (p2.x - p0.x) * t).toFixed(1)},${(p1.y + (p2.y - p0.y) * t).toFixed(1)} ${(p2.x - (p3.x - p1.x) * t).toFixed(1)},${(p2.y - (p3.y - p1.y) * t).toFixed(1)} ${p2.x.toFixed(1)},${p2.y.toFixed(1)}`;
+      }
+      return d;
+    }
+
+    function build() {
+      const c = chartEl.getBoundingClientRect();
+      const W = c.width; H = c.height;
+      const wide = innerWidth >= 768;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.textContent = '';
+      const m = markers.map(n => box(n, c));
+      const s = box(startEl, c), e = box(endEl, c);
+      const start = wide ? { x: s.x, y: s.bottom + 12 } : { x: m[0].x, y: s.top };
+      const end = wide ? { x: e.x, y: e.top - 12 } : { x: m[m.length - 1].x, y: e.bottom };
+      const way = [start, ...m, end];
+      const amp = wide ? 44 : 10;
+      const pts = [];
+      way.forEach((p, i) => {
+        pts.push(p);
+        const q = way[i + 1];
+        if (q) pts.push({ x: (p.x + q.x) / 2 + (i % 2 ? amp : -amp), y: (p.y + q.y) / 2 });
+      });
+      const d = smooth(pts);
+      const defs = el('defs', {}, svg);
+      const clip = el('clipPath', { id: 'route-clip' }, defs);
+      clipRect = el('rect', { x: -80, y: 0, width: W + 160, height: H, transform: 'scale(1 0)' }, clip);
+      el('path', { class: 'base', d }, svg);
+      path = el('path', { class: 'done', d, 'clip-path': 'url(#route-clip)' }, svg);
+
+      /* the way back from the decision point */
+      const di = legs.findIndex(l => l.classList.contains('decision'));
+      if (wide && di > -1) {
+        const D = m[di];
+        const tx = D.x + 150, ty = D.y - 34, cx = D.x + 130, cy = D.y + 8;
+        el('path', { class: 'turn', d: `M${D.x + 20},${D.y + 2} C${D.x + 70},${D.y + 20} ${cx},${cy} ${tx},${ty}` }, svg);
+        const ang = Math.atan2(ty - cy, tx - cx) * 180 / Math.PI;
+        el('path', { class: 'turn-head', d: 'M-2,-6 L10,0 L-2,6 Z', transform: `translate(${tx} ${ty}) rotate(${ang.toFixed(1)})` }, svg);
+        const t = el('text', { class: 'turn-label caption-4', x: tx + 18, y: ty - 2 }, svg);
+        el('tspan', { x: tx + 18, dy: 0 }, t).textContent = 'Turn back here';
+        el('tspan', { x: tx + 18, dy: 16 }, t).textContent = 'at no cost';
+      }
+
+      /* depth soundings in the open water beside each waypoint */
+      if (wide) {
+        const depths = [['18', '24'], ['31', '27'], ['12', '21'], ['33', '15'], ['9', '26'], ['20', '14']];
+        legs.forEach((leg, i) => {
+          if (i === 0 || i === legs.length - 1 || leg.classList.contains('decision')) return;
+          const card = box($('.wp', leg), c);
+          const ex = W - card.x, y = m[i].y;
+          [[-90, -10], [70, 22]].forEach(([dx, dy], k) => {
+            el('text', { class: 'sounding caption-5', x: (ex + dx).toFixed(0), y: (y + dy).toFixed(0), 'text-anchor': 'middle' }, svg).textContent = depths[i % depths.length][k];
+          });
+        });
+      }
+
+      /* on phones: depth soundings and small islets in the water between the cards */
+      if (!wide) {
+        const depths = ['14', '22', '9', '31', '18', '26', '12'];
+        legs.forEach((leg, i) => {
+          const next = legs[i + 1];
+          if (!next) return;
+          const a = box($('.wp', leg), c), b2 = box($('.wp', next), c), gy = (a.bottom + b2.top) / 2;
+          [[0.42, i], [0.8, i + 3]].forEach(([fx, k]) => {
+            el('text', { class: 'sounding caption-5', x: (W * fx).toFixed(0), y: (gy + 4).toFixed(0), 'text-anchor': 'middle' }, svg).textContent = depths[k % depths.length];
+          });
+          if (i === 1 || i === 3) el('ellipse', { class: 'islet', cx: (W * 0.62).toFixed(0), cy: gy.toFixed(0), rx: 10, ry: 5 }, svg);
+        });
+      }
+
+      boat = el('g', { class: 'boat' }, svg);
+      const inner = el('g', { transform: wide ? 'scale(1.6)' : 'scale(1.2)' }, boat);
+      el('circle', { class: 'halo', r: 15 }, inner);
+      el('path', { class: 'wake', d: 'M-15 -4 L-28 -10 M-15 4 L-28 10' }, inner);
+      el('path', { class: 'hull', d: 'M12 0 C 9 -5, -4 -6, -10 -5 L -10 5 C -4 6, 9 5, 12 0 Z' }, inner);
+      el('rect', { class: 'cabin', x: -5, y: -2.5, width: 8, height: 5, rx: 1.5 }, inner);
+
+      total = path.getTotalLength();
+      const N = 360;
+      samples = []; ys = [];
+      for (let i = 0; i <= N; i++) {
+        const l = total * i / N, p = path.getPointAtLength(l);
+        samples.push(l);
+        ys.push(i ? Math.max(ys[i - 1], p.y) : p.y);
+      }
+      markerL = m.map(pt => {
+        let best = 0, bd = Infinity;
+        for (let i = 0; i <= N; i++) { const p = path.getPointAtLength(samples[i]); const dd = (p.x - pt.x) ** 2 + (p.y - pt.y) ** 2; if (dd < bd) { bd = dd; best = i; } }
+        return samples[best];
+      });
+      ready = true;
+      place();
+    }
+
+    function lengthAtY(y) {
+      if (y <= ys[0]) return 0;
+      const N = ys.length - 1;
+      if (y >= ys[N]) return total;
+      let lo = 0, hi = N;
+      while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (ys[mid] <= y) lo = mid; else hi = mid; }
+      const f = (y - ys[lo]) / ((ys[hi] - ys[lo]) || 1);
+      return samples[lo] + f * (samples[hi] - samples[lo]);
+    }
+
+    function place() {
+      if (!ready) return;
+      const c = chartEl.getBoundingClientRect();
+      if (c.bottom < -200 || c.top > innerHeight + 200) return;
+      const l = reduce ? 0 : lengthAtY(innerHeight * 0.55 - c.top);
+      const p = path.getPointAtLength(l), a = path.getPointAtLength(Math.max(0, l - 2)), b = path.getPointAtLength(Math.min(total, l + 2));
+      const ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+      boat.setAttribute('transform', `translate(${p.x.toFixed(1)} ${p.y.toFixed(1)}) rotate(${ang.toFixed(1)})`);
+      clipRect.setAttribute('transform', `scale(1 ${Math.max(0, p.y / H).toFixed(4)})`);
+      legs.forEach((leg, i) => leg.classList.toggle('on', l >= markerL[i] - 1));
+    }
+
+    let rq = 0;
+    const rebuild = () => { cancelAnimationFrame(rq); rq = requestAnimationFrame(build); };
+    if ('ResizeObserver' in window) new ResizeObserver(rebuild).observe(chartEl);
+    if (document.fonts) document.fonts.ready.then(rebuild);
+    rebuild();
+    onFrame.push(place);
+  }
+
+  /* ---------- Boats page: Van Isle's current listings; the row in focus sets the photograph ---------- */
+  const list = $('[data-boats]');
+  const photo = $('.boats-photo');
+  if (list && photo) {
+    let rows = $$('.boat', list), pics = $$('[data-boat-img]', photo), on = 0;
+    const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const activate = i => {
+      if (i === on) return; on = i;
+      rows.forEach((r, k) => r.classList.toggle('is-on', k === i));
+      pics.forEach((m, k) => m.classList.toggle('is-on', k === i));
+    };
+    const render = boats => {
+      const bits = boats.map(b => ({
+        name: `${b.year || ''} ${b.title || ''}`.trim(),
+        price: b.price || 'Call for price',
+        status: /^active$/i.test(b.status || 'Active') ? '' : b.status,
+        b
+      }));
+      photo.innerHTML = bits.map((x, i) => `<img data-boat-img="${i}" src="${esc(x.b.image)}" width="1200" height="800" ${i ? 'loading="lazy"' : ''} referrerpolicy="no-referrer" alt="${esc(x.name)}"${i ? '' : ' class="is-on"'}>`).join('');
+      list.innerHTML = bits.map((x, i) => `<li class="boat${i ? '' : ' is-on'}" data-i="${i}"><span class="boat-name title-2">${esc(x.name)}</span><span class="boat-price title-2">${esc(x.price)}</span><span class="boat-spec body-6">${esc(x.b.length)}${x.status ? ` <span class="tag caption-4">${esc(x.status)}</span>` : ''}</span><span class="boat-act"><button type="button" class="link-btn button-sm" data-ask="${esc(x.name)}" data-price="${esc(x.price)}" data-url="${esc(x.b.url)}">Ask me about her</button><a class="body-5" href="${esc(x.b.url)}" target="_blank" rel="noopener">Full listing and photos</a></span></li>`).join('');
+      rows = $$('.boat', list); pics = $$('[data-boat-img]', photo); on = 0;
+      kick();
+    };
+    list.addEventListener('pointerover', e => { const r = e.target.closest('.boat'); if (r && e.pointerType === 'mouse') activate(+r.dataset.i); });
+    list.addEventListener('focusin', e => { const r = e.target.closest('.boat'); if (r) activate(+r.dataset.i); });
+    if (LIVE) fetch('/api/boats').then(r => (r.ok ? r.json() : null)).then(j => { if (j && Array.isArray(j.boats) && j.boats.length) render(j.boats); }).catch(() => { /* keep the built in list */ });
+    onFrame.push(() => {
+      const vh = innerHeight;
+      const line = innerWidth < 1024 ? photo.getBoundingClientRect().bottom + 48 : vh * 0.5;
+      let best = -1, bd = Infinity;
+      rows.forEach((r, i) => {
+        const b = r.getBoundingClientRect();
+        if (b.bottom < 0 || b.top > vh) return;
+        const d = Math.abs(b.top + b.height / 2 - line);
+        if (d < bd) { bd = d; best = i; }
+      });
+      if (best > -1) activate(best);
+    });
+  }
+
+  /* ---------- Step-through forms: one question at a time ---------- */
+  const num = v => {
+    const t = String(v).trim().replace(/\s*(ft|feet|')\s*$/i, '');
+    if (!t) return null;
+    if (!/^\d{1,3}(\.\d)?$/.test(t)) return NaN;
+    return parseFloat(t);
+  };
+  const feet = n => (Number.isInteger(n) ? String(n) : n.toFixed(1)) + ' ft';
+
+  function flow(dlg, cfg) {
+    const form = $('form', dlg);
+    const steps = $$('.step', form);
+    const bar = $('.val-bar span', dlg);
+    let cur = 0;
+    const setOut = (k, v) => $$(`[data-out="${k}"]`, dlg).forEach(n => {
+      if (n.textContent !== v) { n.textContent = v; n.classList.remove('flash'); void n.offsetWidth; n.classList.add('flash'); }
+    });
+    function show(i, dir = 1) {
+      steps[cur].hidden = true;
+      cur = Math.max(0, Math.min(i, steps.length - 1));
+      const s = steps[cur];
+      s.hidden = false;
+      s.classList.remove('enter', 'enter-back');
+      void s.offsetWidth; s.classList.add(dir > 0 ? 'enter' : 'enter-back');
+      bar.style.setProperty('--p', Math.max(0.05, Math.min(1, (cur + 1) / (steps.length - 1))));
+      const field = s.querySelector('input:not([type="radio"]):not([type="checkbox"]), textarea');
+      (field || s.querySelector('.q')).focus({ preventScroll: true });
+    }
+    function err(id, msg, fields) {
+      const p = $('#' + id, dlg);
+      p.textContent = msg; p.hidden = !msg;
+      $$('input, textarea', p.closest('.step')).forEach(i => i.removeAttribute('aria-invalid'));
+      (fields || []).forEach(f => f.setAttribute('aria-invalid', 'true'));
+      if (fields && fields[0]) fields[0].focus();
+      return false;
+    }
+    form.addEventListener('input', e => {
+      const t = e.target;
+      if (t.getAttribute('aria-invalid') !== 'true') return;
+      t.removeAttribute('aria-invalid');
+      const p = $('.err', t.closest('.step'));
+      if (p) { p.hidden = true; p.textContent = ''; }
+    });
+    $$('[data-close]', dlg).forEach(b => b.addEventListener('click', () => dlg.close()));
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('close', () => {
+      document.documentElement.style.overflow = '';
+      if (location.hash === '#' + dlg.id) history.replaceState(null, '', location.pathname + location.search);
+    });
+    form.addEventListener('change', e => {
+      const t = e.target;
+      if (t.type !== 'radio') return;
+      const label = t.closest('label').querySelector('span').textContent;
+      if (t.closest('[data-stay]')) { setOut(t.name, label); return; }
+      setOut(t.name, t.value);
+      setTimeout(() => show(cur + 1), reduce ? 0 : 260);
+    });
+    $$('[data-back]', form).forEach(b => b.addEventListener('click', () => show(cur - 1, -1)));
+    $$('[data-next]', form).forEach(b => {
+      const step = b.closest('.step');
+      const go = () => { if (cfg.check[step.dataset.step]()) show(cur + 1); };
+      b.addEventListener('click', go);
+      $$('input', step).forEach(i => i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); go(); } }));
+    });
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const p = cfg.prefix;
+      const name = $(`#${p}-name`), email = $(`#${p}-email`), phone = $(`#${p}-phone`), consent = $(`#${p}-consent`);
+      const how = $('input[name="reply_by"]:checked', form);
+      const eid = `${p}-e-contact`;
+      const em = email.value.trim(), digits = phone.value.replace(/\D/g, '');
+      if (!name.value.trim()) return err(eid, 'Add your name so I know who to reply to.', [name]);
+      if (!em && !phone.value.trim()) return err(eid, 'Add an email address or a phone number so I can reach you.', [email]);
+      if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return err(eid, 'Check the email address. It should look like name@example.com.', [email]);
+      if (phone.value.trim() && digits.length < 10) return err(eid, 'Add the phone number with its area code, for example 250 555 0182.', [phone]);
+      if (how && how.value === 'email' && !em) return err(eid, 'Add your email address, or choose a call or a text instead.', [email]);
+      if (how && how.value !== 'email' && !digits) return err(eid, 'Add a phone number so I can call or text you.', [phone]);
+      if (!consent.checked) return err(eid, 'Tick the box so I’m allowed to reply to you.', [consent]);
+      err(eid, '');
+      const btn = $('[data-step="contact"] button[type="submit"]', form);
+      stamp(form, cfg.subject());
+      busy(btn, true);
+      try { await send(form, cfg.files ? await cfg.files() : null); }
+      catch (x) { busy(btn, false); return err(eid, FAIL, []); }
+      busy(btn, false);
+      setOut('first', name.value.trim().split(/\s+/)[0]);
+      const v = how ? how.value : (em ? 'email' : 'call');
+      setOut('next', cfg.next[v](em));
+      show(steps.findIndex(s => s.dataset.step === 'done'));
+    });
+    return {
+      open(reset) { if (!dlg.open) { dlg.showModal(); document.documentElement.style.overflow = 'hidden'; show(reset || cur === steps.length - 1 ? 0 : cur); } },
+      err, setOut
+    };
+  }
+
+  const flows = {};
+
+  const vDlg = $('#value');
+  if (vDlg) {
+    const make = $('#v-make'), model = $('#v-model'), year = $('#v-year'), vlen = $('#v-len');
+    let V;
+    const vTitle = () => V.setOut('title', [year.value.trim(), make.value.trim(), model.value.trim()].filter(Boolean).join(' ') || 'Not named yet');
+    let photos = [];
+    const shrink = async file => {
+      try {
+        const bmp = await createImageBitmap(file);
+        const k = Math.min(1, 1600 / Math.max(bmp.width, bmp.height));
+        const c = document.createElement('canvas');
+        c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+        c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+        const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', 0.82));
+        if (blob) return blob;
+      } catch (e) { /* the browser can't read this photo; fall back to the original if it's small */ }
+      return file.size <= 2.5 * 1024 * 1024 ? file : null;
+    };
+    V = flow(vDlg, {
+      prefix: 'v',
+      subject: () => {
+        const t = [year.value.trim(), make.value.trim(), model.value.trim()].filter(Boolean).join(' ') || 'a boat';
+        const n = num(vlen.value);
+        return `Valuation request: ${t}${n && n >= 8 ? ', ' + feet(n) : ''}`;
+      },
+      files: async () => (await Promise.all(photos.slice(0, 3).map(shrink))).filter(Boolean),
+      check: {
+        model() {
+          const y = year.value.trim(), maxY = new Date().getFullYear() + 1;
+          if (!make.value.trim()) return V.err('v-e-model', 'Add the make, for example Grand Banks or Beneteau.', [make]);
+          if (y && (!/^\d{4}$/.test(y) || +y < 1900 || +y > maxY)) return V.err('v-e-model', `Enter the year as four digits, between 1900 and ${maxY}.`, [year]);
+          V.err('v-e-model', ''); vTitle(); return true;
+        },
+        length() {
+          const n = num(vlen.value);
+          if (n === null) return V.err('v-e-len', 'Enter her length in feet, for example 34.', [vlen]);
+          if (Number.isNaN(n) || n < 8 || n > 200) return V.err('v-e-len', 'Enter a length in feet between 8 and 200, for example 34 or 34.5.', [vlen]);
+          V.err('v-e-len', ''); V.setOut('length', feet(n)); return true;
+        }
+      },
+      next: {
+        email: e => `email your written valuation to ${e}`,
+        call: () => 'call you first so we can talk it through',
+        text: () => 'text you to find a good time to talk'
+      }
+    });
+    [make, model, year].forEach(i => i.addEventListener('input', vTitle));
+    year.addEventListener('input', () => { year.value = year.value.replace(/\D/g, '').slice(0, 4); });
+    vlen.addEventListener('input', () => { const n = num(vlen.value); if (n && n >= 8 && n <= 200) V.setOut('length', feet(n)); });
+    const photoIn = $('#v-photo'), thumbs = $('[data-thumbs]', vDlg), vcPhoto = $('[data-vc-photo]', vDlg);
+    if (photoIn) photoIn.addEventListener('change', () => {
+      const files = [...photoIn.files];
+      const bad = files.find(f => !/^image\//.test(f.type));
+      const big = files.find(f => f.size > 15 * 1024 * 1024);
+      if (bad) { photoIn.value = ''; return V.err('v-e-photo', 'That file isn’t a photo. Choose a JPG, PNG or HEIC image.', []); }
+      if (big) { photoIn.value = ''; return V.err('v-e-photo', 'That photo is over 15 MB. Try a smaller copy.', []); }
+      if (files.length > 3) { photoIn.value = ''; return V.err('v-e-photo', 'Add up to three photos.', []); }
+      photos = files;
+      $('#v-e-photo').hidden = true;
+      thumbs.innerHTML = '';
+      files.forEach(f => { const li = document.createElement('li'); const im = document.createElement('img'); im.src = URL.createObjectURL(f); im.alt = ''; li.appendChild(im); thumbs.appendChild(li); });
+      if (files[0]) { $('img', vcPhoto).src = URL.createObjectURL(files[0]); vcPhoto.hidden = false; } else vcPhoto.hidden = true;
+    });
+    flows.value = V;
+  }
+
+  const fDlg = $('#find');
+  if (fDlg) {
+    const from = $('#f-from'), to = $('#f-to');
+    let F;
+    const sizeText = (a, b) => (a && b ? `${a} to ${feet(b)}` : a ? `${feet(a)} and up` : `Up to ${feet(b)}`);
+    F = flow(fDlg, {
+      prefix: 'f',
+      subject: () => {
+        const want = ($('input[name="want"]:checked', fDlg) || {}).value || 'a boat';
+        const size = $('[data-out="size"]', fDlg).textContent;
+        return `Boat search: ${want}${/ft/.test(size) ? ', ' + size : ''}`;
+      },
+      check: {
+        size() {
+          const a = num(from.value), b = num(to.value);
+          if (a === null && b === null) return F.err('f-e-size', 'Enter at least one length in feet, for example 36.', [from]);
+          for (const [n, el] of [[a, from], [b, to]]) {
+            if (n !== null && (Number.isNaN(n) || n < 8 || n > 200)) return F.err('f-e-size', 'Enter lengths in feet between 8 and 200, for example 36.', [el]);
+          }
+          if (a !== null && b !== null && a > b) return F.err('f-e-size', 'The first length should be the shorter one.', [from]);
+          F.err('f-e-size', ''); F.setOut('size', sizeText(a, b)); return true;
+        }
+      },
+      next: {
+        email: e => `email boats that fit to ${e}`,
+        call: () => 'call you first so we can talk it through',
+        text: () => 'text you to find a good time to talk'
+      }
+    });
+    flows.find = F;
+  }
+
+  const aDlg = $('#ask');
+  if (aDlg) {
+    let asking = 'this boat';
+    const A = flow(aDlg, {
+      prefix: 'a', check: {},
+      subject: () => `Question about the ${asking}`,
+      next: { email: e => `email you at ${e}`, call: () => 'call you', text: () => 'text you' }
+    });
+    document.addEventListener('click', e => {
+      const b = e.target.closest('[data-ask]');
+      if (!b) return;
+      const name = b.dataset.ask;
+      asking = name;
+      A.setOut('boat', name);
+      A.setOut('price', b.dataset.price);
+      const f = $('form', aDlg);
+      f.elements.boat.value = name;
+      f.elements.asking_price.value = b.dataset.price || '';
+      f.elements.listing_url.value = b.dataset.url || '';
+      $('#a-msg').value = `I’d like to know more about the ${name}. Is she still available?`;
+      A.open(true);
+    });
+  }
+
+  /* ---------- Market notes ---------- */
+  const notes = $('#notes');
+  if (notes) notes.addEventListener('submit', async e => {
+    e.preventDefault();
+    const email = $('#n-email'), consent = $('#n-consent'), er = $('#n-err'), ok = $('#n-ok');
+    const fail = (msg, el) => { er.textContent = msg; er.hidden = false; ok.hidden = true; el.setAttribute('aria-invalid', 'true'); el.focus(); };
+    email.removeAttribute('aria-invalid'); consent.removeAttribute('aria-invalid');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) return fail('Check the email address. It should look like name@example.com.', email);
+    if (!consent.checked) return fail('Tick the box so I’m allowed to send them to you.', consent);
+    er.hidden = true;
+    const boat = notes.elements.boat.value.trim();
+    stamp(notes, `Market notes signup${boat ? ': ' + boat : ''}`);
+    const btn = $('button[type="submit"]', notes);
+    busy(btn, true);
+    try { await send(notes); }
+    catch (x) { busy(btn, false); er.textContent = FAIL; er.hidden = false; return; }
+    busy(btn, false);
+    ok.hidden = false; ok.focus();
+  });
+
+  /* ---------- Open the forms from buttons and from links like #value ---------- */
+  $$('[data-open]').forEach(a => a.addEventListener('click', e => {
+    const f = flows[a.dataset.open];
+    if (!f) return;
+    e.preventDefault();
+    setMenu(false);
+    f.open();
+  }));
+  function route() { const f = flows[location.hash.slice(1)]; if (f) f.open(); }
+  route();
+  addEventListener('hashchange', route);
+  kick();
+})();
+
+</script>
+
+</body>
+</html>

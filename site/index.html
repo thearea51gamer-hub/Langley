@@ -1,0 +1,1737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sell your boat on Vancouver Island | Alexander Langley, Van Isle Marina</title>
+<meta name="description" content="Find out what your boat is worth with a free written valuation from Alexander Langley, yacht broker at Van Isle Marina in Sidney. Free, and nothing to sign.">
+<link rel="canonical" href="https://alexanderlangleyyachts.com/">
+<meta property="og:title" content="Sell your boat on Vancouver Island | Alexander Langley, Van Isle Marina">
+<meta property="og:description" content="Find out what your boat is worth with a free written valuation from Alexander Langley, yacht broker at Van Isle Marina in Sidney. Free, and nothing to sign.">
+<meta property="og:url" content="https://alexanderlangleyyachts.com/">
+<meta property="og:image" content="https://alexanderlangleyyachts.com/img/hero-trawler-1200.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<style>
+@font-face{font-family:"Manrope";src:url("/fonts/manrope.woff2") format("woff2");font-weight:200 800;font-display:swap}
+
+/* ===== Core Colors (raw palettes, one mode) ===== */
+:root{
+  color-scheme:light;
+  /* Primary: Van Isle navy, 500 is the brand hue */
+  --primary-00:#f3f7fb;--primary-50:#e8eff6;--primary-100:#d2e0ee;--primary-150:#bcd0e5;--primary-200:#a2bdda;--primary-300:#6f95bf;--primary-350:#5684b4;--primary-400:#3b6c9e;--primary-450:#1f5890;--primary-500:#00467f;--primary-600:#003c6f;--primary-700:#00335f;--primary-800:#00294d;--primary-850:#002242;--primary-900:#0b1f36;--primary-950:#06162a;--primary-1000:#020c18;
+  /* Secondary: chart land buff */
+  --secondary-00:#fdfbf6;--secondary-50:#faf6ec;--secondary-100:#f3ead3;--secondary-150:#eee2c4;--secondary-200:#e8d9b4;--secondary-300:#dbc48f;--secondary-400:#cfb57b;--secondary-500:#c4a768;--secondary-600:#a68a4f;--secondary-700:#806a3c;--secondary-800:#5b4b2a;--secondary-850:#4a3d22;--secondary-900:#382e1a;--secondary-950:#251f11;--secondary-1000:#140f08;
+  /* Accent: Van Isle teal, held under 80% saturation */
+  --accent-00:#f6fbfb;--accent-50:#ecf6f5;--accent-100:#d6ecea;--accent-150:#c1e2df;--accent-200:#acd8d5;--accent-300:#7fc1bd;--accent-400:#4fa8a3;--accent-500:#2a8f8a;--accent-600:#227a76;--accent-700:#1c6562;--accent-800:#16504e;--accent-850:#134542;--accent-900:#0f3937;--accent-950:#0a2625;--accent-1000:#051413;
+  /* Grayscale: cool neutrals */
+  --gray-00:#ffffff;--gray-50:#f6f8fa;--gray-100:#eef1f4;--gray-150:#e4e9ee;--gray-200:#d6dde4;--gray-250:#c8d1da;--gray-300:#b3becb;--gray-400:#8a97a5;--gray-450:#76838f;--gray-500:#636f7b;--gray-600:#4f5a66;--gray-700:#3b4550;--gray-750:#313131;--gray-800:#272727;--gray-850:#1f1f1f;--gray-870:#181818;--gray-900:#111417;--gray-950:#0a0c0e;--gray-1000:#000000;
+  --red-00:#fef7f6;--red-50:#fbeceb;--red-100:#f6d6d3;--red-500:#c2362b;--red-600:#ab2f25;--red-700:#9b2a21;--red-800:#7a2019;
+  --green-50:#ebf5ee;--green-500:#3a8a50;--green-600:#2f7a43;--green-700:#256236;
+  --yellow-50:#fdf6e3;--yellow-500:#c99a1e;--yellow-800:#6b5110;
+  /* Alpha neutrals for overlays */
+  --gray-alpha-00-80:rgb(255 255 255 / .8);--gray-alpha-00-94:rgb(255 255 255 / .94);
+  --primary-alpha-900-40:rgb(11 31 54 / .4);--primary-alpha-900-12:rgb(11 31 54 / .12);
+
+/* ===== Color System (semantic, Light mode; every value is an alias) ===== */
+  --surface-primary:var(--gray-00);
+  --surface-primary-hover:var(--gray-100);
+  --surface-primary-subtle:var(--gray-50);
+  --surface-secondary:var(--primary-00);
+  --surface-secondary-hover:var(--primary-50);
+  --surface-secondary-subtle:var(--primary-50);
+  --surface-land:var(--secondary-100);
+  --surface-land-subtle:var(--secondary-50);
+  --surface-accent:var(--accent-500);
+  --surface-accent-subtle:var(--accent-50);
+  --surface-inverted:var(--primary-800);
+  --surface-error-subtle:var(--red-00);
+  --surface-warning-subtle:var(--yellow-50);
+  --surface-primary-selected:var(--gray-150);
+  --surface-land-strong:var(--secondary-500);
+  --text-primary:var(--primary-900);
+  --text-secondary:var(--gray-700);
+  --text-subtle:var(--gray-600);
+  --text-inverted:var(--gray-00);
+  --text-inverted-subtle:var(--primary-100);
+  --text-accent:var(--accent-700);
+  --text-link:var(--primary-500);
+  --text-error:var(--red-700);
+  --text-success:var(--green-700);
+  --text-land:var(--secondary-800);
+  --text-placeholder:var(--gray-450);
+  --text-warning-inverted:var(--yellow-800);
+  --action-primary:var(--primary-500);
+  --action-primary-hover:var(--primary-700);
+  --action-primary-click:var(--primary-600);
+  --action-primary-disabled:var(--gray-300);
+  --action-inverted:var(--gray-00);
+  --action-inverted-hover:var(--primary-50);
+  --action-inverted-click:var(--primary-100);
+  --border-primary:var(--gray-200);
+  --border-secondary:var(--primary-100);
+  --border-input:var(--gray-450);
+  --border-action:var(--primary-500);
+  --border-accent:var(--accent-500);
+  --border-error:var(--red-500);
+  --border-focus:var(--accent-600);
+  --border-focus-inverted:var(--gray-00);
+  --icon-default:var(--primary-900);
+  --icon-secondary:var(--gray-600);
+  --icon-accent:var(--accent-500);
+  --icon-action:var(--primary-500);
+  --icon-error:var(--red-500);
+  --icon-inverted:var(--gray-00);
+  --chart-route:var(--primary-300);
+  --chart-route-done:var(--primary-500);
+  --chart-contour:var(--primary-150);
+  --chart-sounding:var(--primary-350);
+  --chart-land:var(--secondary-100);
+  --chart-land-edge:var(--secondary-400);
+  --chart-wake:var(--primary-350);
+  --chart-turn:var(--accent-600);
+  --border-land-strong:var(--secondary-600);
+  --hero-from:var(--primary-900);
+  --hero-to:var(--primary-400);
+  --overlay-nav:var(--gray-alpha-00-80);
+  --overlay-menu:var(--gray-alpha-00-94);
+  --overlay-scrim:var(--primary-alpha-900-40);
+  --shadow-float:0 16px 40px var(--primary-alpha-900-12);
+
+/* ===== spacing (only these) ===== */
+  --s-0:0;--s-25:2px;--s-50:4px;--s-75:8px;--s-100:12px;--s-200:16px;--s-300:24px;--s-400:32px;--s-500:40px;--s-600:48px;--s-700:64px;--s-800:80px;--s-900:96px;
+/* ===== radius (Tailwind steps only) ===== */
+  --r-0:0;--r-2:2px;--r-4:4px;--r-6:6px;--r-8:8px;--r-12:12px;--r-16:16px;--r-24:24px;--r-full:9999px;
+/* ===== motion ===== */
+  --ease:cubic-bezier(.22,1,.36,1);--t-layout:500ms;--t-color:300ms;--t-reveal:700ms;
+}
+
+/* ===== Text styles (Tailwind scale only; one typeface) ===== */
+.heading-1{font-size:60px;line-height:60px;font-weight:600}
+.heading-2{font-size:48px;line-height:48px;font-weight:600}
+.heading-3{font-size:36px;line-height:40px;font-weight:600}
+.heading-4{font-size:30px;line-height:36px;font-weight:600}
+.heading-5{font-size:24px;line-height:32px;font-weight:600}
+.heading-6{font-size:20px;line-height:28px;font-weight:600}
+.title-1{font-size:20px;line-height:28px;font-weight:500}
+.title-2{font-size:18px;line-height:28px;font-weight:500}
+.title-3{font-size:16px;line-height:24px;font-weight:500}
+.title-4{font-size:14px;line-height:20px;font-weight:500}
+.title-5{font-size:12px;line-height:16px;font-weight:500}
+.body-1{font-size:16px;line-height:24px;font-weight:600}
+.body-2{font-size:16px;line-height:24px;font-weight:500}
+.body-3{font-size:16px;line-height:24px;font-weight:400}
+.body-4{font-size:14px;line-height:20px;font-weight:600}
+.body-5{font-size:14px;line-height:20px;font-weight:500}
+.body-6{font-size:14px;line-height:20px;font-weight:400}
+.body-7{font-size:18px;line-height:28px;font-weight:400}
+.body-8{font-size:20px;line-height:28px;font-weight:400}
+.button-lg{font-size:18px;line-height:28px;font-weight:600}
+.button-md{font-size:16px;line-height:24px;font-weight:600}
+.button-sm{font-size:14px;line-height:20px;font-weight:600}
+.button-xsm{font-size:12px;line-height:16px;font-weight:600}
+.caption-1{font-size:14px;line-height:20px;font-weight:500}
+.caption-2{font-size:14px;line-height:20px;font-weight:400}
+.caption-3{font-size:12px;line-height:16px;font-weight:600}
+.caption-4{font-size:12px;line-height:16px;font-weight:500}
+.caption-5{font-size:12px;line-height:16px;font-weight:400}
+@media (min-width:768px){
+  .md\:heading-1{font-size:60px;line-height:60px;font-weight:600}
+  .md\:heading-2{font-size:48px;line-height:48px;font-weight:600}
+  .md\:heading-3{font-size:36px;line-height:40px;font-weight:600}
+  .md\:heading-5{font-size:24px;line-height:32px;font-weight:600}
+  .md\:body-7{font-size:18px;line-height:28px;font-weight:400}
+  .md\:body-8{font-size:20px;line-height:28px;font-weight:400}
+}
+@media (min-width:1024px){
+  .lg\:heading-1{font-size:60px;line-height:60px;font-weight:600}
+  .lg\:heading-2{font-size:48px;line-height:48px;font-weight:600}
+  .lg\:heading-5{font-size:24px;line-height:32px;font-weight:600}
+  .lg\:body-8{font-size:20px;line-height:28px;font-weight:400}
+}
+
+/* ===== Base ===== */
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--surface-primary);color:var(--text-secondary);font-family:"Manrope",system-ui,sans-serif;font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;font-variant-numeric:lining-nums}
+h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,figure,blockquote{margin:0;padding:0}
+ul,ol{list-style:none}
+img,svg{display:block}
+img{max-width:100%;height:auto}
+a{color:inherit;text-underline-offset:.25em;text-decoration-thickness:1px}
+button,input,textarea,select{font:inherit;color:inherit}
+h1,h2,h3,h4,h5,h6{color:var(--text-primary);text-wrap:balance}
+p,li,dd,dt,figcaption,summary,legend,label{text-wrap:pretty}
+:focus-visible{outline:2px solid var(--border-focus);outline-offset:2px}
+.icon{width:24px;height:24px;flex:none;fill:currentColor}
+.icon-sm{width:20px;height:20px}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:var(--s-200);top:var(--s-200);z-index:100;padding:var(--s-75) var(--s-100);border-radius:var(--r-8);background:var(--action-primary);color:var(--text-inverted);text-decoration:none;transform:translateY(-200%);transition:transform var(--t-color) var(--ease)}
+.skip:focus{transform:none}
+.wrap{max-width:1280px;margin-inline:auto;padding-inline:var(--s-200)}
+@media (min-width:768px){.wrap{padding-inline:var(--s-400)}}
+@media (min-width:1280px){.wrap{padding-inline:var(--s-500)}}
+.sec{padding-block:var(--s-700)}
+@media (min-width:1024px){.sec{padding-block:var(--s-900)}}
+.muted{color:var(--text-subtle)}
+.tel{white-space:nowrap}
+.mt-200{margin-top:var(--s-200)}
+.stack-200>*+*{margin-top:var(--s-200)}
+.stack-300>*+*{margin-top:var(--s-300)}
+
+/* ===== Buttons ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s-75);min-height:44px;padding:var(--s-75) var(--s-100);border:0;border-radius:var(--r-8);background:var(--action-primary);color:var(--text-inverted);text-decoration:none;cursor:pointer;transition:background-color var(--t-color) var(--ease),transform var(--t-color) var(--ease)}
+.btn .icon{width:20px;height:20px;transition:transform var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.btn:hover{background:var(--action-primary-hover)}.btn:hover .icon{transform:translateX(4px)}}
+.btn:active{transform:scale(.98);background:var(--action-primary-click)}
+.btn:focus-visible{outline:2px solid var(--border-focus);outline-offset:2px}
+.btn[aria-busy="true"]{cursor:progress;opacity:.85}
+.btn:disabled,.btn[aria-disabled="true"]{background:var(--action-primary-disabled);cursor:not-allowed;transform:none}
+.btn-inv{background:var(--action-inverted);color:var(--action-primary)}
+@media (hover:hover) and (pointer:fine){.btn-inv:hover{background:var(--action-inverted-hover)}}
+.btn-inv:active{background:var(--action-inverted-click)}
+.btn-inv:focus-visible{outline-color:var(--border-focus-inverted)}
+.link{display:inline-flex;align-items:center;gap:var(--s-75);min-height:44px;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em}
+.link .icon{width:20px;height:20px;transition:transform var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.link:hover{color:var(--action-primary-hover)}.link:hover .icon{transform:translateX(4px)}}
+.tag{display:inline-flex;align-items:center;gap:var(--s-50);padding:var(--s-25) var(--s-75);border-radius:var(--r-full);background:var(--surface-accent-subtle);color:var(--text-accent)}
+.tag-plain{background:var(--surface-primary-subtle);color:var(--text-subtle)}
+
+/* ===== Floating navigation ===== */
+.nav{position:fixed;z-index:60;top:var(--s-200);left:50%;transform:translateX(-50%);width:max-content;max-width:calc(100% - var(--s-400));display:flex;align-items:center;gap:var(--s-200);padding:var(--s-75) var(--s-75) var(--s-75) var(--s-300);border:1px solid var(--border-primary);border-radius:var(--r-full);background:var(--overlay-nav);-webkit-backdrop-filter:blur(16px) saturate(1.4);backdrop-filter:blur(16px) saturate(1.4)}
+.brand{display:flex;flex-direction:column;color:var(--text-primary);text-decoration:none;white-space:nowrap}
+.brand small{color:var(--text-subtle)}
+.nav-links{display:flex;gap:var(--s-25)}
+.nav-links a{display:inline-flex;align-items:center;min-height:44px;padding:var(--s-75) var(--s-100);border-radius:var(--r-full);color:var(--text-secondary);text-decoration:none;white-space:nowrap;transition:background-color var(--t-color) var(--ease),color var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.nav-links a:hover{background:var(--surface-secondary-hover);color:var(--text-primary)}}
+.nav-links a[aria-current="page"]{background:var(--surface-secondary-subtle);color:var(--text-primary);font-weight:600}
+.nav .btn{border-radius:var(--r-full);padding-inline:var(--s-200);white-space:nowrap}
+.menu-btn{display:none;position:relative;width:44px;height:44px;flex:none;padding:0;border:0;border-radius:var(--r-full);background:var(--surface-secondary-subtle);cursor:pointer}
+.menu-btn span{position:absolute;left:13px;width:18px;height:2px;border-radius:var(--r-2);background:var(--icon-default);transition:transform var(--t-layout) var(--ease)}
+.menu-btn span:first-of-type{top:18px}
+.menu-btn span:last-of-type{top:24px}
+.menu-btn[aria-expanded="true"] span:first-of-type{transform:translateY(3px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span:last-of-type{transform:translateY(-3px) rotate(-45deg)}
+.menu{position:fixed;inset:0;z-index:55;display:flex;flex-direction:column;justify-content:space-between;padding:var(--s-900) var(--s-300) var(--s-400);background:var(--overlay-menu);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);opacity:0;visibility:hidden;transition:opacity var(--t-color) var(--ease),visibility 0s linear var(--t-color)}
+.menu.open{opacity:1;visibility:visible;transition:opacity var(--t-color) var(--ease)}
+.menu ul{display:grid;gap:var(--s-75)}
+.menu li{opacity:0;transform:translateY(24px);transition:opacity var(--t-layout) var(--ease),transform var(--t-layout) var(--ease);transition-delay:calc(var(--i, 0) * 60ms)}
+.menu.open li{opacity:1;transform:none}
+.menu ul a{display:flex;align-items:center;min-height:48px;color:var(--text-primary);text-decoration:none}
+.menu ul a[aria-current="page"]{text-decoration:underline;text-underline-offset:.25em;text-decoration-thickness:2px}
+.menu-foot{display:grid;gap:var(--s-200)}
+.menu-foot .btn{width:100%}
+@media (max-width:959px){
+  .nav{left:var(--s-200);right:var(--s-200);transform:none;width:auto;max-width:none;justify-content:space-between;gap:var(--s-75);padding-left:var(--s-200)}
+  .nav-links,.nav .brand small{display:none}
+  .menu-btn{display:block}
+}
+@media (max-width:389px){.nav .btn{display:none}}
+@media (min-width:960px){.menu{display:none}}
+
+/* ===== Hero ===== */
+main{padding-top:var(--s-800)}
+.hero{padding-top:var(--s-400);padding-bottom:var(--s-700)}
+@media (min-width:1024px){.hero{padding-top:var(--s-700);padding-bottom:var(--s-900)}}
+.hero-grid{display:grid;gap:var(--s-600)}
+@media (min-width:1024px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--s-700);align-items:center}}
+.hero h1{max-width:680px;background-image:linear-gradient(90deg,var(--hero-from) 0%,var(--hero-to) 100%);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+@supports not ((-webkit-background-clip:text) or (background-clip:text)){.hero h1{color:var(--text-primary);background:none}}
+@media (forced-colors:active){.hero h1{color:CanvasText;background:none}}
+.hero-sub{max-width:680px;margin-top:var(--s-300);color:var(--text-secondary)}
+.hero-act{margin-top:var(--s-400);display:grid;gap:var(--s-100);justify-items:start}
+.hero-act .caption-2{color:var(--text-subtle)}
+.hero-call{color:var(--text-secondary)}
+.hero-call a{display:inline-flex;align-items:center;gap:var(--s-50);min-height:44px;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em}
+.hero-call .icon{width:20px;height:20px}
+@media (hover:hover) and (pointer:fine){.hero-call a:hover{color:var(--action-primary-hover)}}
+.proof{margin-top:var(--s-500);display:flex;align-items:center;gap:var(--s-100);max-width:680px}
+.proof img{width:48px;height:48px;border-radius:var(--r-full);object-fit:cover}
+.proof p{color:var(--text-secondary)}
+.proof b{color:var(--text-primary);font-weight:600}
+.hero-visual{position:relative}
+.hero-photo{border-radius:var(--r-24);overflow:hidden;aspect-ratio:4/3;background:var(--surface-secondary)}
+@media (min-width:1024px){.hero-photo{aspect-ratio:5/4}}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.float-card{position:relative;margin:calc(-1 * var(--s-700)) var(--s-200) 0;padding:var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-16);background:var(--surface-primary);box-shadow:var(--shadow-float);display:grid;gap:var(--s-75)}
+@media (min-width:640px){.float-card{position:absolute;margin:0;left:var(--s-300);bottom:var(--s-300);width:360px}}
+@media (min-width:1024px){.float-card{left:calc(-1 * var(--s-600));bottom:var(--s-600)}}
+.fc-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);color:var(--text-subtle)}
+.fc-range{padding:var(--s-100) var(--s-200);border-radius:var(--r-8);background:var(--surface-secondary)}
+.fc-range span{display:block;color:var(--text-subtle)}
+.fc-range b{display:block;color:var(--text-primary);text-wrap:balance;font-variant-numeric:tabular-nums lining-nums}
+.float-card .title-3{color:var(--text-primary)}
+
+/* Hero entrance */
+@keyframes rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+[data-hero]{animation:rise 800ms var(--ease) both;animation-delay:calc(var(--d, 0) * 90ms)}
+
+/* Scroll reveals: visible by default, armed by script only below the fold */
+[data-reveal]{transition:opacity var(--t-reveal) var(--ease),transform var(--t-reveal) var(--ease);transition-delay:calc(var(--d, 0) * 80ms)}
+[data-reveal].pending{opacity:0;transform:translateY(32px)}
+
+/* ===== Section heads ===== */
+.head{display:grid;gap:var(--s-200)}
+@media (min-width:1024px){.head-split{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:end}.head-split>:first-child{grid-column:1/7}.head-split>:last-child{grid-column:7/13}}
+.lead{color:var(--text-secondary)}
+
+/* ===== Benefits bento ===== */
+.bento{display:grid;gap:var(--s-200);margin-top:var(--s-600)}
+@media (min-width:768px){.bento{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300)}.b1,.b4{grid-column:span 7}.b2,.b3{grid-column:span 5}}
+.card{display:flex;flex-direction:column;gap:var(--s-200);padding:var(--s-400);border-radius:var(--r-16);background:var(--surface-primary-subtle)}
+@media (max-width:767px){.card{padding:var(--s-300)}}
+.card>.icon{color:var(--icon-accent);width:32px;height:32px}
+.card h3{color:var(--text-primary)}
+.card .lead{max-width:34rem}
+.mini{margin-top:auto;padding:var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-12);background:var(--surface-primary);display:grid;gap:var(--s-75)}
+.mini-row{display:flex;align-items:center;gap:var(--s-100)}
+.mini-row img{width:40px;height:40px;border-radius:var(--r-full);object-fit:cover}
+.mini-head{display:flex;justify-content:space-between;align-items:center;gap:var(--s-100);color:var(--text-subtle)}
+.mini p{color:var(--text-secondary)}
+.mini .title-3,.mini .title-4{color:var(--text-primary)}
+.checks{display:grid;gap:var(--s-75)}
+.checks li{display:flex;gap:var(--s-75);align-items:flex-start;color:var(--text-secondary)}
+.checks .icon{width:20px;height:20px;margin-top:0}
+.checks .yes .icon{color:var(--icon-accent)}
+.checks .no .icon{color:var(--icon-secondary)}
+
+/* ===== Tagline reveal ===== */
+.tagline{padding-block:var(--s-800)}
+@media (min-width:1024px){.tagline{padding-block:var(--s-900)}}
+.tagline p{max-width:680px;margin-inline:auto;text-align:center;color:var(--text-primary);text-wrap:balance}
+.tagline .w{opacity:.3;transition:opacity var(--t-layout) var(--ease)}
+.tagline .w.on{opacity:1}
+.no-split .tagline .w{opacity:1}
+
+/* ===== Passage plan ===== */
+.chart{position:relative;margin-top:var(--s-600);padding:var(--s-700) var(--s-200) var(--s-600);border:1px solid var(--border-secondary);border-radius:var(--r-24);background:var(--surface-secondary);overflow:hidden;isolation:isolate}
+@media (min-width:768px){.chart{padding:var(--s-800) var(--s-400) var(--s-700)}}
+.chart-deco{position:absolute;pointer-events:none;z-index:-1}
+.deco-isle-a{top:-8px;right:-24px;width:min(46%,420px)}
+.deco-isle-b{bottom:-16px;left:-32px;width:min(40%,360px)}
+.deco-isle-c{top:44%;right:-40px;width:min(26%,220px)}
+.deco-rose{top:var(--s-300);left:var(--s-300);width:88px;color:var(--chart-sounding)}
+@media (max-width:767px){.deco-rose{width:64px;top:var(--s-200);left:auto;right:var(--s-200)}.deco-isle-c{display:none}.deco-isle-a{width:60%;right:-30%}.deco-isle-b{width:70%;left:-35%}}
+.route{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}
+.route .base{fill:none;stroke:var(--chart-route);stroke-width:2;stroke-dasharray:2 8;stroke-linecap:round}
+.route .done{fill:none;stroke:var(--chart-route-done);stroke-width:3;stroke-linecap:round}
+.route .turn{fill:none;stroke:var(--chart-turn);stroke-width:2;stroke-dasharray:6 6;stroke-linecap:round}
+.route .turn-head{fill:var(--chart-turn)}
+.route .turn-label{fill:var(--text-accent)}
+.boat{transition:opacity var(--t-color) var(--ease)}
+.boat .hull{fill:var(--surface-accent);stroke:var(--surface-primary);stroke-width:2}
+.boat .cabin{fill:var(--surface-primary)}
+.boat .wake{fill:none;stroke:var(--chart-wake);stroke-width:1.5;stroke-linecap:round}
+.boat .halo{fill:var(--surface-primary);stroke:var(--chart-route-done);stroke-width:1.5}
+.route .sounding{fill:var(--chart-sounding)}
+.chart-end{position:relative;text-align:center;display:grid;justify-items:center;gap:var(--s-25)}
+.chart-end .caption-3{color:var(--text-accent);text-transform:none}
+.chart-end .body-5{color:var(--text-primary)}
+.chart-end .caption-5{color:var(--text-subtle)}
+.chart-end-top{margin-bottom:var(--s-600)}
+@media (max-width:767px){.chart-end{justify-items:start;text-align:left;padding-left:var(--s-700)}}
+.chart-end-bottom{margin-top:var(--s-600)}
+.legs{position:relative;display:grid;gap:var(--s-500)}
+@media (min-width:768px){.legs{gap:0}.leg+.leg{margin-top:calc(-1 * var(--s-600))}.leg.decision,.leg.decision+.leg{margin-top:var(--s-200)}}
+.leg{display:grid;grid-template-columns:48px minmax(0,1fr);gap:var(--s-100);align-items:center}
+@media (min-width:768px){
+  .leg{grid-template-columns:minmax(0,1fr) 128px minmax(0,1fr);gap:0}
+  .leg .wp{grid-column:1;grid-row:1}
+  .leg.right .wp{grid-column:3}
+  .leg .marker{grid-column:2;grid-row:1}
+}
+.marker{position:relative;justify-self:center;width:44px;height:44px;border:2px solid var(--border-action);border-radius:var(--r-full);background:var(--surface-primary);color:var(--text-primary);display:grid;place-items:center;transition:background-color var(--t-color) var(--ease),border-color var(--t-color) var(--ease),color var(--t-color) var(--ease)}
+.marker .icon{display:none;width:20px;height:20px}
+.leg.on .marker{background:var(--surface-accent);border-color:var(--border-accent);color:var(--text-inverted)}
+.leg.on .marker .n{display:none}
+.leg.on .marker .icon{display:block}
+@media (min-width:768px){.leg .marker{transform:translateX(var(--mx, 0))}}
+.wp{padding:var(--s-300);border:1px solid var(--border-secondary);border-radius:var(--r-16);background:var(--surface-primary);display:grid;gap:var(--s-100);transition:border-color var(--t-color) var(--ease),transform var(--t-layout) var(--ease)}
+.leg.on .wp{border-color:var(--border-accent)}
+@media (max-width:767px){.wp{border-radius:var(--r-8)}}
+.wp-meta{display:flex;align-items:center;justify-content:space-between;gap:var(--s-100);margin-top:var(--s-50)}
+.wp-meta .caption-3{color:var(--text-accent)}
+.wp p{color:var(--text-secondary)}
+.decision .wp{background:var(--surface-land);border-color:var(--chart-land-edge)}
+.decision .wp-meta .caption-3{color:var(--text-land)}
+.decision .marker{border-radius:var(--r-4);transform:rotate(45deg);width:32px;height:32px;border-color:var(--chart-land-edge);background:var(--surface-land)}
+.decision .marker>*{transform:rotate(-45deg)}
+.decision.on .marker{background:var(--surface-land-strong);border-color:var(--border-land-strong)}
+@media (min-width:768px){.decision .marker{transform:translateX(var(--mx, 0)) rotate(45deg)}}
+.turn-note{display:none;align-items:center;gap:var(--s-75);color:var(--text-accent)}
+.turn-note .icon{width:20px;height:20px;color:var(--icon-accent)}
+.route .islet{fill:var(--chart-land);stroke:var(--chart-land-edge);stroke-width:1.5}
+@media (max-width:767px){.turn-note{display:flex}.deco-isle-a{display:none}.chart .deco-isle-b{left:auto;right:-20%;width:62%;transform:scaleX(-1)}}
+.passage-note{margin-top:var(--s-400);display:flex;flex-wrap:wrap;gap:var(--s-200) var(--s-400);align-items:center;justify-content:space-between}
+.passage-note p{color:var(--text-secondary);max-width:44rem}
+
+/* ===== Written valuation example ===== */
+.split{display:grid;gap:var(--s-600)}
+@media (min-width:1024px){.split{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:center}.split>.s-l{grid-column:1/6}.split>.s-r{grid-column:7/13}.split>.s-l7{grid-column:1/8}.split>.s-r5{grid-column:9/13}}
+.report{padding:var(--s-400);border:1px solid var(--border-primary);border-radius:var(--r-16);background:var(--surface-primary);display:grid;gap:var(--s-300);box-shadow:var(--shadow-float)}
+@media (max-width:767px){.report{padding:var(--s-300)}}
+.r-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);color:var(--text-subtle)}
+.r-boat{color:var(--text-primary)}
+.r-sub{color:var(--text-subtle);margin-top:var(--s-50)}
+.r-range{padding:var(--s-200) var(--s-300);border-radius:var(--r-12);background:var(--surface-secondary);display:grid;gap:var(--s-50)}
+.r-range span{color:var(--text-subtle)}
+.r-range b{color:var(--text-primary);font-variant-numeric:tabular-nums lining-nums}
+.r-sales .caption-1{color:var(--text-primary);margin-bottom:var(--s-75)}
+.rows>div{position:relative;display:flex;justify-content:space-between;gap:var(--s-200);padding-block:var(--s-100)}
+.rows>div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-primary)}
+.rows dd{color:var(--text-primary);font-variant-numeric:tabular-nums lining-nums;white-space:nowrap}
+.r-foot{color:var(--text-subtle)}
+.rows dt{display:grid;gap:var(--s-25)}
+.r-where{color:var(--text-subtle)}
+.tax-note{display:flex;gap:var(--s-200);align-items:flex-start;padding:var(--s-300);border-radius:var(--r-16);background:var(--surface-accent-subtle);max-width:32rem}
+.tax-note>.icon{width:32px;height:32px;color:var(--icon-accent)}
+.tax-note .title-3{color:var(--text-primary)}
+.tax-note .body-6{margin-top:var(--s-50);color:var(--text-secondary)}
+
+/* ===== Presented properly ===== */
+.channels{margin-top:var(--s-400);display:flex;flex-wrap:wrap;gap:var(--s-75)}
+.channels li{padding:var(--s-75) var(--s-200);border-radius:var(--r-full);background:var(--surface-primary-subtle);color:var(--text-secondary)}
+.pair{margin-top:var(--s-600);display:grid;gap:var(--s-200)}
+@media (min-width:768px){.pair{grid-template-columns:1fr 1fr;gap:var(--s-300)}}
+.pair figure{border-radius:var(--r-16);overflow:hidden;aspect-ratio:4/3;background:var(--surface-secondary)}
+.pair img{width:100%;height:100%;object-fit:cover}
+
+/* ===== Marina ===== */
+.photo{border-radius:var(--r-24);overflow:hidden;background:var(--surface-secondary)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.marina .photo{aspect-ratio:4/3}
+.facts{display:grid;gap:var(--s-200);margin-top:var(--s-400)}
+.facts li{display:flex;gap:var(--s-200);align-items:flex-start}
+.facts .ic{flex:none;width:44px;height:44px;border-radius:var(--r-12);background:var(--surface-secondary);display:grid;place-items:center;color:var(--icon-action)}
+.facts .ic .icon{width:24px;height:24px}
+.facts b{display:block;color:var(--text-primary)}
+.facts span{color:var(--text-secondary)}
+
+/* ===== About ===== */
+.about .photo{aspect-ratio:1}
+.facts-grid{margin-top:var(--s-400);display:grid;grid-template-columns:1fr 1fr;gap:var(--s-300) var(--s-300)}
+.facts-grid dt{color:var(--text-subtle)}
+.facts-grid dd{color:var(--text-primary);margin-top:var(--s-25)}
+.quotes{margin-top:var(--s-700);display:grid;gap:var(--s-300)}
+@media (min-width:768px){.quotes{grid-template-columns:1fr 1fr}}
+.quotes h3{grid-column:1/-1}
+.quote{padding:var(--s-400);border:2px dashed var(--border-input);border-radius:var(--r-16);display:grid;gap:var(--s-200);color:var(--text-subtle)}
+.quote .ph{color:var(--text-primary)}
+
+/* ===== Cost ===== */
+.fees{padding:var(--s-75);border-radius:var(--r-16);background:var(--surface-primary-subtle);display:grid;gap:var(--s-75)}
+.fees>div{display:flex;justify-content:space-between;align-items:baseline;gap:var(--s-300);padding:var(--s-200) var(--s-300);border-radius:var(--r-8);background:var(--surface-primary)}
+.fees dt{color:var(--text-primary)}
+.fees dd{color:var(--text-secondary);text-align:right;max-width:22rem}
+@media (max-width:639px){.fees>div{flex-direction:column;gap:var(--s-50)}.fees dd{text-align:left}}
+
+/* ===== FAQ ===== */
+.faq{display:grid;gap:var(--s-100)}
+.faq details{border-radius:var(--r-12);background:var(--surface-primary-subtle);transition:background-color var(--t-color) var(--ease)}
+.faq details[open]{background:var(--surface-secondary)}
+.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);min-height:44px;padding:var(--s-200) var(--s-300);color:var(--text-primary);cursor:pointer;border-radius:var(--r-12)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .icon{width:20px;height:20px;color:var(--icon-action);transition:transform var(--t-layout) var(--ease)}
+.faq details[open] summary .icon{transform:rotate(45deg)}
+@media (hover:hover) and (pointer:fine){.faq details:not([open]):hover{background:var(--surface-primary-hover)}}
+.faq details p{padding:0 var(--s-300) var(--s-300);color:var(--text-secondary);max-width:44rem}
+.faq details[open] p{animation:rise 500ms var(--ease) both}
+.faq-side{display:grid;gap:var(--s-200);align-content:start}
+
+/* ===== Market notes ===== */
+.notes{padding:var(--s-400) var(--s-300);border-radius:var(--r-24);background:var(--surface-accent-subtle)}
+@media (min-width:768px){.notes{padding:var(--s-600)}}
+.notes-grid{display:grid;gap:var(--s-400)}
+@media (min-width:1024px){.notes-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:end}.notes-grid>:first-child{grid-column:1/7}.notes-grid>form{grid-column:7/13}}
+.notes form{display:grid;gap:var(--s-200)}
+.inline{display:flex;flex-wrap:wrap;gap:var(--s-100);align-items:flex-end}
+.pair-fields{display:grid;gap:var(--s-200)}
+@media (min-width:640px){.pair-fields{grid-template-columns:1fr 1fr}}
+.inline .field{flex:1 1 16rem}
+@media (max-width:639px){.inline .btn{width:100%}}
+
+/* ===== Fields (shared with the forms) ===== */
+.field{display:grid;gap:var(--s-75)}
+.field label,.legend{color:var(--text-primary)}
+.field input,.field textarea{width:100%;min-height:48px;padding:var(--s-100) var(--s-200);border:1px solid var(--border-input);border-radius:var(--r-8);background:var(--surface-primary);color:var(--text-primary);font-size:16px;line-height:24px;transition:border-color var(--t-color) var(--ease)}
+.field textarea{resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:var(--text-placeholder)}
+.field input:hover,.field textarea:hover{border-color:var(--text-subtle)}
+.field input:focus-visible,.field textarea:focus-visible{outline:2px solid var(--border-focus);outline-offset:1px;border-color:var(--border-action)}
+.field input[aria-invalid="true"],.field textarea[aria-invalid="true"]{border-color:var(--border-error);background:var(--surface-error-subtle)}
+.field input:disabled{background:var(--surface-primary-subtle);color:var(--text-subtle);cursor:not-allowed}
+.check{display:flex;gap:var(--s-100);align-items:flex-start;cursor:pointer;color:var(--text-secondary)}
+.check input{flex:none;width:20px;height:20px;margin:2px 0 0;accent-color:var(--action-primary)}
+.check input[aria-invalid="true"]{outline:2px solid var(--border-error);outline-offset:2px}
+.err{display:flex;gap:var(--s-75);align-items:flex-start;color:var(--text-error)}
+.err::before{content:"";flex:none;width:20px;height:20px;background:currentColor;-webkit-mask:var(--warn) center/contain no-repeat;mask:var(--warn) center/contain no-repeat}
+.ok{display:flex;gap:var(--s-75);align-items:flex-start;color:var(--text-success)}
+.ok::before{content:"";flex:none;width:20px;height:20px;background:currentColor;-webkit-mask:var(--tick) center/contain no-repeat;mask:var(--tick) center/contain no-repeat}
+
+/* ===== Final call to action ===== */
+.final{padding:var(--s-700) var(--s-300);border-radius:var(--r-24);background:var(--surface-inverted);color:var(--text-inverted-subtle)}
+@media (min-width:768px){.final{padding:var(--s-800) var(--s-700)}}
+.final h2{color:var(--text-inverted)}
+.final .split{align-items:center}
+.final-act{display:grid;gap:var(--s-200);justify-items:start}
+@media (min-width:1024px){.final-act{justify-items:end;text-align:right}}
+.final a.tel{color:var(--text-inverted)}
+
+/* ===== Visit ===== */
+.visit{padding-bottom:var(--s-700)}
+@media (min-width:1024px){.visit{padding-bottom:var(--s-900)}}
+.visit-wrap{position:relative}
+.visit .photo{aspect-ratio:4/5}
+@media (min-width:768px){.visit .photo{aspect-ratio:16/9}}
+.visit-card{position:relative;margin:calc(-1 * var(--s-700)) var(--s-200) 0;padding:var(--s-300);border-radius:var(--r-16);background:var(--surface-primary);box-shadow:var(--shadow-float);display:grid;gap:var(--s-200)}
+@media (min-width:768px){.visit-card{position:absolute;margin:0;left:var(--s-400);bottom:var(--s-400);width:360px;padding:var(--s-400)}}
+.visit-card address{font-style:normal;color:var(--text-secondary)}
+.hours>div{position:relative;display:flex;justify-content:space-between;gap:var(--s-200);padding-block:var(--s-100)}
+.hours>div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-primary)}
+.hours dt{color:var(--text-subtle)}
+.hours dd{color:var(--text-primary);text-align:right}
+.visit-card .btn{justify-self:start}
+
+/* ===== Footer ===== */
+.foot{padding-bottom:var(--s-600)}
+.foot .photo{aspect-ratio:4/5}
+@media (min-width:768px){.foot .photo{aspect-ratio:21/9}}
+.foot-cap{margin-top:var(--s-100);color:var(--text-subtle)}
+.foot-grid{margin-top:var(--s-600);display:grid;gap:var(--s-400)}
+@media (min-width:1024px){.foot-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300)}.foot-grid>:first-child{grid-column:1/7}.foot-grid>:last-child{grid-column:7/13}}
+.foot-lines{display:grid;gap:var(--s-200)}
+.foot-lines li{display:grid;gap:var(--s-25)}
+.foot-lines small{color:var(--text-subtle)}
+.foot-lines a{color:var(--text-primary);text-decoration:none;justify-self:start;min-height:28px}
+@media (hover:hover) and (pointer:fine){.foot-lines a:hover{text-decoration:underline}}
+.foot-base{margin-top:var(--s-600);padding-top:var(--s-300);position:relative;display:flex;flex-wrap:wrap;gap:var(--s-200) var(--s-400);justify-content:space-between;color:var(--text-subtle)}
+.foot-base::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-primary)}
+.foot-base nav{display:flex;gap:var(--s-300);flex-wrap:wrap}
+.foot-base a{color:var(--text-secondary);display:inline-flex;align-items:center;min-height:44px}
+
+/* ===== Step-through forms (dialog) ===== */
+dialog.val{width:min(960px,calc(100% - var(--s-400)));max-height:calc(100dvh - var(--s-400));padding:0;border:0;border-radius:var(--r-24);background:var(--surface-primary);color:var(--text-secondary);box-shadow:var(--shadow-float);overflow:auto}
+dialog.val::backdrop{background:var(--overlay-scrim)}
+dialog.val[open]{animation:pop var(--t-layout) var(--ease) both}
+@keyframes pop{from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+@media (max-width:639px){dialog.val{width:100%;max-width:100%;height:100dvh;max-height:100dvh;border-radius:0;margin:0}}
+.val-form{display:grid;grid-template-rows:auto auto 1fr;min-height:100%}
+.val-top{display:flex;justify-content:space-between;align-items:center;gap:var(--s-200);padding:var(--s-200) var(--s-200) var(--s-200) var(--s-300);color:var(--text-primary)}
+.icon-btn{width:44px;height:44px;display:grid;place-items:center;padding:0;border:0;border-radius:var(--r-full);background:var(--surface-primary-subtle);color:var(--icon-default);cursor:pointer;transition:background-color var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.icon-btn:hover{background:var(--surface-primary-selected)}}
+.icon-btn:active{transform:scale(.98)}
+.val-bar{height:4px;margin-inline:var(--s-300);border-radius:var(--r-full);background:var(--surface-secondary-subtle);overflow:hidden}
+.val-bar span{display:block;height:100%;background:var(--surface-accent);transform-origin:left;transform:scaleX(var(--p, .05));transition:transform var(--t-layout) var(--ease)}
+.val-body{display:grid;gap:var(--s-400);padding:var(--s-400) var(--s-300) var(--s-300)}
+@media (min-width:768px){.val-body{grid-template-columns:minmax(0,1fr) 280px;gap:var(--s-600);padding:var(--s-500) var(--s-500) var(--s-500)}}
+.step{border:0;margin:0;padding:0;min-width:0;display:grid;gap:var(--s-300);align-content:start}
+.step.enter{animation:stepin var(--t-layout) var(--ease) both}
+.step.enter-back{animation:stepback var(--t-layout) var(--ease) both}
+@keyframes stepin{from{opacity:0;transform:translateX(24px)}to{opacity:1;transform:none}}
+@keyframes stepback{from{opacity:0;transform:translateX(-24px)}to{opacity:1;transform:none}}
+.q{padding:0;color:var(--text-primary);outline:none}
+.step>legend.q{float:left;width:100%}
+.q-help{color:var(--text-subtle);margin-top:calc(-1 * var(--s-200))}
+.opts{display:grid;gap:var(--s-75)}
+.opt{position:relative;display:flex;align-items:center;justify-content:space-between;gap:var(--s-200);min-height:56px;padding:var(--s-100) var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-12);background:var(--surface-primary);color:var(--text-primary);cursor:pointer;transition:background-color var(--t-color) var(--ease),border-color var(--t-color) var(--ease),transform var(--t-color) var(--ease)}
+.opt input{position:absolute;opacity:0;pointer-events:none}
+.opt .icon{width:20px;height:20px;color:var(--icon-action);transition:transform var(--t-color) var(--ease)}
+@media (hover:hover) and (pointer:fine){.opt:hover{border-color:var(--border-action);background:var(--surface-secondary)}.opt:hover .icon{transform:translateX(4px)}}
+.opt:active{transform:scale(.98)}
+.opt:has(input:focus-visible){outline:2px solid var(--border-focus);outline-offset:2px}
+.opt:has(input:checked){border-color:var(--border-action);background:var(--surface-secondary-subtle)}
+.opts.small .opt{min-height:48px}
+.opts.small .opt::after{content:"";flex:none;width:20px;height:20px;border-radius:var(--r-full);border:2px solid var(--border-input);background:var(--surface-primary);transition:border-color var(--t-color) var(--ease)}
+.opts.small .opt:has(input:checked)::after{border:6px solid var(--border-action)}
+.fields{display:grid;gap:var(--s-200)}
+.file{display:inline-flex;align-items:center;gap:var(--s-75);justify-self:start;min-height:44px;padding:var(--s-75) var(--s-100);border:1px solid var(--border-input);border-radius:var(--r-8);background:var(--surface-primary);color:var(--text-primary);cursor:pointer;transition:background-color var(--t-color) var(--ease),transform var(--t-color) var(--ease)}
+.file .icon{width:20px;height:20px;color:var(--icon-action)}
+@media (hover:hover) and (pointer:fine){.file:hover{background:var(--surface-secondary)}}
+.file:active{transform:scale(.98)}
+.sr:focus-visible+.file{outline:2px solid var(--border-focus);outline-offset:2px}
+.thumbs{display:flex;flex-wrap:wrap;gap:var(--s-75)}
+.thumbs:empty{display:none}
+.thumbs li{width:64px;height:64px;border-radius:var(--r-8);overflow:hidden;background:var(--surface-secondary)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.vc-photo{aspect-ratio:4/3;border-radius:var(--r-8);overflow:hidden;background:var(--surface-secondary-subtle)}
+.vc-photo img{width:100%;height:100%;object-fit:cover}
+.row2,.range{display:grid;grid-template-columns:1fr 1fr;gap:var(--s-200)}
+.row2{grid-template-columns:2fr 1fr}
+.feet{position:relative}
+.feet span{position:absolute;right:var(--s-200);top:50%;transform:translateY(-50%);color:var(--text-subtle);pointer-events:none}
+.feet input{padding-right:var(--s-900)}
+.step-actions{display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-200)}
+.back{min-height:44px;padding:var(--s-75) var(--s-100);border:0;border-radius:var(--r-8);background:none;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em;cursor:pointer}
+@media (hover:hover) and (pointer:fine){.back:hover{background:var(--surface-secondary)}}
+.val-aside{display:grid;gap:var(--s-200);align-content:start;color:var(--text-subtle)}
+@media (max-width:767px){.val-aside{display:none}}
+.vc{padding:var(--s-300);border-radius:var(--r-16);background:var(--surface-secondary);display:grid;gap:var(--s-100)}
+.vc-label{color:var(--text-subtle)}
+.vc-title{color:var(--text-primary)}
+.vc-rows>div{position:relative;display:flex;justify-content:space-between;gap:var(--s-200);padding-block:var(--s-75)}
+.vc-rows>div::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--border-secondary)}
+.vc-rows dt{color:var(--text-subtle)}
+.vc-rows dd{color:var(--text-primary);text-align:right}
+.vc-foot{color:var(--text-subtle)}
+.flash{animation:fade 600ms var(--ease) both}
+.done-sum{color:var(--text-secondary)}
+.proto{padding:var(--s-100) var(--s-200);border-radius:var(--r-8);background:var(--surface-warning-subtle);color:var(--text-warning-inverted)}
+
+/* ===== Boats page ===== */
+.boats-grid{display:grid;gap:var(--s-400)}
+.boats-photo{position:relative;aspect-ratio:4/3;border-radius:var(--r-24);overflow:hidden;background:var(--surface-secondary)}
+@media (min-width:1024px){.boats-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:var(--s-300);align-items:start}.boats-photo{grid-column:1/7;position:sticky;top:var(--s-900)}.boats-list{grid-column:7/13}}
+.boats-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity var(--t-layout) var(--ease)}
+.boats-photo img.is-on{opacity:1}
+@media (max-width:1023px){.boats-photo{position:sticky;top:var(--s-800);z-index:2}}
+.boat-rows{display:grid;gap:var(--s-75)}
+.boat{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:var(--s-25) var(--s-200);align-items:baseline;padding:var(--s-200);border:1px solid var(--border-primary);border-radius:var(--r-16);background:var(--surface-primary);transition:background-color var(--t-color) var(--ease),border-color var(--t-color) var(--ease)}
+.boat.is-on{background:var(--surface-secondary);border-color:var(--border-secondary)}
+.boat-name{color:var(--text-primary)}
+.boat-price{color:var(--text-primary);font-variant-numeric:tabular-nums lining-nums}
+.boat-spec{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:var(--s-75);color:var(--text-subtle)}
+.boat-act{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:var(--s-50) var(--s-300);margin-top:var(--s-75)}
+.link-btn{display:inline-flex;align-items:center;min-height:44px;padding:0;border:0;background:none;color:var(--text-link);text-decoration:underline;text-underline-offset:.3em;cursor:pointer}
+.boat-act a{display:inline-flex;align-items:center;min-height:44px;color:var(--text-secondary)}
+@media (hover:hover) and (pointer:fine){.link-btn:hover{color:var(--action-primary-hover)}.boat-act a:hover{color:var(--text-primary)}}
+
+/* ===== Simple pages ===== */
+.doc{max-width:720px}
+.doc h2{margin-top:var(--s-600)}
+.doc p,.doc li{margin-top:var(--s-200);color:var(--text-secondary)}
+.doc ul{list-style:disc;padding-left:var(--s-300)}
+.draft{padding:var(--s-200) var(--s-300);border-radius:var(--r-12);background:var(--surface-warning-subtle);color:var(--text-warning-inverted)}
+
+@media (prefers-reduced-motion:reduce){
+  [data-hero]{animation-name:fade}
+  [data-reveal].pending{transform:none}
+  .menu li{transform:none}
+  .step.enter,.step.enter-back,.faq details[open] p,dialog.val[open]{animation-name:fade}
+  .btn,.btn .icon,.link .icon,.opt,.opt .icon{transition-property:background-color,color,border-color,opacity}
+}
+
+:root{--warn:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20256%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M128%2C24A104%2C104%2C0%2C1%2C0%2C232%2C128%2C104.11%2C104.11%2C0%2C0%2C0%2C128%2C24Zm0%2C192a88%2C88%2C0%2C1%2C1%2C88-88A88.1%2C88.1%2C0%2C0%2C1%2C128%2C216Zm-8-80V80a8%2C8%2C0%2C0%2C1%2C16%2C0v56a8%2C8%2C0%2C0%2C1-16%2C0Zm20%2C36a12%2C12%2C0%2C1%2C1-12-12A12%2C12%2C0%2C0%2C1%2C140%2C172Z%22/%3E%3C/svg%3E");--tick:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20256%20256%22%20fill%3D%22currentColor%22%3E%3Cpath%20d%3D%22M173.66%2C98.34a8%2C8%2C0%2C0%2C1%2C0%2C11.32l-56%2C56a8%2C8%2C0%2C0%2C1-11.32%2C0l-24-24a8%2C8%2C0%2C0%2C1%2C11.32-11.32L112%2C148.69l50.34-50.35A8%2C8%2C0%2C0%2C1%2C173.66%2C98.34ZM232%2C128A104%2C104%2C0%2C1%2C1%2C128%2C24%2C104.11%2C104.11%2C0%2C0%2C1%2C232%2C128Zm-16%2C0a88%2C88%2C0%2C1%2C0-88%2C88A88.1%2C88.1%2C0%2C0%2C0%2C216%2C128Z%22/%3E%3C/svg%3E")}
+
+</style>
+
+<a class="skip button-sm" href="#main">Skip to content</a>
+
+<header>
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#main"><span class="title-3">Alexander Langley</span><small class="caption-5">Yacht broker, Van Isle Marina</small></a>
+    <div class="nav-links">
+      <a class="title-4" href="#main" aria-current="page">Sell your boat</a>
+      <a class="title-4" href="#how-it-works">How it works</a>
+      <a class="title-4" href="#about">About</a>
+      <a class="title-4" href="/boats">Boats for sale</a>
+    </div>
+    <a class="btn button-sm" href="#value" data-open="value">Free valuation</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><b class="sr caption-3">Menu</b></button>
+  </nav>
+  <div class="menu" id="menu" inert>
+    <ul>
+      <li style="--i:0"><a class="heading-4" href="#main" aria-current="page">Sell your boat</a></li>
+      <li style="--i:1"><a class="heading-4" href="#how-it-works">How it works</a></li>
+      <li style="--i:2"><a class="heading-4" href="#about">About</a></li>
+      <li style="--i:3"><a class="heading-4" href="/boats">Boats for sale</a></li>
+    </ul>
+    <div class="menu-foot">
+      <a class="btn button-md" href="#value" data-open="value">Get my free valuation<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+      <p class="body-6 muted">Or call or text <a class="tel" href="tel:+12505148944">250 514 8944</a></p>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero wrap" aria-labelledby="hero-h">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <h1 class="heading-3 md:heading-2 lg:heading-1" id="hero-h" data-hero>Find out what<br>your boat is worth<br>Decide in<br>your own time</h1>
+        <p class="hero-sub body-7 lg:body-8" data-hero style="--d:1">I’m Alexander Langley, a yacht broker at Van Isle Marina in Sidney. Answer six short questions and I’ll send you a written valuation based on what boats like yours have actually sold for.</p>
+        <div class="hero-act" data-hero style="--d:2">
+          <a class="btn button-md" href="#value" data-open="value">Get my free valuation<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          <p class="caption-2">Free, and nothing to sign.</p>
+          <p class="hero-call body-5">Rather talk first? <a href="tel:+12505148944"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"/></svg>Call or text 250 514 8944</a></p>
+        </div>
+        <div class="proof" data-hero style="--d:3">
+          <img src="/img/portrait-face-240.jpg" width="240" height="240" alt="">
+          <p class="body-6"><b>Alexander Langley</b>, broker at Van Isle Marina in Sidney. I cruise the Gulf Islands in my own 1978 trawler.</p>
+        </div>
+      </div>
+      <div class="hero-visual" data-hero style="--d:2">
+        <div class="hero-photo">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="/img/hero-trawler-1200.jpg">
+            <img src="/img/hero-trawler-2000.jpg" width="2000" height="1600" alt="A 2007 Nordhavn 43 trawler under way on a calm, sunny day in the islands, Canadian flag at the bow" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="float-card" aria-label="Example of a written valuation">
+          <div class="fc-top"><span class="caption-4">Opinion of value</span><span class="tag tag-plain caption-4">Example</span></div>
+          <p class="title-3">2007 Nordhavn 43</p>
+          <div class="fc-range"><span class="caption-5">Suggested asking range</span><b class="heading-6">$1,060,000 to $1,175,000</b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="why" aria-labelledby="why-h">
+    <div class="head head-split">
+      <h2 class="heading-4 md:heading-3 lg:heading-2" id="why-h" data-reveal>Why owners list with me</h2>
+      <p class="lead body-7 lg:body-8" data-reveal style="--d:1">Every boat I take on gets my full attention. Here is what that means in practice.</p>
+    </div>
+    <div class="bento">
+      <article class="card b1" data-reveal>
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M254.3,107.91,228.78,56.85a16,16,0,0,0-21.47-7.15L182.44,62.13,130.05,48.27a8.14,8.14,0,0,0-4.1,0L73.56,62.13,48.69,49.7a16,16,0,0,0-21.47,7.15L1.7,107.9a16,16,0,0,0,7.15,21.47l27,13.51,55.49,39.63a8.06,8.06,0,0,0,2.71,1.25l64,16a8,8,0,0,0,7.6-2.1l55.07-55.08,26.42-13.21a16,16,0,0,0,7.15-21.46Zm-54.89,33.37L165,113.72a8,8,0,0,0-10.68.61C136.51,132.27,116.66,130,104,122L147.24,80h31.81l27.21,54.41ZM41.53,64,62,74.22,36.43,125.27,16,115.06Zm116,119.13L99.42,168.61l-49.2-35.14,28-56L128,64.28l9.8,2.59-45,43.68-.08.09a16,16,0,0,0,2.72,24.81c20.56,13.13,45.37,11,64.91-5L188,152.66Zm62-57.87-25.52-51L214.47,64,240,115.06Zm-87.75,92.67a8,8,0,0,1-7.75,6.06,8.13,8.13,0,0,1-1.95-.24L80.41,213.33a7.89,7.89,0,0,1-2.71-1.25L51.35,193.26a8,8,0,0,1,9.3-13l25.11,17.94L126,208.24A8,8,0,0,1,131.82,217.94Z"/></svg>
+        <h3 class="heading-6 md:heading-5">You deal with me, start to finish</h3>
+        <p class="lead body-3 md:body-7">I’m the one who visits your boat, answers every buyer and shows her. You never get passed along, and behind me is a team of dozens at Van Isle Marina.</p>
+        <div class="mini">
+          <div class="mini-row">
+            <img src="/img/portrait-face-240.jpg" width="240" height="240" alt="">
+            <div><p class="title-4">Alexander Langley</p><p class="caption-5">Your broker from the first call to the bill of sale</p></div>
+          </div>
+        </div>
+      </article>
+      <article class="card b2" data-reveal style="--d:1">
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M239.43,133l-32-80h0a8,8,0,0,0-9.16-4.84L136,62V40a8,8,0,0,0-16,0V65.58L54.26,80.19A8,8,0,0,0,48.57,85h0v.06L16.57,165a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32a7.92,7.92,0,0,0-.57-3L66.92,93.77,120,82V208H104a8,8,0,0,0,0,16h48a8,8,0,0,0,0-16H136V78.42L187,67.1,160.57,133a7.92,7.92,0,0,0-.57,3c0,23.31,24.54,32,40,32s40-8.69,40-32A7.92,7.92,0,0,0,239.43,133ZM56,184c-7.53,0-22.76-3.61-23.93-14.64L56,109.54l23.93,59.82C78.76,180.39,63.53,184,56,184Zm144-32c-7.53,0-22.76-3.61-23.93-14.64L200,77.54l23.93,59.82C222.76,148.39,207.53,152,200,152Z"/></svg>
+        <h3 class="heading-6 md:heading-5">A straight answer on price</h3>
+        <p class="lead body-3 md:body-7">I’ll tell you what she’s realistically worth, even when it isn’t the number you hoped for. A realistic price sells. A hopeful one sits.</p>
+      </article>
+      <article class="card b3" data-reveal>
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M168,112a8,8,0,0,1-8,8H96a8,8,0,0,1,0-16h64A8,8,0,0,1,168,112Zm-8,24H96a8,8,0,0,0,0,16h64a8,8,0,0,0,0-16Zm72-8A104,104,0,0,1,79.12,219.82L45.07,231.17a16,16,0,0,1-20.24-20.24l11.35-34.05A104,104,0,1,1,232,128Zm-16,0A88,88,0,1,0,51.81,172.06a8,8,0,0,1,.66,6.54L40,216,77.4,203.53a7.85,7.85,0,0,1,2.53-.42,8,8,0,0,1,4,1.08A88,88,0,0,0,216,128Z"/></svg>
+        <h3 class="heading-6 md:heading-5">You always know what’s happening</h3>
+        <p class="lead body-3 md:body-7">While she’s listed, you hear from me every week: who looked, who asked, and what they said after showings.</p>
+        <div class="mini">
+          <div class="mini-head"><span class="caption-4">Friday update</span><span class="tag tag-plain caption-4">Example</span></div>
+          <p class="body-6">Two new enquiries this week and a viewing booked for Saturday. Last week’s buyer asked for the engine service records.</p>
+        </div>
+      </article>
+      <article class="card b4" data-reveal style="--d:1">
+        <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M184,89.57V84c0-25.08-37.83-44-88-44S8,58.92,8,84v40c0,20.89,26.25,37.49,64,42.46V172c0,25.08,37.83,44,88,44s88-18.92,88-44V132C248,111.3,222.58,94.68,184,89.57ZM232,132c0,13.22-30.79,28-72,28-3.73,0-7.43-.13-11.08-.37C170.49,151.77,184,139,184,124V105.74C213.87,110.19,232,122.27,232,132ZM72,150.25V126.46A183.74,183.74,0,0,0,96,128a183.74,183.74,0,0,0,24-1.54v23.79A163,163,0,0,1,96,152,163,163,0,0,1,72,150.25Zm96-40.32V124c0,8.39-12.41,17.4-32,22.87V123.5C148.91,120.37,159.84,115.71,168,109.93ZM96,56c41.21,0,72,14.78,72,28s-30.79,28-72,28S24,97.22,24,84,54.79,56,96,56ZM24,124V109.93c8.16,5.78,19.09,10.44,32,13.57v23.37C36.41,141.4,24,132.39,24,124Zm64,48v-4.17c2.63.1,5.29.17,8,.17,3.88,0,7.67-.13,11.39-.35A121.92,121.92,0,0,0,120,171.41v23.46C100.41,189.4,88,180.39,88,172Zm48,26.25V174.4a179.48,179.48,0,0,0,24,1.6,183.74,183.74,0,0,0,24-1.54v23.79a165.45,165.45,0,0,1-48,0Zm64-3.38V171.5c12.91-3.13,23.84-7.79,32-13.57V172C232,180.39,219.59,189.4,200,194.87Z"/></svg>
+        <h3 class="heading-6 md:heading-5">No money spent you won’t get back</h3>
+        <p class="lead body-3 md:body-7">Before you list, I’ll tell you the few things worth fixing and the ones buyers won’t pay for.</p>
+        <div class="mini">
+          <ul class="checks body-6">
+            <li class="yes"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span><b class="title-4">Worth doing:</b> put the service records in one binder</span></li>
+            <li class="yes"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span><b class="title-4">Worth doing:</b> refresh the exterior varnish</span></li>
+            <li class="no"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M165.66,101.66,139.31,128l26.35,26.34a8,8,0,0,1-11.32,11.32L128,139.31l-26.34,26.35a8,8,0,0,1-11.32-11.32L116.69,128,90.34,101.66a8,8,0,0,1,11.32-11.32L128,116.69l26.34-26.35a8,8,0,0,1,11.32,11.32ZM232,128A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"/></svg><span><b class="title-4">Skip it:</b> new canvas, because buyers won’t pay for it</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec wrap about" id="about" aria-labelledby="about-h">
+    <div class="split">
+      <div class="s-l stack-300">
+        <h2 class="heading-4 md:heading-3 lg:heading-2" id="about-h" data-reveal>A broker who boats</h2>
+        <p class="lead body-7 lg:body-8" data-reveal style="--d:1">I grew up in White Rock, came to the Island for UVic, and stayed.</p>
+        <p class="body-3 md:body-7" data-reveal style="--d:2">These days I cruise the Gulf Islands in my own 1978 trawler. Owning an older boat means I know what buyers check and what sellers worry about.</p>
+        <dl class="facts-grid" data-reveal style="--d:3">
+          <div><dt class="caption-2">Based at</dt><dd class="title-3">Van Isle Marina, Sidney</dd></div>
+          <div><dt class="caption-2">Sells</dt><dd class="title-3">Power and sail, all brands, and boathouses</dd></div>
+          <div><dt class="caption-2">Own boat</dt><dd class="title-3">1978 trawler</dd></div>
+          <div><dt class="caption-2">Favourite anchorage</dt><dd class="title-3">Pirates Cove</dd></div>
+        </dl>
+      </div>
+      <figure class="s-r photo" data-reveal style="--d:1"><img src="/img/portrait-1x1-1200.jpg" width="1200" height="1200" loading="lazy" alt="Alexander Langley on the docks in front of the Van Isle Marina office"></figure>
+    </div>
+  </section>
+
+  <section class="tagline wrap" aria-label="My promise">
+    <p class="heading-4 md:heading-2" data-split>A straight answer<br>on what she’s worth<br>and no pressure<br>to do anything with it</p>
+  </section>
+
+  <section class="sec wrap passage" id="how-it-works" aria-labelledby="how-h">
+    <div class="head head-split">
+      <h2 class="heading-4 md:heading-3 lg:heading-2" id="how-h" data-reveal>Your sale, plotted like a passage</h2>
+      <p class="lead body-7 lg:body-8" data-reveal style="--d:1">Five waypoints from the first chat to the closing. The first two are free, and you can turn back at any of them.</p>
+    </div>
+
+    <div class="chart" data-chart>
+      <svg class="chart-deco deco-isle-a" viewBox="0 0 400 300" aria-hidden="true">
+        <path d="M400 262 C 360 290, 304 280, 274 252 C 248 230, 220 232, 192 212 C 154 186, 166 144, 140 124 C 110 100, 112 48, 140 14 C 146 8, 150 4, 154 0" fill="none" stroke="var(--chart-contour)" stroke-width="1.5" stroke-dasharray="1 6" stroke-linecap="round"/>
+        <path d="M400 236 C 366 262, 318 254, 290 228 C 266 206, 236 208, 210 190 C 176 166, 190 128, 164 108 C 136 86, 142 40, 170 16 C 180 8, 190 2, 196 0" fill="none" stroke="var(--chart-contour)" stroke-width="1.5"/>
+        <path d="M400 0 L400 210 C 372 236, 330 228, 304 204 C 280 182, 250 186, 226 168 C 196 146, 214 112, 186 92 C 160 72, 168 34, 196 18 C 214 8, 230 0, 240 0 Z" fill="var(--chart-land)" stroke="var(--chart-land-edge)" stroke-width="1.5"/>
+        <ellipse cx="146" cy="232" rx="11" ry="7" fill="var(--chart-land)" stroke="var(--chart-land-edge)" stroke-width="1.5"/>
+      </svg>
+      <svg class="chart-deco deco-isle-c" viewBox="0 0 220 200" aria-hidden="true">
+        <path d="M220 18 C 186 12, 148 34, 138 70 C 128 104, 146 128, 136 152 C 128 176, 166 196, 220 192" fill="none" stroke="var(--chart-contour)" stroke-width="1.5"/>
+        <path d="M220 40 C 196 36, 168 52, 160 78 C 152 104, 170 128, 160 150 C 154 166, 176 176, 220 170 Z" fill="var(--chart-land)" stroke="var(--chart-land-edge)" stroke-width="1.5"/>
+      </svg>
+      <svg class="chart-deco deco-isle-b" viewBox="0 0 360 260" aria-hidden="true">
+        <path d="M0 8 C 42 -6, 98 8, 128 40 C 152 66, 186 62, 216 90 C 252 124, 238 168, 270 192 C 292 210, 308 232, 316 260" fill="none" stroke="var(--chart-contour)" stroke-width="1.5" stroke-dasharray="1 6" stroke-linecap="round"/>
+        <path d="M0 34 C 36 20, 84 34, 110 62 C 134 88, 168 84, 196 110 C 228 140, 214 182, 246 206 C 266 222, 280 240, 286 260" fill="none" stroke="var(--chart-contour)" stroke-width="1.5"/>
+        <path d="M0 60 C 30 48, 70 60, 92 84 C 116 110, 150 104, 176 128 C 204 154, 190 196, 222 220 C 240 234, 252 248, 256 260 L0 260 Z" fill="var(--chart-land)" stroke="var(--chart-land-edge)" stroke-width="1.5"/>
+        <circle cx="302" cy="148" r="8" fill="var(--chart-land)" stroke="var(--chart-land-edge)" stroke-width="1.5"/>
+      </svg>
+      <svg class="chart-deco deco-rose" viewBox="0 -14 100 114" aria-hidden="true">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="currentColor" stroke-width="1"/>
+        <circle cx="50" cy="50" r="36" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="1 4"/>
+        <path d="M50 8 L56 44 L92 50 L56 56 L50 92 L44 56 L8 50 L44 44 Z" fill="none" stroke="currentColor" stroke-width="1" stroke-linejoin="round"/>
+        <path d="M50 8 L56 44 L50 50 Z M92 50 L56 56 L50 50 Z M50 92 L44 56 L50 50 Z M8 50 L44 44 L50 50 Z" fill="currentColor"/>
+        <text x="50" y="-3" text-anchor="middle" class="caption-3" fill="currentColor">N</text>
+      </svg>
+      <svg class="route" aria-hidden="true" data-route></svg>
+
+      <div class="chart-end chart-end-top" data-end="start">
+        <span class="caption-3">Departure</span>
+        <span class="body-5">Tsehum Harbour, Sidney</span>
+        <span class="caption-5">48°40′ N, 123°25′ W</span>
+      </div>
+
+      <ol class="legs">
+        <li class="leg" style="--mx:-20px">
+          <span class="marker title-4" data-marker><span class="n">1</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+          <div class="wp">
+            <h3 class="heading-6">A conversation, with no paperwork</h3>
+            <p class="body-3">We meet at your boat or on the docks at Van Isle. You tell me about her and what you’re weighing up.</p>
+            <div class="wp-meta"><span class="caption-3">Waypoint 1</span><span class="tag caption-4">Free</span></div>
+          </div>
+        </li>
+        <li class="leg right" style="--mx:20px">
+          <span class="marker title-4" data-marker><span class="n">2</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+          <div class="wp">
+            <h3 class="heading-6">A written valuation that’s yours to keep</h3>
+            <p class="body-3">I look at what boats like yours have actually sold for, here on the Island and across North America, and put a realistic price range in writing.</p>
+            <div class="wp-meta"><span class="caption-3">Waypoint 2</span><span class="tag caption-4">Free</span></div>
+          </div>
+        </li>
+        <li class="leg decision" style="--mx:-8px">
+          <span class="marker" data-marker data-decision><span class="n caption-3">?</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+          <div class="wp">
+            <h3 class="heading-6">List her, wait, or keep her</h3>
+            <p class="body-3">It’s your call, in your own time.</p>
+            <p class="turn-note body-5"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M232,144a64.07,64.07,0,0,1-64,64H80a8,8,0,0,1,0-16h88a48,48,0,0,0,0-96H51.31l34.35,34.34a8,8,0,0,1-11.32,11.32l-48-48a8,8,0,0,1,0-11.32l48-48A8,8,0,0,1,85.66,45.66L51.31,80H168A64.07,64.07,0,0,1,232,144Z"/></svg>Turn back here at no cost</p>
+            <div class="wp-meta"><span class="caption-3">Decision point</span></div>
+          </div>
+        </li>
+        <li class="leg right" style="--mx:24px">
+          <span class="marker title-4" data-marker><span class="n">3</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+          <div class="wp">
+            <h3 class="heading-6">Getting her ready</h3>
+            <p class="body-3">I tell you what’s worth fixing and what isn’t, arrange the photography, drone and video, and go through the listing agreement and my fee with you before you sign anything.</p>
+            <div class="wp-meta"><span class="caption-3">Waypoint 3</span><span class="tag tag-plain caption-4">If you go ahead</span></div>
+          </div>
+        </li>
+        <li class="leg" style="--mx:-20px">
+          <span class="marker title-4" data-marker><span class="n">4</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+          <div class="wp">
+            <h3 class="heading-6">Showings</h3>
+            <p class="body-3">She can stay in her slip. I show the boat and answer buyers’ questions, so you don’t need to be there unless you want to be.</p>
+            <div class="wp-meta"><span class="caption-3">Waypoint 4</span></div>
+          </div>
+        </li>
+        <li class="leg right" style="--mx:16px">
+          <span class="marker title-4" data-marker><span class="n">5</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z"/></svg></span>
+          <div class="wp">
+            <h3 class="heading-6">The offer, sea trial, survey and closing</h3>
+            <p class="body-3">I negotiate the offer with you. Once it’s accepted, I run the sea trial, coordinate the buyer’s survey with the haul out at Van Isle’s Yacht Park, and handle the paperwork through to the bill of sale and the registry transfer.</p>
+            <div class="wp-meta"><span class="caption-3">Waypoint 5</span></div>
+          </div>
+        </li>
+      </ol>
+
+      <div class="chart-end chart-end-bottom" data-end="end">
+        <span class="caption-3">Arrival</span>
+        <span class="body-5">Sold, with the paperwork done</span>
+      </div>
+    </div>
+
+    <div class="passage-note">
+      <p class="body-3 md:body-7">Most owners I talk to aren’t ready to list. Waypoints one and two are there so you can find out where you stand first.</p>
+      <a class="btn button-md" href="#value" data-open="value">Start at waypoint 1<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="valuation" aria-labelledby="sample-h">
+    <div class="split">
+      <div class="s-l stack-300">
+        <h2 class="heading-4 md:heading-3 lg:heading-2" id="sample-h" data-reveal>Your written valuation</h2>
+        <p class="lead body-7 lg:body-8" data-reveal style="--d:1">A clear opinion of value, on paper, yours to keep.</p>
+        <p class="body-3 md:body-7" data-reveal style="--d:2">It’s built from research on boats like yours that have sold here on the Island and across North America, with real examples in front of you. It shows where yours sits among them and why, and the few things worth doing before you list. Most owners read it over coffee and decide in their own time.</p>
+        <div data-reveal style="--d:3"><a class="btn button-md" href="#value" data-open="value">Get my free valuation<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a></div>
+      </div>
+      <article class="s-r report" aria-label="Example of a written valuation" data-reveal style="--d:1">
+        <div class="r-top"><span class="caption-4">Opinion of value</span><span class="tag tag-plain caption-4">Example</span></div>
+        <div>
+          <p class="r-boat heading-5">2004 Grand Banks 42 Classic</p>
+          <p class="r-sub body-6">Twin Cummins diesels, kept in Sidney, BC</p>
+        </div>
+        <div class="r-range"><span class="caption-2">Suggested asking range</span><b class="heading-5 md:heading-3">$385,000 to $410,000</b></div>
+        <div class="r-sales">
+          <p class="caption-1">Recent sales of similar boats, here and across North America</p>
+          <dl class="rows body-6">
+            <div><dt>2005 Grand Banks 42 Classic<span class="r-where caption-5">Sidney, BC</span></dt><dd>$398,000</dd></div>
+            <div><dt>2003 Grand Banks 42 Classic<span class="r-where caption-5">Anacortes, WA</span></dt><dd>$372,000</dd></div>
+            <div><dt>2004 Grand Banks 42 Europa<span class="r-where caption-5">Annapolis, MD</span></dt><dd>$415,000</dd></div>
+          </dl>
+        </div>
+        <p class="r-foot caption-5">Prepared by Alexander Langley, Van Isle Marina. An illustrative example; your valuation uses real recent sales of boats like yours.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="presented" aria-labelledby="show-h">
+    <div class="head head-split">
+      <h2 class="heading-4 md:heading-3 lg:heading-2" id="show-h" data-reveal>Your boat, presented properly</h2>
+      <div class="stack-200" data-reveal style="--d:1">
+        <p class="lead body-7 lg:body-8">Every listing gets professional photography, drone footage and a video walkthrough, because most buyers see your boat online long before they step aboard.</p>
+        <p class="body-3 md:body-7">I field enquiries from buyers all over North America. In my experience, a boat that’s marketed properly usually sells for a better price, and sooner.</p>
+      </div>
+    </div>
+    <ul class="channels title-4" aria-label="Where your boat is advertised" data-reveal style="--d:2">
+      <li>Van Isle Marina website</li><li>YachtWorld</li><li>boats.com</li><li>Boat Trader</li><li>Boat dealer sites</li><li>YouTube</li><li>Facebook</li>
+    </ul>
+    <div class="pair" data-reveal style="--d:2">
+      <figure><img src="/img/show-a-43-1400.jpg" width="1400" height="1050" loading="lazy" alt="Drone view looking down on a Pursuit cruiser on deep blue water"></figure>
+      <figure><img src="/img/show-b-43-1400.jpg" width="1400" height="1050" loading="lazy" alt="Drone view of a Beneteau Gran Turismo 41 at speed, its wake curling behind"></figure>
+    </div>
+  </section>
+
+  <section class="sec wrap marina" id="marina" aria-labelledby="marina-h">
+    <div class="split">
+      <figure class="s-l7 photo" data-reveal><img src="/img/marina-aerial-1284.jpg" width="1284" height="955" loading="lazy" alt="Aerial view of Van Isle Marina on Tsehum Harbour, with the Gulf Islands beyond"></figure>
+      <div class="s-r5">
+        <h2 class="heading-4 md:heading-3" id="marina-h" data-reveal>Sold from<br>Van Isle Marina</h2>
+        <p class="body-3 md:body-7 mt-200" data-reveal style="--d:1">When your boat is listed with me, it has one of the Island’s best known marinas behind it.</p>
+        <ul class="facts" data-reveal style="--d:2">
+          <li><span class="ic"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M216,136a8,8,0,0,0-8,8c0,24.69-13.77,29.64-38.1,36.28-11.36,3.1-24.12,6.6-33.9,14.34V128h32a8,8,0,0,0,0-16H136V87a32,32,0,1,0-16,0v25H88a8,8,0,0,0,0,16h32v66.62c-9.78-7.74-22.54-11.24-33.9-14.34C61.77,173.64,48,168.69,48,144a8,8,0,0,0-16,0c0,38.11,27.67,45.66,49.9,51.72C106.23,202.36,120,207.31,120,232a8,8,0,0,0,16,0c0-24.69,13.77-29.64,38.1-36.28C196.33,189.66,224,182.11,224,144A8,8,0,0,0,216,136ZM112,56a16,16,0,1,1,16,16A16,16,0,0,1,112,56Z"/></svg></span><div><b class="title-3">Family run since 1955</b><span class="body-6">On Sidney’s Tsehum Harbour</span></div></li>
+          <li><span class="ic"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.06,110.59,208,106.23V56a16,16,0,0,0-16-16H136V24a8,8,0,0,0-16,0V40H64A16,16,0,0,0,48,56v50.23l-13.06,4.36A16,16,0,0,0,24,125.77V152c0,61.54,97.89,86.72,102.06,87.76a8,8,0,0,0,3.88,0C134.11,238.72,232,213.54,232,152V125.77A16,16,0,0,0,221.06,110.59ZM64,56H192v44.9L130.53,80.41a8,8,0,0,0-5.06,0L64,100.9Zm152,96c0,24.91-23.68,43-43.55,53.83A228.13,228.13,0,0,1,128,223.72,226.85,226.85,0,0,1,83.81,206C47.6,186.35,40,165.79,40,152V125.77L120,99.1V168a8,8,0,0,0,16,0V99.1l80,26.67Z"/></svg></span><div><b class="title-3">About 500 berths and a fuel dock</b><span class="body-6">Buyers can see her right where she sits</span></div></li>
+          <li><span class="ic"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M226.76,69a8,8,0,0,0-12.84-2.88l-40.3,37.19-17.23-3.7-3.7-17.23,37.19-40.3A8,8,0,0,0,187,29.24,72,72,0,0,0,88,96,72.34,72.34,0,0,0,94,124.94L33.79,177c-.15.12-.29.26-.43.39a32,32,0,0,0,45.26,45.26c.13-.13.27-.28.39-.42L131.06,162A72,72,0,0,0,232,96,71.56,71.56,0,0,0,226.76,69ZM160,152a56.14,56.14,0,0,1-27.07-7,8,8,0,0,0-9.92,1.77L67.11,211.51a16,16,0,0,1-22.62-22.62L109.18,133a8,8,0,0,0,1.77-9.93,56,56,0,0,1,58.36-82.31l-31.2,33.81a8,8,0,0,0-1.94,7.1L141.83,108a8,8,0,0,0,6.14,6.14l26.35,5.66a8,8,0,0,0,7.1-1.94l33.81-31.2A56.06,56.06,0,0,1,160,152Z"/></svg></span><div><b class="title-3">A Yacht Park on site</b><span class="body-6">Haul outs for surveys up to 70 feet, all on Harbour Road</span></div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="cost" aria-labelledby="cost-h">
+    <div class="split">
+      <div class="s-l stack-200">
+        <h2 class="heading-4 md:heading-3 lg:heading-2" id="cost-h" data-reveal>What it costs</h2>
+        <p class="lead body-7 lg:body-8" data-reveal style="--d:1">Nothing until your boat sells.</p>
+        <div class="tax-note" data-reveal style="--d:2">
+          <svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M72,104a8,8,0,0,1,8-8h96a8,8,0,0,1,0,16H80A8,8,0,0,1,72,104Zm8,40h96a8,8,0,0,0,0-16H80a8,8,0,0,0,0,16ZM232,56V208a8,8,0,0,1-11.58,7.15L192,200.94l-28.42,14.21a8,8,0,0,1-7.16,0L128,200.94,99.58,215.15a8,8,0,0,1-7.16,0L64,200.94,35.58,215.15A8,8,0,0,1,24,208V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56Zm-16,0H40V195.06l20.42-10.22a8,8,0,0,1,7.16,0L96,199.06l28.42-14.22a8,8,0,0,1,7.16,0L160,199.06l28.42-14.22a8,8,0,0,1,7.16,0L216,195.06Z"/></svg>
+          <div>
+            <p class="title-3">Buying your next boat too?</p>
+            <p class="body-6">Ask me about Van Isle Marina’s trade program. If you’re moving up or changing boats, yours can be part of the deal.</p>
+          </div>
+        </div>
+      </div>
+      <dl class="s-r fees body-3" data-reveal style="--d:1">
+        <div><dt class="title-3">Conversation and valuation</dt><dd>Free</dd></div>
+        <div><dt class="title-3">Photography, drone and video</dt><dd>Included</dd></div>
+        <div><dt class="title-3">Advertising</dt><dd>Included</dd></div>
+        <div><dt class="title-3">Commission</dt><dd>A standard brokerage percentage plus GST, paid from the sale. Before you sign, I’ll show you exactly what you’d net.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="sec wrap" id="questions" aria-labelledby="qa-h">
+    <div class="split" style="align-items:start">
+      <div class="s-l faq-side">
+        <h2 class="heading-4 md:heading-3 lg:heading-2" id="qa-h" data-reveal>Questions owners ask</h2>
+        <p class="body-3 md:body-7" data-reveal style="--d:1">Can’t see yours? Call or text me at <a class="tel" href="tel:+12505148944">250 514 8944</a>.</p>
+      </div>
+      <div class="s-r faq" data-reveal style="--d:1">
+        <details><summary class="title-2">What’s your commission?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">A standard brokerage percentage of the selling price, plus GST, paid from the sale at closing. Nothing comes out of your pocket before then. Before you sign, I’ll show you in writing exactly what you’d net at your asking price.</p></details>
+        <details><summary class="title-2">Can I keep using her while she’s listed?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Yes. Most owners keep boating until there’s an accepted offer. We plan showings around your trips.</p></details>
+        <details><summary class="title-2">Do I have to fix things before listing?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Usually not. I’ll point out the few things worth doing because buyers and surveyors will notice them, and tell you what isn’t worth the money.</p></details>
+        <details><summary class="title-2">What if I change my mind?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Until you sign a listing agreement, you can stop at any point and it costs you nothing. The agreement itself explains how it can be ended, and I go through that with you before you sign.</p></details>
+        <details><summary class="title-2">Is now a good time to sell?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">It depends on your boat. Spring is when most buyers on the Island are looking, so many owners get ready over the winter. Your valuation will show where your boat sits in today’s market.</p></details>
+        <details><summary class="title-2">How long will it take to sell?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">It depends on the boat, the price and the season. Realistically priced boats sell fastest, and spring and early summer are the busiest months here. Your valuation includes my honest view on timing.</p></details>
+        <details><summary class="title-2">Does my boat have to be at Van Isle?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">No. I sell boats wherever they’re kept on Vancouver Island and in the Gulf Islands.</p></details>
+        <details><summary class="title-2">Do I need to be there for showings?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">No. I show the boat and answer buyers’ questions, and once there’s an accepted offer I run the sea trial. You’re welcome to come along whenever you’d like to.</p></details>
+        <details><summary class="title-2">Can I sell a boat that still has a loan on it?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Yes. The loan is paid out from the sale at closing, and I coordinate that with your lender.</p></details>
+        <details><summary class="title-2">Do you sell sailboats too?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Yes. I sell power and sail, all brands.</p></details>
+        <details><summary class="title-2">Do you handle boathouses?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Yes. I help owners sell their boathouses, and help buyers find and buy one.</p></details>
+        <details><summary class="title-2">I’m buying another boat too. Can you help with both?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Yes. I can sell your boat and help you find the next one, and Van Isle Marina has a trade program for owners who are changing boats. Ask me how it would work for you.</p></details>
+        <details><summary class="title-2">What do you need from me to get started?<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"/></svg></summary><p class="body-3 md:body-7">Just the answers to six short questions. Her service records and any past survey help, but you don’t need them for the valuation.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="notes-h">
+    <div class="notes" data-reveal>
+      <div class="notes-grid">
+        <div class="stack-200">
+          <h2 class="heading-5 md:heading-3" id="notes-h">Not ready to talk yet?</h2>
+          <p class="body-3 md:body-7">Get my Island market notes: a short email every so often on what’s selling here, for how much and how quickly. Useful whether you sell next spring or never.</p>
+        </div>
+        <form id="notes" name="market-notes" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate aria-labelledby="notes-h">
+    <input type="hidden" name="form-name" value="market-notes">
+    <input type="hidden" name="subject" value="">
+    <input type="hidden" name="lead_source" value="">
+    <input type="hidden" name="utm_source" value="">
+    <input type="hidden" name="utm_medium" value="">
+    <input type="hidden" name="utm_campaign" value="">
+    <input type="hidden" name="utm_content" value="">
+    <input type="hidden" name="utm_term" value="">
+    <input type="hidden" name="landing_page" value="">
+    <input type="hidden" name="referrer" value="">
+    <p class="sr" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+          <div class="pair-fields">
+            <div class="field"><label class="title-4" for="n-name">Name (optional)</label><input id="n-name" name="name" autocomplete="name"></div>
+            <div class="field"><label class="title-4" for="n-boat">Your boat (optional)</label><input id="n-boat" name="boat" autocomplete="off" placeholder="2001 Bayliner 3788"></div>
+          </div>
+          <div class="inline">
+            <div class="field"><label class="title-4" for="n-email">Email</label><input id="n-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="n-err"></div>
+            <button type="submit" class="btn button-md">Send me the notes</button>
+          </div>
+          <label class="check body-6"><input type="checkbox" id="n-consent" name="consent" value="yes" aria-describedby="n-err"><span>I’d like Alexander’s market notes. I can unsubscribe at any time.</span></label>
+          <p class="err body-5" id="n-err" hidden></p>
+          <p class="ok body-5" id="n-ok" hidden tabindex="-1">You’re on the list. Thanks, the next notes will come straight to your inbox.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec wrap" aria-labelledby="final-h">
+    <div class="final" data-reveal>
+      <div class="split">
+        <div class="s-l7 stack-200">
+          <h2 class="heading-4 md:heading-2" id="final-h">Curious what she’s worth?</h2>
+          <p class="body-7">Six short questions, then I’ll be in touch the way you prefer.</p>
+        </div>
+        <div class="s-r5 final-act">
+          <a class="btn btn-inv button-md" href="#value" data-open="value">Get my free valuation<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></a>
+          <p class="caption-2">Or call or text <a class="tel" href="tel:+12505148944">250 514 8944</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap visit" id="visit" aria-labelledby="visit-h">
+    <div class="visit-wrap" data-reveal>
+      <figure class="photo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="/img/visit-sunset-tall-900.jpg">
+          <img src="/img/visit-sunset-2400.jpg" srcset="/img/visit-sunset-1200.jpg 1200w, /img/visit-sunset-2400.jpg 2400w" sizes="(min-width: 1280px) 1200px, 100vw" width="2400" height="1350" loading="lazy" alt="Van Isle Marina at sunset: the office lit up, the boathouses and docks, hills behind">
+        </picture>
+      </figure>
+      <div class="visit-card">
+        <h2 class="heading-5">Visit the docks</h2>
+        <address class="body-3">Van Isle Marina<br>2320 Harbour Road<br>Sidney, BC V8L 2P6</address>
+        <dl class="hours body-6">
+          <div><dt>Monday to Friday</dt><dd>At the marina</dd></div>
+          <div><dt>Weekends</dt><dd>By appointment</dd></div>
+          <div><dt>Call or text</dt><dd><a class="tel" href="tel:+12505148944">250 514 8944</a></dd></div>
+        </dl>
+        <a class="btn button-md" href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Isle%20Marina%2C%202320%20Harbour%20Road%2C%20Sidney%20BC" target="_blank" rel="noopener">Get directions<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M200,64V168a8,8,0,0,1-16,0V83.31L69.66,197.66a8,8,0,0,1-11.32-11.32L172.69,72H88a8,8,0,0,1,0-16H192A8,8,0,0,1,200,64Z"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap" aria-label="Contact">
+  <figure>
+    <div class="photo">
+      <picture>
+        <source media="(max-width: 767px)" srcset="/img/anchor-tall-1000.jpg">
+        <img src="/img/anchor-wide-2016.jpg" srcset="/img/anchor-wide-1200.jpg 1200w, /img/anchor-wide-2016.jpg 2016w" sizes="(min-width: 1280px) 1200px, 100vw" width="2016" height="864" loading="lazy" alt="Alexander’s 1978 CHB 34 trawler at anchor in a still, tree lined Gulf Islands cove at dusk">
+      </picture>
+    </div>
+    <figcaption class="foot-cap caption-2">My 1978 CHB 34, at anchor in the Gulf Islands.</figcaption>
+  </figure>
+  <div class="foot-grid">
+    <div class="stack-200">
+      <h2 class="heading-4">Fair winds</h2>
+      <p class="body-3 md:body-7">Selling, buying, or just wondering what she’s worth? I’m always happy to talk boats.</p>
+    </div>
+    <ul class="foot-lines">
+      <li><small class="caption-2">Call or text</small><a class="title-2 tel" href="tel:+12505148944">250 514 8944</a></li>
+      <li><small class="caption-2">Email</small><a class="title-2" href="mailto:alangley@vanislemarina.com">alangley@vanislemarina.com</a></li>
+      <li><small class="caption-2">Office</small><a class="title-2" href="https://www.google.com/maps/search/?api=1&amp;query=Van%20Isle%20Marina%2C%202320%20Harbour%20Road%2C%20Sidney%20BC" target="_blank" rel="noopener">Van Isle Marina, 2320 Harbour Road, Sidney</a></li>
+      <li><small class="caption-2">YouTube</small><a class="title-2" href="https://www.youtube.com/@alexanderlangleyyacht" target="_blank" rel="noopener">@alexanderlangleyyacht</a></li>
+    </ul>
+  </div>
+  <div class="foot-base caption-2">
+    <p>© 2026 Alexander Langley, yacht broker with Van Isle Marina, Sidney, British Columbia</p>
+    <nav aria-label="Footer"><a href="/">Sell your boat</a><a href="/boats">Boats for sale</a><a href="/privacy">Privacy and terms</a></nav>
+  </div>
+</footer>
+
+<dialog class="val" id="value" aria-labelledby="q-type">
+  <form class="val-form" name="valuation" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" novalidate>
+    <input type="hidden" name="form-name" value="valuation">
+    <input type="hidden" name="subject" value="">
+    <input type="hidden" name="lead_source" value="">
+    <input type="hidden" name="utm_source" value="">
+    <input type="hidden" name="utm_medium" value="">
+    <input type="hidden" name="utm_campaign" value="">
+    <input type="hidden" name="utm_content" value="">
+    <input type="hidden" name="utm_term" value="">
+    <input type="hidden" name="landing_page" value="">
+    <input type="hidden" name="referrer" value="">
+    <p class="sr" aria-hidden="true"><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+    <div class="val-top">
+      <p class="title-3">Free boat valuation</p>
+      <button type="button" class="icon-btn" data-close aria-label="Close valuation"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"/></svg></button>
+    </div>
+    <div class="val-bar" aria-hidden="true"><span></span></div>
+    <div class="val-body">
+      <div class="val-main">
+        <fieldset class="step" data-step="type">
+          <legend class="q heading-5 md:heading-3" id="q-type" tabindex="-1">What kind of boat is she?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="type" value="Motor yacht or cruiser"><span class="title-2">Motor yacht or cruiser</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="type" value="Trawler"><span class="title-2">Trawler</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="type" value="Sportfish or centre console"><span class="title-2">Sportfish or centre console</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="type" value="Sailboat"><span class="title-2">Sailboat</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="type" value="Something else"><span class="title-2">Something else</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="step" data-step="model" hidden>
+          <legend class="q heading-5 md:heading-3" tabindex="-1">Make, model and year</legend>
+          <p class="q-help body-3">Whatever is on her papers is fine. Leave the model blank if you’re not sure.</p>
+          <div class="fields">
+            <div class="field"><label class="title-4" for="v-make">Make</label><input id="v-make" name="make" autocomplete="off" placeholder="Grand Banks" aria-describedby="v-e-model"></div>
+            <div class="row2">
+              <div class="field"><label class="title-4" for="v-model">Model</label><input id="v-model" name="model" autocomplete="off" placeholder="42 Classic"></div>
+              <div class="field"><label class="title-4" for="v-year">Year</label><input id="v-year" name="year" inputmode="numeric" autocomplete="off" maxlength="4" placeholder="1998" aria-describedby="v-e-model"></div>
+            </div>
+            <p class="err body-5" id="v-e-model" hidden></p>
+            <div class="field">
+              <span class="title-4" id="v-photo-l">Up to three photos of her (optional)</span>
+              <input class="sr" id="v-photo" type="file" accept="image/*" multiple aria-labelledby="v-photo-l" aria-describedby="v-e-photo">
+              <label class="file button-md" for="v-photo"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M208,56H180.28L166.65,35.56A8,8,0,0,0,160,32H96a8,8,0,0,0-6.65,3.56L75.71,56H48A24,24,0,0,0,24,80V192a24,24,0,0,0,24,24H208a24,24,0,0,0,24-24V80A24,24,0,0,0,208,56Zm8,136a8,8,0,0,1-8,8H48a8,8,0,0,1-8-8V80a8,8,0,0,1,8-8H80a8,8,0,0,0,6.66-3.56L100.28,48h55.43l13.63,20.44A8,8,0,0,0,176,72h32a8,8,0,0,1,8,8ZM128,88a44,44,0,1,0,44,44A44.05,44.05,0,0,0,128,88Zm0,72a28,28,0,1,1,28-28A28,28,0,0,1,128,160Z"/></svg>Add photos</label>
+              <ul class="thumbs" data-thumbs aria-label="Photos you added"></ul>
+              <p class="err body-5" id="v-e-photo" hidden></p>
+              <input type="file" name="photo1" hidden><input type="file" name="photo2" hidden><input type="file" name="photo3" hidden>
+            </div>
+          </div>
+          <div class="step-actions"><button type="button" class="btn button-md" data-next>Continue<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></button><button type="button" class="back button-md" data-back>Back</button></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="length" hidden>
+          <legend class="q heading-5 md:heading-3" tabindex="-1">How long is she, in feet?</legend>
+          <p class="q-help body-3">As on her papers or listing. Half feet are fine, for example 34.5.</p>
+          <div class="fields">
+            <div class="field"><label class="title-4" for="v-len">Length</label><div class="feet"><input id="v-len" name="length" inputmode="decimal" autocomplete="off" placeholder="34" aria-describedby="v-e-len"><span class="body-3">feet</span></div></div>
+            <p class="err body-5" id="v-e-len" hidden></p>
+          </div>
+          <div class="step-actions"><button type="button" class="btn button-md" data-next>Continue<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></button><button type="button" class="back button-md" data-back>Back</button></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="place" hidden>
+          <legend class="q heading-5 md:heading-3" tabindex="-1">Where is she kept?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="place" value="Sidney and Saanich"><span class="title-2">Sidney or the Saanich Peninsula</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="place" value="Victoria"><span class="title-2">Victoria</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="place" value="Gulf Islands"><span class="title-2">Gulf Islands</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="place" value="Nanaimo to Ladysmith"><span class="title-2">Nanaimo to Ladysmith</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="place" value="Comox Valley and north"><span class="title-2">Comox Valley and north</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="place" value="Mainland or the US"><span class="title-2">Mainland or the US</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+          </div>
+          <div class="step-actions"><button type="button" class="back button-md" data-back>Back</button></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="when" hidden>
+          <legend class="q heading-5 md:heading-3" tabindex="-1">Are you thinking of selling?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="when" value="This spring"><span class="title-2">Yes, this spring</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="when" value="Within the year"><span class="title-2">Probably, within the year</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+            <label class="opt"><input type="radio" name="when" value="Just curious"><span class="title-2">Not sure, just curious for now</span><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></label>
+          </div>
+          <div class="step-actions"><button type="button" class="back button-md" data-back>Back</button></div>
+        </fieldset>
+
+        <fieldset class="step" data-step="contact" hidden>
+          <legend class="q heading-5 md:heading-3" tabindex="-1">Where should I send it?</legend>
+          <p class="q-help body-3">An email address or a phone number is enough, whichever suits you.</p>
+          <div class="fields">
+            <div class="field"><label class="title-4" for="v-name">Your name</label><input id="v-name" name="name" autocomplete="name" aria-describedby="v-e-contact"></div>
+            <div class="field"><label class="title-4" for="v-email">Email</label><input id="v-email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="v-e-contact"></div>
+            <div class="field"><label class="title-4" for="v-phone">Phone</label><input id="v-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="v-e-contact"></div>
+            <div class="field" role="radiogroup" aria-labelledby="v-how-l"><span class="legend title-4" id="v-how-l">How would you like to hear from me?</span>
+          <div class="opts small" data-stay>
+            <label class="opt"><input type="radio" name="reply_by" value="email"><span class="body-3">By email</span></label>
+            <label class="opt"><input type="radio" name="reply_by" value="call"><span class="body-3">A phone call first, I’d rather talk</span></label>
+            <label class="opt"><input type="radio" name="reply_by" value="text"><span class="body-3">A text message</span></label>
+          </div>
+            </div>
+            <label class="check body-6"><input type="checkbox" id="v-consent" name="consent" value="yes" aria-describedby="v-e-contact"><span>Alexander can contact me about my boat. I can opt out at any time.</span></label>
+            <p class="err body-5" id="v-e-contact" hidden></p>
+          </div>
+          <div class="step-actions"><button type="submit" class="btn button-md">Send my request<svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 256 256" fill="currentColor"><path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/></svg></button><button type="button" class="back button-md" data-back>Back</button></div>
+        </fieldset>
+
+        <div class="step" data-step="done" hidden>
+          <h2 class="q heading-5 md:heading-3" tabindex="-1">Thanks, <span data-out="first">there</span></h2>
+          <p class="done-sum body-3 md:body-7">I’ll look at recent sales of boats like yours and <span data-out="next">be in touch</span>. You’ll hear from me within one business day. </p>
+          <div class="step-actions"><button type="button" class="btn button-md" data-close>Back to the site</button></div>
+        </div>
+      </div>
+      <aside class="val-aside" aria-label="Your boat so far">
+        <div class="vc">
+          <div class="vc-photo" data-vc-photo hidden><img alt="Your photo of your boat"></div>
+          <p class="vc-label caption-4">Your boat</p>
+          <p class="vc-title heading-6" data-out="title">Not named yet</p>
+          <dl class="vc-rows body-6">
+            <div><dt>Type</dt><dd data-out="type">Not yet</dd></div>
+            <div><dt>Length</dt><dd data-out="length">Not yet</dd></div>
+            <div><dt>Kept at</dt><dd data-out="place">Not yet</dd></div>
+            <div><dt>Selling</dt><dd data-out="when">Not yet</dd></div>
+          </dl>
+          <p class="vc-foot caption-5">Valuation by Alexander Langley, Van Isle Marina</p>
+        </div>
+        <p class="caption-2">Your answers stay between you and me.</p>
+      </aside>
+    </div>
+  </form>
+</dialog>
+
+<script>
+(() => {
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const NS = 'http://www.w3.org/2000/svg';
+
+  /* ---------- Where this visitor came from, sent with every enquiry ---------- */
+  const LIVE = /^https?:$/.test(location.protocol) && !/claude/.test(location.hostname);
+  const KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+  let track = {};
+  try { track = JSON.parse(sessionStorage.getItem('al_track') || '{}'); } catch (e) { track = {}; }
+  const qs = new URLSearchParams(location.search);
+  if (KEYS.some(k => qs.get(k)) || qs.get('fbclid') || qs.get('gclid') || !track.landing_page) {
+    track = { landing_page: location.pathname + location.search, referrer: document.referrer };
+    KEYS.forEach(k => { if (qs.get(k)) track[k] = qs.get(k); });
+    if (qs.get('fbclid') && !track.utm_source) track.utm_source = 'facebook';
+    if (qs.get('gclid') && !track.utm_source) track.utm_source = 'google';
+  }
+  try { sessionStorage.setItem('al_track', JSON.stringify(track)); } catch (e) { /* private mode */ }
+  function leadSource() {
+    const s = (track.utm_source || '').toLowerCase(), r = (track.referrer || '').toLowerCase();
+    if (/chatgpt|openai/.test(s) || /chatgpt\.com|openai\.com/.test(r)) return 'ChatGPT ad';
+    if (/facebook|^fb$|meta|instagram/.test(s) || /facebook\.|instagram\./.test(r)) return 'Facebook';
+    if (/youtube/.test(s) || /youtube\./.test(r)) return 'YouTube';
+    if (/google/.test(s) || /google\./.test(r)) return 'Google';
+    if (s) return s;
+    const host = r.replace(/^https?:\/\//, '').split('/')[0];
+    return host && host !== location.hostname ? 'Link from ' + host : 'Website';
+  }
+  function stamp(form, subject) {
+    const set = (n, v) => { const el = form.querySelector(`input[type="hidden"][name="${n}"]`); if (el) el.value = v || ''; };
+    const src = leadSource();
+    set('lead_source', src);
+    KEYS.concat(['landing_page', 'referrer']).forEach(k => set(k, track[k]));
+    set('subject', `${subject} | ${src}`);
+  }
+  async function send(form, files) {
+    if (!LIVE) { await new Promise(r => setTimeout(r, 400)); return; }
+    const fd = new FormData(form);
+    ['photo1', 'photo2', 'photo3'].forEach(k => fd.delete(k));
+    const opts = { method: 'POST' };
+    if (form.querySelector('input[type="file"][name]')) {
+      (files || []).forEach((b, i) => fd.append('photo' + (i + 1), b, `photo${i + 1}.jpg`));
+      opts.body = fd;
+    } else {
+      opts.headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
+      opts.body = new URLSearchParams([...fd].filter(([, v]) => typeof v === 'string')).toString();
+    }
+    const res = await fetch('/', opts);
+    if (!res.ok) throw new Error('Form answered ' + res.status);
+  }
+  function busy(btn, on) {
+    if (!btn) return;
+    const label = btn.firstChild;
+    if (on) { btn.dataset.label = label.textContent; label.textContent = 'Sending '; btn.disabled = true; btn.setAttribute('aria-busy', 'true'); }
+    else { if (btn.dataset.label) label.textContent = btn.dataset.label; btn.disabled = false; btn.removeAttribute('aria-busy'); }
+  }
+  const FAIL = 'That didn’t send. Please try again, or call or text me at 250 514 8944.';
+
+  /* ---------- Navigation: full height menu on phones ---------- */
+  const menuBtn = $('.menu-btn'), menu = $('#menu');
+  function setMenu(open) {
+    if (!menu) return;
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menu.classList.toggle('open', open);
+    menu.inert = !open;
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+    if (open) $('a', menu).focus({ preventScroll: true });
+  }
+  if (menuBtn) {
+    menuBtn.addEventListener('click', () => setMenu(menuBtn.getAttribute('aria-expanded') !== 'true'));
+    $$('a', menu).forEach(a => a.addEventListener('click', () => setMenu(false)));
+    addEventListener('keydown', e => { if (e.key === 'Escape' && menu.classList.contains('open')) { setMenu(false); menuBtn.focus(); } });
+    matchMedia('(min-width: 960px)').addEventListener('change', e => { if (e.matches) setMenu(false); });
+  }
+
+  /* ---------- Scroll reveals: armed only below the fold, played once ---------- */
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.remove('pending'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -8% 0px' });
+    $$('[data-reveal]').forEach(n => {
+      if (n.getBoundingClientRect().top > innerHeight * 0.92) { n.classList.add('pending'); io.observe(n); }
+    });
+  }
+
+  /* One rAF throttled scroll loop shared by the tagline, the chart and the boat list */
+  const onFrame = [];
+  let ticking = false;
+  const run = () => { ticking = false; onFrame.forEach(f => f()); };
+  const kick = () => { if (!ticking) { ticking = true; requestAnimationFrame(run); } };
+  addEventListener('scroll', kick, { passive: true });
+  addEventListener('resize', kick);
+
+  /* ---------- Tagline: words light up one at a time, in reading order ---------- */
+  const tl = $('[data-split]');
+  if (tl) {
+    const parts = tl.innerHTML.split(/(<br>)/);
+    tl.setAttribute('aria-label', tl.textContent.replace(/\s+/g, ' ').trim());
+    tl.innerHTML = parts.map(p => p === '<br>' ? '<br>' : p.split(/(\s+)/).map(w => (/^\s+$/.test(w) || !w) ? w : `<span class="w" aria-hidden="true">${w}</span>`).join('')).join('');
+    const words = $$('.w', tl);
+    if (reduce) words.forEach(w => w.classList.add('on'));
+    else onFrame.push(() => {
+      const r = tl.getBoundingClientRect();
+      const startTop = innerHeight * 0.85, endTop = innerHeight * 0.45 - r.height;
+      const p = Math.min(1, Math.max(0, (startTop - r.top) / (startTop - endTop)));
+      const n = Math.round(p * words.length);
+      words.forEach((w, i) => w.classList.toggle('on', i < n));
+    });
+  }
+
+  /* ---------- The passage plan: a route through the waypoints, a boat that follows the reader ---------- */
+  const chartEl = $('[data-chart]');
+  if (chartEl) {
+    const svg = $('[data-route]', chartEl);
+    const legs = $$('.leg', chartEl);
+    const markers = legs.map(l => $('[data-marker]', l));
+    const startEl = $('[data-end="start"]', chartEl), endEl = $('[data-end="end"]', chartEl);
+    let path, clipRect, boat, samples = [], ys = [], markerL = [], total = 0, H = 0, ready = false;
+
+    const box = (n, c) => { const r = n.getBoundingClientRect(); return { x: r.left - c.left + r.width / 2, y: r.top - c.top + r.height / 2, top: r.top - c.top, bottom: r.bottom - c.top }; };
+    const el = (tag, attrs, parent) => { const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; };
+
+    function smooth(pts) {
+      let d = `M${pts[0].x.toFixed(1)},${pts[0].y.toFixed(1)}`;
+      for (let i = 0; i < pts.length - 1; i++) {
+        const p0 = pts[i - 1] || pts[i], p1 = pts[i], p2 = pts[i + 1], p3 = pts[i + 2] || p2, t = 1 / 6;
+        d += ` C${(p1.x + (p2.x - p0.x) * t).toFixed(1)},${(p1.y + (p2.y - p0.y) * t).toFixed(1)} ${(p2.x - (p3.x - p1.x) * t).toFixed(1)},${(p2.y - (p3.y - p1.y) * t).toFixed(1)} ${p2.x.toFixed(1)},${p2.y.toFixed(1)}`;
+      }
+      return d;
+    }
+
+    function build() {
+      const c = chartEl.getBoundingClientRect();
+      const W = c.width; H = c.height;
+      const wide = innerWidth >= 768;
+      svg.setAttribute('viewBox', `0 0 ${W} ${H}`);
+      svg.textContent = '';
+      const m = markers.map(n => box(n, c));
+      const s = box(startEl, c), e = box(endEl, c);
+      const start = wide ? { x: s.x, y: s.bottom + 12 } : { x: m[0].x, y: s.top };
+      const end = wide ? { x: e.x, y: e.top - 12 } : { x: m[m.length - 1].x, y: e.bottom };
+      const way = [start, ...m, end];
+      const amp = wide ? 44 : 10;
+      const pts = [];
+      way.forEach((p, i) => {
+        pts.push(p);
+        const q = way[i + 1];
+        if (q) pts.push({ x: (p.x + q.x) / 2 + (i % 2 ? amp : -amp), y: (p.y + q.y) / 2 });
+      });
+      const d = smooth(pts);
+      const defs = el('defs', {}, svg);
+      const clip = el('clipPath', { id: 'route-clip' }, defs);
+      clipRect = el('rect', { x: -80, y: 0, width: W + 160, height: H, transform: 'scale(1 0)' }, clip);
+      el('path', { class: 'base', d }, svg);
+      path = el('path', { class: 'done', d, 'clip-path': 'url(#route-clip)' }, svg);
+
+      /* the way back from the decision point */
+      const di = legs.findIndex(l => l.classList.contains('decision'));
+      if (wide && di > -1) {
+        const D = m[di];
+        const tx = D.x + 150, ty = D.y - 34, cx = D.x + 130, cy = D.y + 8;
+        el('path', { class: 'turn', d: `M${D.x + 20},${D.y + 2} C${D.x + 70},${D.y + 20} ${cx},${cy} ${tx},${ty}` }, svg);
+        const ang = Math.atan2(ty - cy, tx - cx) * 180 / Math.PI;
+        el('path', { class: 'turn-head', d: 'M-2,-6 L10,0 L-2,6 Z', transform: `translate(${tx} ${ty}) rotate(${ang.toFixed(1)})` }, svg);
+        const t = el('text', { class: 'turn-label caption-4', x: tx + 18, y: ty - 2 }, svg);
+        el('tspan', { x: tx + 18, dy: 0 }, t).textContent = 'Turn back here';
+        el('tspan', { x: tx + 18, dy: 16 }, t).textContent = 'at no cost';
+      }
+
+      /* depth soundings in the open water beside each waypoint */
+      if (wide) {
+        const depths = [['18', '24'], ['31', '27'], ['12', '21'], ['33', '15'], ['9', '26'], ['20', '14']];
+        legs.forEach((leg, i) => {
+          if (i === 0 || i === legs.length - 1 || leg.classList.contains('decision')) return;
+          const card = box($('.wp', leg), c);
+          const ex = W - card.x, y = m[i].y;
+          [[-90, -10], [70, 22]].forEach(([dx, dy], k) => {
+            el('text', { class: 'sounding caption-5', x: (ex + dx).toFixed(0), y: (y + dy).toFixed(0), 'text-anchor': 'middle' }, svg).textContent = depths[i % depths.length][k];
+          });
+        });
+      }
+
+      /* on phones: depth soundings and small islets in the water between the cards */
+      if (!wide) {
+        const depths = ['14', '22', '9', '31', '18', '26', '12'];
+        legs.forEach((leg, i) => {
+          const next = legs[i + 1];
+          if (!next) return;
+          const a = box($('.wp', leg), c), b2 = box($('.wp', next), c), gy = (a.bottom + b2.top) / 2;
+          [[0.42, i], [0.8, i + 3]].forEach(([fx, k]) => {
+            el('text', { class: 'sounding caption-5', x: (W * fx).toFixed(0), y: (gy + 4).toFixed(0), 'text-anchor': 'middle' }, svg).textContent = depths[k % depths.length];
+          });
+          if (i === 1 || i === 3) el('ellipse', { class: 'islet', cx: (W * 0.62).toFixed(0), cy: gy.toFixed(0), rx: 10, ry: 5 }, svg);
+        });
+      }
+
+      boat = el('g', { class: 'boat' }, svg);
+      const inner = el('g', { transform: wide ? 'scale(1.6)' : 'scale(1.2)' }, boat);
+      el('circle', { class: 'halo', r: 15 }, inner);
+      el('path', { class: 'wake', d: 'M-15 -4 L-28 -10 M-15 4 L-28 10' }, inner);
+      el('path', { class: 'hull', d: 'M12 0 C 9 -5, -4 -6, -10 -5 L -10 5 C -4 6, 9 5, 12 0 Z' }, inner);
+      el('rect', { class: 'cabin', x: -5, y: -2.5, width: 8, height: 5, rx: 1.5 }, inner);
+
+      total = path.getTotalLength();
+      const N = 360;
+      samples = []; ys = [];
+      for (let i = 0; i <= N; i++) {
+        const l = total * i / N, p = path.getPointAtLength(l);
+        samples.push(l);
+        ys.push(i ? Math.max(ys[i - 1], p.y) : p.y);
+      }
+      markerL = m.map(pt => {
+        let best = 0, bd = Infinity;
+        for (let i = 0; i <= N; i++) { const p = path.getPointAtLength(samples[i]); const dd = (p.x - pt.x) ** 2 + (p.y - pt.y) ** 2; if (dd < bd) { bd = dd; best = i; } }
+        return samples[best];
+      });
+      ready = true;
+      place();
+    }
+
+    function lengthAtY(y) {
+      if (y <= ys[0]) return 0;
+      const N = ys.length - 1;
+      if (y >= ys[N]) return total;
+      let lo = 0, hi = N;
+      while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (ys[mid] <= y) lo = mid; else hi = mid; }
+      const f = (y - ys[lo]) / ((ys[hi] - ys[lo]) || 1);
+      return samples[lo] + f * (samples[hi] - samples[lo]);
+    }
+
+    function place() {
+      if (!ready) return;
+      const c = chartEl.getBoundingClientRect();
+      if (c.bottom < -200 || c.top > innerHeight + 200) return;
+      const l = reduce ? 0 : lengthAtY(innerHeight * 0.55 - c.top);
+      const p = path.getPointAtLength(l), a = path.getPointAtLength(Math.max(0, l - 2)), b = path.getPointAtLength(Math.min(total, l + 2));
+      const ang = Math.atan2(b.y - a.y, b.x - a.x) * 180 / Math.PI;
+      boat.setAttribute('transform', `translate(${p.x.toFixed(1)} ${p.y.toFixed(1)}) rotate(${ang.toFixed(1)})`);
+      clipRect.setAttribute('transform', `scale(1 ${Math.max(0, p.y / H).toFixed(4)})`);
+      legs.forEach((leg, i) => leg.classList.toggle('on', l >= markerL[i] - 1));
+    }
+
+    let rq = 0;
+    const rebuild = () => { cancelAnimationFrame(rq); rq = requestAnimationFrame(build); };
+    if ('ResizeObserver' in window) new ResizeObserver(rebuild).observe(chartEl);
+    if (document.fonts) document.fonts.ready.then(rebuild);
+    rebuild();
+    onFrame.push(place);
+  }
+
+  /* ---------- Boats page: Van Isle's current listings; the row in focus sets the photograph ---------- */
+  const list = $('[data-boats]');
+  const photo = $('.boats-photo');
+  if (list && photo) {
+    let rows = $$('.boat', list), pics = $$('[data-boat-img]', photo), on = 0;
+    const esc = v => String(v == null ? '' : v).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const activate = i => {
+      if (i === on) return; on = i;
+      rows.forEach((r, k) => r.classList.toggle('is-on', k === i));
+      pics.forEach((m, k) => m.classList.toggle('is-on', k === i));
+    };
+    const render = boats => {
+      const bits = boats.map(b => ({
+        name: `${b.year || ''} ${b.title || ''}`.trim(),
+        price: b.price || 'Call for price',
+        status: /^active$/i.test(b.status || 'Active') ? '' : b.status,
+        b
+      }));
+      photo.innerHTML = bits.map((x, i) => `<img data-boat-img="${i}" src="${esc(x.b.image)}" width="1200" height="800" ${i ? 'loading="lazy"' : ''} referrerpolicy="no-referrer" alt="${esc(x.name)}"${i ? '' : ' class="is-on"'}>`).join('');
+      list.innerHTML = bits.map((x, i) => `<li class="boat${i ? '' : ' is-on'}" data-i="${i}"><span class="boat-name title-2">${esc(x.name)}</span><span class="boat-price title-2">${esc(x.price)}</span><span class="boat-spec body-6">${esc(x.b.length)}${x.status ? ` <span class="tag caption-4">${esc(x.status)}</span>` : ''}</span><span class="boat-act"><button type="button" class="link-btn button-sm" data-ask="${esc(x.name)}" data-price="${esc(x.price)}" data-url="${esc(x.b.url)}">Ask me about her</button><a class="body-5" href="${esc(x.b.url)}" target="_blank" rel="noopener">Full listing and photos</a></span></li>`).join('');
+      rows = $$('.boat', list); pics = $$('[data-boat-img]', photo); on = 0;
+      kick();
+    };
+    list.addEventListener('pointerover', e => { const r = e.target.closest('.boat'); if (r && e.pointerType === 'mouse') activate(+r.dataset.i); });
+    list.addEventListener('focusin', e => { const r = e.target.closest('.boat'); if (r) activate(+r.dataset.i); });
+    if (LIVE) fetch('/api/boats').then(r => (r.ok ? r.json() : null)).then(j => { if (j && Array.isArray(j.boats) && j.boats.length) render(j.boats); }).catch(() => { /* keep the built in list */ });
+    onFrame.push(() => {
+      const vh = innerHeight;
+      const line = innerWidth < 1024 ? photo.getBoundingClientRect().bottom + 48 : vh * 0.5;
+      let best = -1, bd = Infinity;
+      rows.forEach((r, i) => {
+        const b = r.getBoundingClientRect();
+        if (b.bottom < 0 || b.top > vh) return;
+        const d = Math.abs(b.top + b.height / 2 - line);
+        if (d < bd) { bd = d; best = i; }
+      });
+      if (best > -1) activate(best);
+    });
+  }
+
+  /* ---------- Step-through forms: one question at a time ---------- */
+  const num = v => {
+    const t = String(v).trim().replace(/\s*(ft|feet|')\s*$/i, '');
+    if (!t) return null;
+    if (!/^\d{1,3}(\.\d)?$/.test(t)) return NaN;
+    return parseFloat(t);
+  };
+  const feet = n => (Number.isInteger(n) ? String(n) : n.toFixed(1)) + ' ft';
+
+  function flow(dlg, cfg) {
+    const form = $('form', dlg);
+    const steps = $$('.step', form);
+    const bar = $('.val-bar span', dlg);
+    let cur = 0;
+    const setOut = (k, v) => $$(`[data-out="${k}"]`, dlg).forEach(n => {
+      if (n.textContent !== v) { n.textContent = v; n.classList.remove('flash'); void n.offsetWidth; n.classList.add('flash'); }
+    });
+    function show(i, dir = 1) {
+      steps[cur].hidden = true;
+      cur = Math.max(0, Math.min(i, steps.length - 1));
+      const s = steps[cur];
+      s.hidden = false;
+      s.classList.remove('enter', 'enter-back');
+      void s.offsetWidth; s.classList.add(dir > 0 ? 'enter' : 'enter-back');
+      bar.style.setProperty('--p', Math.max(0.05, Math.min(1, (cur + 1) / (steps.length - 1))));
+      const field = s.querySelector('input:not([type="radio"]):not([type="checkbox"]), textarea');
+      (field || s.querySelector('.q')).focus({ preventScroll: true });
+    }
+    function err(id, msg, fields) {
+      const p = $('#' + id, dlg);
+      p.textContent = msg; p.hidden = !msg;
+      $$('input, textarea', p.closest('.step')).forEach(i => i.removeAttribute('aria-invalid'));
+      (fields || []).forEach(f => f.setAttribute('aria-invalid', 'true'));
+      if (fields && fields[0]) fields[0].focus();
+      return false;
+    }
+    form.addEventListener('input', e => {
+      const t = e.target;
+      if (t.getAttribute('aria-invalid') !== 'true') return;
+      t.removeAttribute('aria-invalid');
+      const p = $('.err', t.closest('.step'));
+      if (p) { p.hidden = true; p.textContent = ''; }
+    });
+    $$('[data-close]', dlg).forEach(b => b.addEventListener('click', () => dlg.close()));
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('close', () => {
+      document.documentElement.style.overflow = '';
+      if (location.hash === '#' + dlg.id) history.replaceState(null, '', location.pathname + location.search);
+    });
+    form.addEventListener('change', e => {
+      const t = e.target;
+      if (t.type !== 'radio') return;
+      const label = t.closest('label').querySelector('span').textContent;
+      if (t.closest('[data-stay]')) { setOut(t.name, label); return; }
+      setOut(t.name, t.value);
+      setTimeout(() => show(cur + 1), reduce ? 0 : 260);
+    });
+    $$('[data-back]', form).forEach(b => b.addEventListener('click', () => show(cur - 1, -1)));
+    $$('[data-next]', form).forEach(b => {
+      const step = b.closest('.step');
+      const go = () => { if (cfg.check[step.dataset.step]()) show(cur + 1); };
+      b.addEventListener('click', go);
+      $$('input', step).forEach(i => i.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); go(); } }));
+    });
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      const p = cfg.prefix;
+      const name = $(`#${p}-name`), email = $(`#${p}-email`), phone = $(`#${p}-phone`), consent = $(`#${p}-consent`);
+      const how = $('input[name="reply_by"]:checked', form);
+      const eid = `${p}-e-contact`;
+      const em = email.value.trim(), digits = phone.value.replace(/\D/g, '');
+      if (!name.value.trim()) return err(eid, 'Add your name so I know who to reply to.', [name]);
+      if (!em && !phone.value.trim()) return err(eid, 'Add an email address or a phone number so I can reach you.', [email]);
+      if (em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)) return err(eid, 'Check the email address. It should look like name@example.com.', [email]);
+      if (phone.value.trim() && digits.length < 10) return err(eid, 'Add the phone number with its area code, for example 250 555 0182.', [phone]);
+      if (how && how.value === 'email' && !em) return err(eid, 'Add your email address, or choose a call or a text instead.', [email]);
+      if (how && how.value !== 'email' && !digits) return err(eid, 'Add a phone number so I can call or text you.', [phone]);
+      if (!consent.checked) return err(eid, 'Tick the box so I’m allowed to reply to you.', [consent]);
+      err(eid, '');
+      const btn = $('[data-step="contact"] button[type="submit"]', form);
+      stamp(form, cfg.subject());
+      busy(btn, true);
+      try { await send(form, cfg.files ? await cfg.files() : null); }
+      catch (x) { busy(btn, false); return err(eid, FAIL, []); }
+      busy(btn, false);
+      setOut('first', name.value.trim().split(/\s+/)[0]);
+      const v = how ? how.value : (em ? 'email' : 'call');
+      setOut('next', cfg.next[v](em));
+      show(steps.findIndex(s => s.dataset.step === 'done'));
+    });
+    return {
+      open(reset) { if (!dlg.open) { dlg.showModal(); document.documentElement.style.overflow = 'hidden'; show(reset || cur === steps.length - 1 ? 0 : cur); } },
+      err, setOut
+    };
+  }
+
+  const flows = {};
+
+  const vDlg = $('#value');
+  if (vDlg) {
+    const make = $('#v-make'), model = $('#v-model'), year = $('#v-year'), vlen = $('#v-len');
+    let V;
+    const vTitle = () => V.setOut('title', [year.value.trim(), make.value.trim(), model.value.trim()].filter(Boolean).join(' ') || 'Not named yet');
+    let photos = [];
+    const shrink = async file => {
+      try {
+        const bmp = await createImageBitmap(file);
+        const k = Math.min(1, 1600 / Math.max(bmp.width, bmp.height));
+        const c = document.createElement('canvas');
+        c.width = Math.round(bmp.width * k); c.height = Math.round(bmp.height * k);
+        c.getContext('2d').drawImage(bmp, 0, 0, c.width, c.height);
+        const blob = await new Promise(r => c.toBlob(r, 'image/jpeg', 0.82));
+        if (blob) return blob;
+      } catch (e) { /* the browser can't read this photo; fall back to the original if it's small */ }
+      return file.size <= 2.5 * 1024 * 1024 ? file : null;
+    };
+    V = flow(vDlg, {
+      prefix: 'v',
+      subject: () => {
+        const t = [year.value.trim(), make.value.trim(), model.value.trim()].filter(Boolean).join(' ') || 'a boat';
+        const n = num(vlen.value);
+        return `Valuation request: ${t}${n && n >= 8 ? ', ' + feet(n) : ''}`;
+      },
+      files: async () => (await Promise.all(photos.slice(0, 3).map(shrink))).filter(Boolean),
+      check: {
+        model() {
+          const y = year.value.trim(), maxY = new Date().getFullYear() + 1;
+          if (!make.value.trim()) return V.err('v-e-model', 'Add the make, for example Grand Banks or Beneteau.', [make]);
+          if (y && (!/^\d{4}$/.test(y) || +y < 1900 || +y > maxY)) return V.err('v-e-model', `Enter the year as four digits, between 1900 and ${maxY}.`, [year]);
+          V.err('v-e-model', ''); vTitle(); return true;
+        },
+        length() {
+          const n = num(vlen.value);
+          if (n === null) return V.err('v-e-len', 'Enter her length in feet, for example 34.', [vlen]);
+          if (Number.isNaN(n) || n < 8 || n > 200) return V.err('v-e-len', 'Enter a length in feet between 8 and 200, for example 34 or 34.5.', [vlen]);
+          V.err('v-e-len', ''); V.setOut('length', feet(n)); return true;
+        }
+      },
+      next: {
+        email: e => `email your written valuation to ${e}`,
+        call: () => 'call you first so we can talk it through',
+        text: () => 'text you to find a good time to talk'
+      }
+    });
+    [make, model, year].forEach(i => i.addEventListener('input', vTitle));
+    year.addEventListener('input', () => { year.value = year.value.replace(/\D/g, '').slice(0, 4); });
+    vlen.addEventListener('input', () => { const n = num(vlen.value); if (n && n >= 8 && n <= 200) V.setOut('length', feet(n)); });
+    const photoIn = $('#v-photo'), thumbs = $('[data-thumbs]', vDlg), vcPhoto = $('[data-vc-photo]', vDlg);
+    if (photoIn) photoIn.addEventListener('change', () => {
+      const files = [...photoIn.files];
+      const bad = files.find(f => !/^image\//.test(f.type));
+      const big = files.find(f => f.size > 15 * 1024 * 1024);
+      if (bad) { photoIn.value = ''; return V.err('v-e-photo', 'That file isn’t a photo. Choose a JPG, PNG or HEIC image.', []); }
+      if (big) { photoIn.value = ''; return V.err('v-e-photo', 'That photo is over 15 MB. Try a smaller copy.', []); }
+      if (files.length > 3) { photoIn.value = ''; return V.err('v-e-photo', 'Add up to three photos.', []); }
+      photos = files;
+      $('#v-e-photo').hidden = true;
+      thumbs.innerHTML = '';
+      files.forEach(f => { const li = document.createElement('li'); const im = document.createElement('img'); im.src = URL.createObjectURL(f); im.alt = ''; li.appendChild(im); thumbs.appendChild(li); });
+      if (files[0]) { $('img', vcPhoto).src = URL.createObjectURL(files[0]); vcPhoto.hidden = false; } else vcPhoto.hidden = true;
+    });
+    flows.value = V;
+  }
+
+  const fDlg = $('#find');
+  if (fDlg) {
+    const from = $('#f-from'), to = $('#f-to');
+    let F;
+    const sizeText = (a, b) => (a && b ? `${a} to ${feet(b)}` : a ? `${feet(a)} and up` : `Up to ${feet(b)}`);
+    F = flow(fDlg, {
+      prefix: 'f',
+      subject: () => {
+        const want = ($('input[name="want"]:checked', fDlg) || {}).value || 'a boat';
+        const size = $('[data-out="size"]', fDlg).textContent;
+        return `Boat search: ${want}${/ft/.test(size) ? ', ' + size : ''}`;
+      },
+      check: {
+        size() {
+          const a = num(from.value), b = num(to.value);
+          if (a === null && b === null) return F.err('f-e-size', 'Enter at least one length in feet, for example 36.', [from]);
+          for (const [n, el] of [[a, from], [b, to]]) {
+            if (n !== null && (Number.isNaN(n) || n < 8 || n > 200)) return F.err('f-e-size', 'Enter lengths in feet between 8 and 200, for example 36.', [el]);
+          }
+          if (a !== null && b !== null && a > b) return F.err('f-e-size', 'The first length should be the shorter one.', [from]);
+          F.err('f-e-size', ''); F.setOut('size', sizeText(a, b)); return true;
+        }
+      },
+      next: {
+        email: e => `email boats that fit to ${e}`,
+        call: () => 'call you first so we can talk it through',
+        text: () => 'text you to find a good time to talk'
+      }
+    });
+    flows.find = F;
+  }
+
+  const aDlg = $('#ask');
+  if (aDlg) {
+    let asking = 'this boat';
+    const A = flow(aDlg, {
+      prefix: 'a', check: {},
+      subject: () => `Question about the ${asking}`,
+      next: { email: e => `email you at ${e}`, call: () => 'call you', text: () => 'text you' }
+    });
+    document.addEventListener('click', e => {
+      const b = e.target.closest('[data-ask]');
+      if (!b) return;
+      const name = b.dataset.ask;
+      asking = name;
+      A.setOut('boat', name);
+      A.setOut('price', b.dataset.price);
+      const f = $('form', aDlg);
+      f.elements.boat.value = name;
+      f.elements.asking_price.value = b.dataset.price || '';
+      f.elements.listing_url.value = b.dataset.url || '';
+      $('#a-msg').value = `I’d like to know more about the ${name}. Is she still available?`;
+      A.open(true);
+    });
+  }
+
+  /* ---------- Market notes ---------- */
+  const notes = $('#notes');
+  if (notes) notes.addEventListener('submit', async e => {
+    e.preventDefault();
+    const email = $('#n-email'), consent = $('#n-consent'), er = $('#n-err'), ok = $('#n-ok');
+    const fail = (msg, el) => { er.textContent = msg; er.hidden = false; ok.hidden = true; el.setAttribute('aria-invalid', 'true'); el.focus(); };
+    email.removeAttribute('aria-invalid'); consent.removeAttribute('aria-invalid');
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) return fail('Check the email address. It should look like name@example.com.', email);
+    if (!consent.checked) return fail('Tick the box so I’m allowed to send them to you.', consent);
+    er.hidden = true;
+    const boat = notes.elements.boat.value.trim();
+    stamp(notes, `Market notes signup${boat ? ': ' + boat : ''}`);
+    const btn = $('button[type="submit"]', notes);
+    busy(btn, true);
+    try { await send(notes); }
+    catch (x) { busy(btn, false); er.textContent = FAIL; er.hidden = false; return; }
+    busy(btn, false);
+    ok.hidden = false; ok.focus();
+  });
+
+  /* ---------- Open the forms from buttons and from links like #value ---------- */
+  $$('[data-open]').forEach(a => a.addEventListener('click', e => {
+    const f = flows[a.dataset.open];
+    if (!f) return;
+    e.preventDefault();
+    setMenu(false);
+    f.open();
+  }));
+  function route() { const f = flows[location.hash.slice(1)]; if (f) f.open(); }
+  route();
+  addEventListener('hashchange', route);
+  kick();
+})();
+
+</script>
+
+</body>
+</html>

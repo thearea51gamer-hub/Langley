@@ -1,0 +1,21 @@
+# Netlify settings for alexanderlangleyyachts.com
+# The site is already built (see src/build.py), so there is no build command.
+[build]
+  publish = "site"
+  functions = "netlify/functions"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

@@ -1,0 +1,9 @@
+{
+  "name": "alexander-langley-site-build",
+  "private": true,
+  "description": "Build tools for the site: icons and font used by build.py",
+  "devDependencies": {
+    "@fontsource-variable/manrope": "^5.0.0",
+    "@phosphor-icons/core": "^2.1.1"
+  }
+}
