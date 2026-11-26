@@ -389,6 +389,18 @@ css = (SRC / 'style.css').read_text()
 css += '\n:root{--warn:' + mask('warning-circle') + ';--tick:' + mask('check-circle') + '}\n'
 js = (SRC / 'site.js').read_text()
 
+# ChatGPT Ads measurement pixel. Paste the Pixel ID from Ads Manager > Tools > Conversions.
+# Leave empty and no OpenAI script loads at all.
+OAIQ_PIXEL_ID = ''
+
+def oaiq_tag():
+    if not OAIQ_PIXEL_ID:
+        return ''
+    return ('<script>(function(w,d,s,u){if(w.oaiq)return;var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;'
+            'var js=d.createElement(s);js.async=true;js.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(js,f);'
+            '})(window,document,"script","https://bzrcdn.openai.com/sdk/oaiq.min.js");'
+            'oaiq("init",{pixelId:"%s"});</script>\n' % OAIQ_PIXEL_ID)
+
 HEAD = '''<!doctype html>
 <html lang="en">
 <head>
@@ -404,7 +416,7 @@ HEAD = '''<!doctype html>
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-{robots}</head>
+{robots}{pixel}</head>
 <body>
 '''
 TAIL = '\n</body>\n</html>\n'
@@ -429,7 +441,7 @@ def absolute(s):
 
 
 def page(name, body, title, desc, path, robots=''):
-    doc = HEAD.format(title=title, desc=desc, url=SITE_URL + path, site=SITE_URL, robots=robots) + absolute(body) + TAIL
+    doc = HEAD.format(title=title, desc=desc, url=SITE_URL + path, site=SITE_URL, robots=robots, pixel=oaiq_tag()) + absolute(body) + TAIL
     (OUT / name).write_text(doc)
     return doc
 

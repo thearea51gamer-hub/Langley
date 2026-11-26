@@ -1562,6 +1562,9 @@ dialog.val[open]{animation:pop var(--t-layout) var(--ease) both}
       try { await send(form, cfg.files ? await cfg.files() : null); }
       catch (x) { busy(btn, false); return err(eid, FAIL, []); }
       busy(btn, false);
+      if (cfg.conversion && LIVE && typeof window.oaiq === 'function') {
+        try { window.oaiq('measure', cfg.conversion, { type: 'customer_action' }); } catch (_) {}
+      }
       setOut('first', name.value.trim().split(/\s+/)[0]);
       const v = how ? how.value : (em ? 'email' : 'call');
       setOut('next', cfg.next[v](em));
@@ -1594,6 +1597,7 @@ dialog.val[open]{animation:pop var(--t-layout) var(--ease) both}
       return file.size <= 2.5 * 1024 * 1024 ? file : null;
     };
     V = flow(vDlg, {
+      conversion: 'lead_created',
       prefix: 'v',
       subject: () => {
         const t = [year.value.trim(), make.value.trim(), model.value.trim()].filter(Boolean).join(' ') || 'a boat';
