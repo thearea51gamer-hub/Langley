@@ -391,7 +391,7 @@ js = (SRC / 'site.js').read_text()
 
 # ChatGPT Ads measurement pixel. Paste the Pixel ID from Ads Manager > Tools > Conversions.
 # Leave empty and no OpenAI script loads at all.
-OAIQ_PIXEL_ID = ''
+OAIQ_PIXEL_ID = '63VidfamjuhXsY4YjzUGtC'
 
 def oaiq_tag():
     if not OAIQ_PIXEL_ID:
